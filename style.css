@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+t-size: 20px;
+=======
 ul {
     list-style-type: none;
     margin: 0;
@@ -9,19 +12,15 @@ ul {
 
 li {
     display:inline;
-<<<<<<< HEAD
-    margin-left: 10px;
-    float: right;
-=======
     margin-left: 5px;
     margin-top: 45px;
 float: right;
->>>>>>> 4756d61faf9f3483d798586d625ca404925eea1f
     
 }
 nav{
-    padding: 20px 20px;
-    font-size: 25px;
+    padding: 20px 20px 
+
+    ;
 }
 bg{
     width: 25%;
@@ -29,4 +28,5 @@ bg{
 
  
 
+>>>>>>> 4756d61faf9f3483d798586d625ca404925eea1f
 }
