@@ -1,16 +1,32 @@
 ul {
     list-style-type: none;
     margin: 0;
-    padding;
+    padding: 50px;
+    font-size: 25px;
+    
+    font-weight: bolder;
 }
 
 li {
     display:inline;
+<<<<<<< HEAD
     margin-left: 10px;
     float: right;
+=======
+    margin-left: 5px;
+    margin-top: 45px;
+float: right;
+>>>>>>> 4756d61faf9f3483d798586d625ca404925eea1f
     
 }
 nav{
     padding: 20px 20px;
     font-size: 25px;
+}
+bg{
+    width: 25%;
+    margin-right: 90%;
+
+ 
+
 }
