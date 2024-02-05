@@ -1,2 +1,32 @@
+<<<<<<< HEAD
 t-size: 20px;
+=======
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 50px;
+    font-size: 25px;
+    
+    font-weight: bolder;
+}
+
+li {
+    display:inline;
+    margin-left: 5px;
+    margin-top: 45px;
+float: right;
+    
+}
+nav{
+    padding: 20px 20px 
+
+    ;
+}
+bg{
+    width: 25%;
+    margin-right: 90%;
+
+ 
+
+>>>>>>> 4756d61faf9f3483d798586d625ca404925eea1f
 }
