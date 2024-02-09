@@ -138,22 +138,22 @@
             <form>
             <br>
             <label for="fname">First Name: </label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            <input type="text" id="fname" placeholder="Your name.." required>
             </br>
         
             <br>
             <label for="lname">Last Name: </label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+            <input type="text" id="lname" placeholder="Your last name.." required>
             </br>
 
             <br>
             <label for="email">Email address: </label>
-            <input type="text" id="email" name="email" required placeholder="example@gmail.com">
+            <input type="email" id="email" required placeholder="example@gmail.com">
             </br>
 
             <br>
-            <label for="pNumber">Cellphone Number: </label>
-            <input type="tel" id="pNumber" name="pNumber" placeholder="Your cellphone number.." maxlength="10" required>
+            <label for="phone">Cellphone Number: </label>
+            <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             </br>
 
             <br>
@@ -161,25 +161,26 @@
             <input type="checkbox" id="race1" name="race1">
             <label for="race1"> African</label>
             </br>
-
+            
+            <!--All check boxes have to be selected as we have not yet started to do javascript as a listener-->
             <br>
             <input type="checkbox" id="race2" name="race2">
             <label for="race2"> White</label>
             </br>
 
             <br>
-            <input type="checkbox" id="race3" name="race3">
+            <input type="checkbox" id="race3" name="race3" required>
             <label for="race3"> Indian</label>
             </br>
 
             <br>
-            <input type="checkbox" id="race4" name="race4">
+            <input type="checkbox" id="race4" name="race4" required>
             <label for="race4"> Other</label>
             </br>
             
             <br>
             <label for="number">Number of people</label>
-            <select id="number" name="number" required>
+            <select id="number" required>
               <option value="one">1</option>
               <option value="two">2</option>
               <option value="three">3</option>
@@ -205,8 +206,8 @@
             </br>
 
             <br>
-            <label for="text"> Leave a message:</label><br>
-            <textarea id="text" name="text" rows="4" cols="50"></textarea>
+            <label for="comment"> Leave a message:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
             </br>
 
             <br>
