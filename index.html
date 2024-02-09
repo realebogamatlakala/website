@@ -136,15 +136,15 @@
             Discover the world with us</i> 
         </h3>
 
-          <form>
+          <form action="result.html" method="POST">
             <br>
             <label for="fname">First Name: </label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
             </br>
         
             <br>
             <label for="lname">Last Name: </label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
             </br>
 
             <br>
@@ -154,33 +154,33 @@
 
             <br>
             <label for="pNumber">Cellphone Number: </label>
-            <input type="tel" id="pNumber" name="pNumber" placeholder="Your cellphone number.." maxlength="10">
+            <input type="tel" id="pNumber" name="pNumber" placeholder="Your cellphone number.." maxlength="10" required>
             </br>
 
             <br>
             <p><h3>Ethinicity</h3></p>
-            <input type="checkbox" id="race1" name="race1" value="African">
+            <input type="checkbox" id="race1" name="race1" required>
             <label for="race1"> African</label>
             </br>
 
             <br>
-            <input type="checkbox" id="race2" name="race2" value="White">
+            <input type="checkbox" id="race2" name="race2" required>
             <label for="race2"> White</label>
             </br>
 
             <br>
-            <input type="checkbox" id="race3" name="race3" value="Indian">
+            <input type="checkbox" id="race3" name="race3" required>
             <label for="race3"> Indian</label>
             </br>
 
             <br>
-            <input type="checkbox" id="race4" name="race4" value="Other">
+            <input type="checkbox" id="race4" name="race4" required>
             <label for="race4"> Other</label>
             </br>
             
             <br>
             <label for="number">Number of people</label>
-            <select id="number" name="number">
+            <select id="number" name="number" required>
               <option value="one">1</option>
               <option value="two">2</option>
               <option value="three">3</option>
@@ -191,7 +191,7 @@
 
             <br>
             <label for="date">Date:</label>
-            <input type="date" id="date" name="Date">
+            <input type="date" id="date" name="Date" required>
             </br>
 
             <br>
@@ -200,8 +200,8 @@
             </br>
 
             <br>
-            <input type="button" onclick="alert('We have recieved your response, We will be in touch!')" value="Submit">
-            <input type="reset" value="Reset">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
             </br>
         </form>
 
