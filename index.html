@@ -135,8 +135,7 @@
        <h3><i>Book your trip with Techno Champs Tours<br>
             Discover the world with us</i> 
         </h3>
-
-          <form action="result.html" method="POST">
+            <form>
             <br>
             <label for="fname">First Name: </label>
             <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
@@ -159,22 +158,22 @@
 
             <br>
             <p><h3>Ethinicity</h3></p>
-            <input type="checkbox" id="race1" name="race1" required>
+            <input type="checkbox" id="race1" name="race1">
             <label for="race1"> African</label>
             </br>
 
             <br>
-            <input type="checkbox" id="race2" name="race2" required>
+            <input type="checkbox" id="race2" name="race2">
             <label for="race2"> White</label>
             </br>
 
             <br>
-            <input type="checkbox" id="race3" name="race3" required>
+            <input type="checkbox" id="race3" name="race3">
             <label for="race3"> Indian</label>
             </br>
 
             <br>
-            <input type="checkbox" id="race4" name="race4" required>
+            <input type="checkbox" id="race4" name="race4">
             <label for="race4"> Other</label>
             </br>
             
@@ -190,6 +189,17 @@
             </br>
 
             <br>
+            <label for="number">Destination</label>
+            <select id="number" name="number" required>
+              <option value="suncity">Sun City</option>
+              <option value="shaka">uShaka</option>
+              <option value="table">Table Mountain</option>
+              <option value="draken">Drankensburg</option>
+              <option value="vna">V&A Waterfront</option>
+            </select>
+            </br>
+
+            <br>
             <label for="date">Date:</label>
             <input type="date" id="date" name="Date" required>
             </br>
@@ -200,7 +210,7 @@
             </br>
 
             <br>
-            <button type="submit">Submit</button>
+            <input type="submit" onclick="alert('Thank you for filling out the form. We will contact you shortly.')">
             <button type="reset">Reset</button>
             </br>
         </form>
