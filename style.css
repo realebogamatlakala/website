@@ -1,4 +1,10 @@
-body{ background-color: #d0e1eb;}
+body{ 
+    background-color: #d0e1eb;
+    background-image: url(/images/back2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 ul{
     list-style-type: none;
     margin: 0;
@@ -14,33 +20,19 @@ li a{
     padding: 14px 16px;
     text-decoration: none;
 }
-.nav a { color: #043146;
+.nav a { color: #020202;
        font-weight: bold;
 
     }
 h1{
-    color: #043146 ;
+    color: #ffffff ;
     text-align: center;
     font-family: Comic sans MS;
-    font-size: 45px;}
-h2{ 
-    color: #043146 ;
-    text-align: center;
-    font-family: Comic sans MS;
-    font-size: 35px;
-} 
-.about-us p{
-   
-    font-family: Comic sans MS ;
-    font-size: 20px;
-    text-align: center;
+    font-size: 50px;
 }
-.home p{ color: #043146;
+.home p{ color: #ffffff;
  text-align: center;
  font-family: Comic sans MS;
- font-size: 25px;}
- .meet p{
-    font-family: Comic sans MS ;
-    font-size: 20px;
-    text-align: center;
- }
+ font-size: 35px;
+}
+
