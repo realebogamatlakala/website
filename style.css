@@ -1,1 +1,29 @@
-body{ background-color: bbe4e9;}
+body{ background-color: #d0e1eb;}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: right;
+}
+li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav a { color: #043146;
+       font-weight: bold;
+
+    }
+h1{
+    color: #043146 ;
+    text-align: center;
+    font-family: Comic sans MS;
+    font-size: 45px;
+}
+.home p{ color: #043146;
+ text-align: center;
+ font-family: Comic sans MS;
+ font-size: 25px;}
