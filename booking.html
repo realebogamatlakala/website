@@ -8,111 +8,110 @@
 </head>
 <body>    
    <!-- Navigation bar that scrolls down to sections on page-->
-   <nav role = "navigation" aria-label="main menu">
-    <div class="container">
-        <div class="nav">
-            <ul class="navbar">
-                <!--Logo--> 
-                <img src="../website/images/Techno.png" alt = "Techno Champs Tours Logo">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="services.html">OUR SERVICES</a></li>
-                <li><a href="places.html">PLACES TO VISIT</a></li>
-                <li><a href="booking.html">BOOKING</a></li>
-                <li><a href="contacts.html">CONTACT US</a></li>
-            </ul>
+   <div class="container">
+      <nav role="navigation" aria-label="main menu">
+        <div class="navbar">
+          <ul>
+            <!--Logo-->
+            <img
+              src="../website/images/Techno.png"
+              alt="Techno Champs Tours Logo"
+              class="logo"
+            />
+            <li><a href="#home">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="services.html">OUR SERVICES</a></li>
+            <li><a href="places.html">PLACES TO VISIT</a></li>
+            <li><a href="booking.html">BOOKING</a></li>
+            <li><a href="contacts.html">CONTACT US</a></li>
+          </ul>
         </div>
+      </nav>
     </div>
-</div>   
-</nav>
 <!-- End of Nav bar-->
-  <section>
-         
-        
-    <center><h2 id="book">BOOKING</h2></center>
-<h3><i>Book your trip with Techno Champs Tours<br>
-    Discover the world with us</i> 
-</h3>
+  <div class="content">
+      <h1><i>Book your trip with Techno Champs Tours<br>Discover the world with us</i></h1>
     <form>
-    <br>
-    <label for="fname">First Name: </label>
-    <input type="text" id="fname" placeholder="Your name.." required>
-    </br>
+      <br>
+      <label for="fname">First Name: </label>
+      <input type="text" id="fname" placeholder="Your name.." required>
+      </br>
 
-    <br>
-    <label for="lname">Last Name: </label>
-    <input type="text" id="lname" placeholder="Your last name.." required>
-    </br>
+      <br>
+      <label for="lname">Last Name: </label>
+      <input type="text" id="lname" placeholder="Your last name.." required>
+      </br>
 
-    <br>
-    <label for="email">Email address: </label>
-    <input type="email" id="email" required placeholder="example@gmail.com">
-    </br>
+      <br>
+      <label for="email">Email address: </label>
+      <input type="email" id="email" required placeholder="example@gmail.com">
+      </br>
 
-    <br>
-    <label for="phone">Cellphone Number: </label>
-    <input type="tel" id="phone" placeholder="123-456-7890" required>
-    </br>
+      <br>
+      <label for="phone">Cellphone Number: </label>
+      <input type="tel" id="phone" placeholder="123-456-7890" required>
+      </br>
 
-    <br>
-    <p><h3>Ethinicity</h3></p>
-    <input type="checkbox" id="race1" name="race1">
-    <label for="race1"> African</label>
-    </br>
+      <br>
+      <p><h3>Ethinicity</h3></p>
+      <input type="checkbox" id="race1" name="race1">
+      <label for="race1"> African</label>
+      </br>
     
-    <!--All check boxes have to be selected as we have not yet started to do javascript as a listener-->
-    <br>
-    <input type="checkbox" id="race2" name="race2">
-    <label for="race2"> White</label>
-    </br>
+      <!--All check boxes have to be selected as we have not yet started to do javascript as a listener-->
+      <br>
+      <input type="checkbox" id="race2" name="race2">
+      <label for="race2"> White</label>
+      </br>
 
-    <br>
-    <input type="checkbox" id="race3" name="race3" required>
-    <label for="race3"> Indian</label>
-    </br>
+      <br>
+      <input type="checkbox" id="race3" name="race3" required>
+      <label for="race3"> Indian</label>
+      </br>
 
-    <br>
-    <input type="checkbox" id="race4" name="race4" required>
-    <label for="race4"> Other</label>
-    </br>
+      <br>
+      <input type="checkbox" id="race4" name="race4" required>
+      <label for="race4"> Other</label>
+      </br>
     
-    <br>
-    <label for="number">Number of people</label>
-    <select id="number" required>
+      <br>
+      <label for="number">Number of people</label>
+      <select id="number" required>
       <option value="one">1</option>
       <option value="two">2</option>
       <option value="three">3</option>
       <option value="four">4</option>
       <option value="five">5</option>
-    </select>
-    </br>
+      </select>
+      </br>
 
-    <br>
-    <label for="number">Destination</label>
-    <select id="number" name="number" required>
+      <br>
+      <label for="number">Destination</label>
+      <select id="number" name="number" required>
       <option value="suncity">Sun City</option>
       <option value="shaka">uShaka</option>
       <option value="table">Table Mountain</option>
       <option value="draken">Drankensburg</option>
       <option value="vna">V&A Waterfront</option>
-    </select>
-    </br>
+      </select>
+      </br>
 
-    <br>
-    <label for="date">Date:</label>
-    <input type="date" id="date" name="Date" required>
-    </br>
+      <br>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="Date" required>
+      </br>
 
-    <br>
-    <label for="comment"> Leave a message:</label><br>
-    <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
-    </br>
+      <br>
+      <label for="comment"> Leave a message:</label><br>
+      <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+      </br>
 
-    <br>
-    <input type="submit" onclick="alert('Thank you for filling out the form. We will contact you shortly.')">
-    <button type="reset">Reset</button>
-    </br>
-  </form>
+      <br>
+      <input type="submit" onclick="alert('Thank you for filling out the form. We will contact you shortly.')">
+      <button type="reset">Reset</button>
+      </br>
+    </form>
+  </div>
 
 <footer><small>&copy; 2024 Techno Champs Tours</small></footer>
 </body>
