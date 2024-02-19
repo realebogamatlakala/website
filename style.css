@@ -4,41 +4,27 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-
-ul{
-    list-style-type: none;
-    margin: 0;
+.navbar ul{
+ list-style: none;
+ background-color: #3498db ;
+ margin: 0;
     padding: 0;
-    
 }
-nav{
-    background-color:  #3498db;
-    
-}
-
-nav ul li{
-    margin: 0 10px 0 10px;
-    float: right;
+.navbar li{
+    display: inline-block;
 
 }
 a:hover{
     background-color: #d0e1eb;
 }
-li a{
-  
+.navbar a{
+    color: #020202;
     display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-
-    
+   float: right;
 }
-.nav a { color: #020202;
-       font-weight: bolder;
-       font-size: 18px;
-    
-
-    }
 h1{
     color: #ffffff ;
     text-align: center;
