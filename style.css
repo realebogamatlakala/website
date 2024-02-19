@@ -1,17 +1,28 @@
 body{ 
     background-color: #d0e1eb;
-    background-image: url(/images/back2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
+
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
 }
-nav li{
+nav{
+    background-color:  #3498db;
+    
+}
+
+nav ul li{
+    margin: 0 10px 0 10px;
     float: right;
+
+}
+a:hover{
+    background-color: #d0e1eb;
 }
 li a{
   
@@ -19,9 +30,13 @@ li a{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
+    
 }
 .nav a { color: #020202;
-       font-weight: bold;
+       font-weight: bolder;
+       font-size: 18px;
+    
 
     }
 h1{
@@ -34,5 +49,9 @@ h1{
  text-align: center;
  font-family: Comic sans MS;
  font-size: 35px;
+}
+.rea{
+    text-align: left;
+    margin-bottom: 10px;
 }
 
