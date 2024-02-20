@@ -36,7 +36,7 @@ a:hover {
   float: right;
   display: block;
   text-align: center;
-  
+    
 }
 .home h1 {
   color: #ffffff;
@@ -45,7 +45,6 @@ a:hover {
   font-size: 50px;
 }
 .home{
-
   padding-top: 180px;
   padding-bottom: 180px;
 }
@@ -60,13 +59,6 @@ a:hover {
   text-align: center;
   padding: 20px 0;
 }
-
-.home p {
-  color: #ffffff;
-  text-align: center;
-  font-family: Comic sans MS;
-  font-size: 35px;
-}
 .about p{
   text-align: center;
   font-size: 25px;
@@ -74,15 +66,22 @@ a:hover {
 .about-us figure{
   padding: 5px;
   display: flex;
+  
 }
 .about-us img{
   line-height: 2.5px;
   border-radius: 70%;
-  width: 220px;
-  
+  width: 220px; 
+}
+.about-us figcaption{
+  display: inline;
 }
 .reviews p{
  font-size: 20px;
+}
+.reviews h2{
+  font-size: 40px;
+  
 }
 .social-links{
   padding: 5px;
