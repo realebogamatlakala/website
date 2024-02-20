@@ -66,7 +66,63 @@ a:hover {
   font-family: Comic sans MS;
   font-size: 35px;
 }
-.rea {
+
+
+
+.rea img{
   text-align: left;
   margin-bottom: 10px;
+  border-radius: 75%;
+  width: 220px;
+  
+}
+
+.col{
+ 
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    display: flex;
+
+
+}
+
+.places::after {
+  content: "";
+  clear: both;
+  display: flex;
+}
+
+
+
+.sam img{
+  text-align: left;
+  margin-bottom: 10px;
+  border-radius: 75%;
+  width: 220px;
+
+}
+
+.thando img{
+  text-align: left;
+  margin-bottom: 10px;
+  border-radius: 75%;
+  width: 220px;
+ 
+}
+
+.marcia img{
+  text-align: left;
+  margin-bottom: 10px;
+  border-radius: 75%;
+  width: 220px;
+ 
+}
+
+.alex img{
+  text-align: left;
+  margin-bottom: 10px;
+  border-radius: 75%;
+  width: 220px;
+ 
 }
