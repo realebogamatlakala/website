@@ -81,9 +81,26 @@ a:hover {
 .about-us img{
   line-height: 2.5px;
   border-radius: 70%;
-  width: 220px;
-  
+  width: 220px;}
+
+.service-content{
+  text-align: center;
+  font-family: Comic sans MS;
+  font-size: 35px;
 }
+
+.service-icons{
+content: "";
+clear:both;
+display:inline-block;
+}
+
+.service-pics {
+  float: right;
+  width: 33.33%;
+
+}
+
 .rea {
   text-align: left;
   margin-bottom: 10px;
