@@ -119,6 +119,15 @@ footer{
   content: "";
   clear: both;
   display:inline-block;
+}
+
+.places h1{
+
+  font-family: Comic sans MS;
+  font-size: 45px;
+  text-align: center;
+
+  
 
 }
 
@@ -126,7 +135,12 @@ footer{
 
   float: right;
   width: 33.33%;
+}
 
+.col p{
+
+  font-family:Comic sans MS;
+  font-size: 15px;
 
 }
 .contact-content{
