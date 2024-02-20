@@ -78,9 +78,26 @@ a:hover {
 .about-us img{
   line-height: 2.5px;
   border-radius: 70%;
-  width: 220px;
-  
+  width: 220px;}
+
+.service-content{
+  text-align: center;
+  font-family: Comic sans MS;
+  font-size: 35px;
 }
+<<<<<<< HEAD
+
+.service-icons{
+content: "";
+clear:both;
+display:inline-block;
+}
+
+.service-pics {
+  float: right;
+  width: 33.33%;
+
+=======
 .reviews p{
  font-size: 20px;
 }
@@ -90,6 +107,7 @@ a:hover {
 }
 footer{
   padding: 30px ;
+>>>>>>> 5d1fca42dc227043d411dd8072bf6463a4c5ec0d
 }
 
 .rea {
