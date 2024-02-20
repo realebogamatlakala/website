@@ -76,9 +76,7 @@ a:hover {
 .service-content{
   text-align: center;
   font-family: Comic sans MS;
-  font-size: 35px;
-}
-<<<<<<< HEAD
+  font-size: 35px;}
 
 .service-icons{
 content: "";
@@ -89,8 +87,7 @@ display:inline-block;
 .service-pics {
   float: right;
   width: 33.33%;
-
-=======
+}
 .reviews p{
  font-size: 20px;
 }
@@ -103,10 +100,8 @@ display:inline-block;
   text-align: center;
 }
 footer{
-  padding: 30px ;
->>>>>>> 5d1fca42dc227043d411dd8072bf6463a4c5ec0d
+  padding: 30px 
 }
-
 .rea {
   text-align: left;
   margin-bottom: 10px;
