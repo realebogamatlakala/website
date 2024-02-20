@@ -101,8 +101,11 @@ a:hover {
 
 .col{
 
-  float: left;
+  float: right;
   width: 33.33%;
-  padding: 5px;
 
+
+}
+.contact-content{
+  display: flex;
 }
