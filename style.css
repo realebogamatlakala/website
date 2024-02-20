@@ -35,7 +35,8 @@ a:hover {
   text-decoration: none;
   float: right;
   display: block;
-  
+  text-align: center;
+    
 }
 .home h1 {
   color: #ffffff;
@@ -44,27 +45,65 @@ a:hover {
   font-size: 50px;
 }
 .home{
-
   padding-top: 180px;
   padding-bottom: 180px;
- 
-
-
 }
 .content h1 {
   font-size: 64px;
   line-height: 80px;
+  text-align: center;
 }
 .content h2 {
   font-size: 24px;
   line-height: 1.5px;
+  text-align: center;
+  padding: 20px 0;
+}
+.about p{
+  text-align: center;
+  font-size: 25px;
+}
+.about-us figure{
+  padding: 5px;
+  display: flex;
+  
+}
+.about-us img{
+  line-height: 2.5px;
+  border-radius: 70%;
+  width: 220px;}
+
+.service-content{
+  font-family: Comic sans MS;
+  font-size: 20x;
+  text-align: center;
 }
 
-.home p {
-  color: #ffffff;
+.service-icons{
+content: "";
+clear:both;
+display:inline-block;
+}
+
+.service-pics {
+  float: right;
+  width: 33.33%;
+}
+
+.reviews p{
+ font-size: 20px;
+}
+.reviews h2{
+  font-size: 40px;
+  
+}
+.social-links{
+  padding: 5px;
   text-align: center;
-  font-family: Comic sans MS;
-  font-size: 35px;
+}
+footer{
+  padding: 30px ;
+
 }
 .rea {
   text-align: left;
