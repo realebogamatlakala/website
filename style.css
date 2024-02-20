@@ -22,7 +22,9 @@ nav {
   margin-top: 10px;
   display: inline;
   line-height: 44px;
-  margin-left: 15px;
+  margin-left : 15px;
+  padding-right: 10px;
+  
 }
 a:hover {
   background-color: #d0e1eb;
@@ -32,6 +34,8 @@ a:hover {
   padding: 14px 16px;
   text-decoration: none;
   float: right;
+  display: block;
+  
 }
 .home h1 {
   color: #ffffff;
