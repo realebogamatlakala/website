@@ -85,7 +85,6 @@ a:hover {
   font-family: Comic sans MS;
   font-size: 35px;
 }
-<<<<<<< HEAD
 
 .service-icons{
 content: "";
@@ -97,17 +96,6 @@ display:inline-block;
   float: right;
   width: 33.33%;
 
-=======
-.reviews p{
- font-size: 20px;
-}
-.social-links{
-  padding: 5px;
-  text-align: center;
-}
-footer{
-  padding: 30px ;
->>>>>>> 5d1fca42dc227043d411dd8072bf6463a4c5ec0d
 }
 
 .rea {
