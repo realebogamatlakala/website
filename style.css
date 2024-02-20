@@ -70,3 +70,41 @@ a:hover {
   text-align: left;
   margin-bottom: 10px;
 }
+/*booking start*/
+.content-form h1{
+  font-size: 64px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgb(86, 83, 109);
+}
+.content-form h3{
+  font-size: 35px;
+  line-height: 30px;
+  text-align: center;
+}
+.content-form{
+  max-width: 650px;
+  padding: 28px;
+  margin: 0 28px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(10, 0, 0, 0.2);
+  box-shadow: 0 15px 20px rgba(10, 0, 0, 0.6);
+  
+}
+.form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.input-box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+}
+
+/*booking end*/
