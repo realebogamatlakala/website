@@ -80,9 +80,9 @@ a:hover {
   width: 220px;}
 
 .service-content{
-  text-align: center;
   font-family: Comic sans MS;
-  font-size: 35px;
+  font-size: 20x;
+  text-align: center;
 }
 
 .service-icons{
