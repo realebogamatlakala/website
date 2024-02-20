@@ -75,12 +75,19 @@ a:hover {
   font-size: 20px;
 }
 .about-us figure{
-  padding: 20px;
+  padding: 5px;
+  display: flex;
 }
 .about-us img{
   line-height: 2.5px;
+  border-radius: 70%;
+  width: 220px;
+  
 }
 .rea {
   text-align: left;
   margin-bottom: 10px;
+  border-radius: 75%;
+  width: 220px;
+ 
 }
