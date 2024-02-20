@@ -6,9 +6,28 @@
   <link  rel="stylesheet" href="style.css">
   <title>Bookings</title>
 </head>
-<body>    
-   <!-- Navigation bar that scrolls down to sections on page-->
+<body>
+    <!-- Navigation bar that scrolls down to sections on page-->
    <div class="container">
+    <nav role="navigation" aria-label="main menu">
+      <div class="navbar">
+        <ul>
+          <!--Logo-->
+          <img
+            src="../website/images/Techno.png"
+            alt="Techno Champs Tours Logo"
+            class="logo"
+          />
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="services.html">OUR SERVICES</a></li>
+          <li><a href="places.html">PLACES TO VISIT</a></li>
+          <li><a href="booking.html">BOOKING</a></li>
+          <li><a href="contacts.html">CONTACT US</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
       <nav role="navigation" aria-label="main menu">
         <div class="navbar">
           <ul>
@@ -29,90 +48,77 @@
       </nav>
     </div>
 <!-- End of Nav bar-->
-  <div class="content">
-      <h1><i>Book your trip with Techno Champs Tours<br>Discover the world with us</i></h1>
-    <form>
-      <br>
-      <label for="fname">First Name: </label>
-      <input type="text" id="fname" placeholder="Your name.." required>
-      </br>
-
-      <br>
-      <label for="lname">Last Name: </label>
-      <input type="text" id="lname" placeholder="Your last name.." required>
-      </br>
-
-      <br>
-      <label for="email">Email address: </label>
-      <input type="email" id="email" required placeholder="example@gmail.com">
-      </br>
-
-      <br>
-      <label for="phone">Cellphone Number: </label>
-      <input type="tel" id="phone" placeholder="123-456-7890" required>
-      </br>
-
-      <br>
-      <p><h3>Ethinicity</h3></p>
-      <input type="checkbox" id="race1" name="race1">
-      <label for="race1"> African</label>
-      </br>
-    
-      <!--All check boxes have to be selected as we have not yet started to do javascript as a listener-->
-      <br>
-      <input type="checkbox" id="race2" name="race2">
-      <label for="race2"> White</label>
-      </br>
-
-      <br>
-      <input type="checkbox" id="race3" name="race3" required>
-      <label for="race3"> Indian</label>
-      </br>
-
-      <br>
-      <input type="checkbox" id="race4" name="race4" required>
-      <label for="race4"> Other</label>
-      </br>
-    
-      <br>
-      <label for="number">Number of people</label>
-      <select id="number" required>
-      <option value="one">1</option>
-      <option value="two">2</option>
-      <option value="three">3</option>
-      <option value="four">4</option>
-      <option value="five">5</option>
-      </select>
-      </br>
-
-      <br>
-      <label for="number">Destination</label>
-      <select id="number" name="number" required>
-      <option value="suncity">Sun City</option>
-      <option value="shaka">uShaka</option>
-      <option value="table">Table Mountain</option>
-      <option value="draken">Drankensburg</option>
-      <option value="vna">V&A Waterfront</option>
-      </select>
-      </br>
-
-      <br>
-      <label for="date">Date:</label>
-      <input type="date" id="date" name="Date" required>
-      </br>
-
-      <br>
-      <label for="comment"> Leave a message:</label><br>
-      <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
-      </br>
-
-      <br>
-      <input type="submit" onclick="alert('Thank you for filling out the form. We will contact you shortly.')">
-      <button type="reset">Reset</button>
-      </br>
-    </form>
-  </div>
-
-<footer><small>&copy; 2024 Techno Champs Tours</small></footer>
+<div class="content-form">
+  
+        <form action="" method="post">
+            <h1>Bookings</h1>
+            <h3><i>Book your trip with Techno Champs Tours<br>Discover the world with us</i></h3>
+            <div class="form">
+                <div class="input-box">
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" placeholder="Your name.." required>
+                </div>
+                <div class="input-box">
+                    <label for="lname">Last Name: </label>
+                    <input type="text" id="lname" placeholder="Your last name.." required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email address: </label>
+                    <input type="email" id="email" required placeholder="example@gmail.com">
+                </div>
+                <div class="input-box">
+                    <label for="phone">Cellphone Number: </label>
+                    <input type="tel" id="phone" placeholder="123-456-7890" required>
+                </div>
+                <span class="ethinicity">Ethinicity</span>
+                <div class="ethinicity-box">
+                    <label for="race1"> White</label>
+                    <input type="radio" id="race1" name="race1" required>
+                    <label for="race2"> Black</label>
+                    <input type="radio" id="race2" name="race2" required>
+                    <label for="race3"> Coloured</label>
+                    <input type="radio" id="race3" name="race3" required>
+                </div>
+                <div class="select-option">
+                    <label for="number">Number of people</label>
+                    <select id="number" required>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    </select>
+                </div>
+                <div class="destination-box">
+                    <label for="place">Destination</label>
+                    <select id="place" name="place" required>
+                    <option value="suncity">Sun City</option>
+                    <option value="shaka">uShaka</option>
+                    <option value="table">Table Mountain</option>
+                    <option value="draken">Drankensburg</option>
+                    <option value="vna">V&A Waterfront</option>
+                    </select>
+                </div>
+                <div class="date-box">
+                    <label for="date">Arrival date:</label>
+                    <input type="date" id="date" name="Date" required>
+                </div>
+                <div class="date-box">
+                    <label for="date">Depature date:</label>
+                    <input type="date" id="date" name="Date" required>
+                </div>
+                <div class="text-box">
+                    <label for="comment"> Leave a message:</label><br>
+                    <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+                    </div>
+            
+            <div class="button">
+                    <input type="submit" onclick="alert('Thank you for filling out the form. We will contact you shortly.')">
+                    <button type="reset">Reset</button>
+            </div>
+            </div>
+        </form>   
+  </div>  
+ 
 </body>
 </html>
