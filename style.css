@@ -24,7 +24,7 @@ nav {
   line-height: 44px;
   margin-left : 15px;
   padding-right: 10px;
-  
+ 
 }
 a:hover {
   background-color: #d0e1eb;
@@ -36,19 +36,13 @@ a:hover {
   float: right;
   display: block;
   text-align: center;
-    
+   
 }
 .home h1 {
   color: #ffffff;
   text-align: center;
   font-family: Comic sans MS;
   font-size: 50px;
-}
-.home p{
-  font-size: 25px;
-  color: #ffffff;
-  text-align: center;
-  font-family: Comic sans MS;
 }
 .home{
   padding-top: 180px;
@@ -72,36 +66,36 @@ a:hover {
 .about-us figure{
   padding: 5px;
   display: flex;
-  
+ 
 }
 .about-us img{
   line-height: 2.5px;
   border-radius: 70%;
   width: 220px;}
-
+ 
 .service-content{
   font-family: Comic sans MS;
   font-size: 20x;
   text-align: center;
 }
-
+ 
 .service-icons{
 content: "";
 clear:both;
 display:inline-block;
 }
-
+ 
 .service-pics {
   float: right;
   width: 33.33%;
 }
-
+ 
 .reviews p{
  font-size: 20px;
 }
 .reviews h2{
   font-size: 40px;
-  
+ 
 }
 .social-links{
   padding: 5px;
@@ -109,12 +103,46 @@ display:inline-block;
 }
 footer{
   padding: 30px ;
-
+ 
 }
 .rea {
   text-align: left;
   margin-bottom: 10px;
+  border-radius: 75%;
+  width: 220px;
+ 
 }
+ 
+.places{
+  content: "";
+  clear: both;
+  display:inline-block;
+}
+ 
+.places h1{
+ 
+  font-family: Comic sans MS;
+  font-size: 45px;
+  text-align: center;
+ 
+ 
+ 
+}
+ 
+.col{
+ 
+  float: right;
+  width: 33.33%;
+}
+ 
+.col p{
+ 
+  font-family:Comic sans MS;
+  font-size: 15px;
+ 
+}
+.contact-content{
+  display: flex;
 /*booking start*/
 .content-form h1{
   font-size: 64px;
