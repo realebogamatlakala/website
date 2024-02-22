@@ -4,6 +4,24 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+.content h1 {
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+}
+.content h2{
+  font-size: 24px;
+  line-height: 1.5px;
+  text-align: center;
+  padding: 20px 0;
+}
+.content p{
+  text-align: center;
+  font-size: 25px;
+}
+a{
+  text-decoration: none;
+}
 nav {
   padding: 20px 0;
 }
@@ -56,21 +74,6 @@ a:hover {
   padding-top: 180px;
   padding-bottom: 180px;
 }
-.content h1 {
-  font-size: 64px;
-  line-height: 80px;
-  text-align: center;
-}
-.content h2 {
-  font-size: 24px;
-  line-height: 1.5px;
-  text-align: center;
-  padding: 20px 0;
-}
-.about p{
-  text-align: center;
-  font-size: 25px;
-}
 .about-us figure{
   padding: 5px;
   display: flex;
@@ -79,14 +82,8 @@ a:hover {
 .about-us img{
   line-height: 2.5px;
   border-radius: 70%;
-  width: 220px;}
- 
-.service-content{
-  font-family: Comic sans MS;
-  font-size: 20x;
-  text-align: center;
+  width: 220px;
 }
- 
 .service-icons{
 content: "";
 clear:both;
@@ -97,10 +94,9 @@ display:inline-block;
   float: right;
   width: 33.33%;
 }
- 
 .reviews p{
- font-size: 20px;
-}
+  font-size: 20px;
+ }
 .reviews h2{
   font-size: 40px;
  
@@ -109,35 +105,21 @@ display:inline-block;
   padding: 5px;
   text-align: center;
 }
+
 footer{
   margin: 60px 0;
   text-align: center;
-  
- 
 }
- 
 .places{
   content: "";
   clear: both;
   display:inline-block;
 }
- 
-.places h1{
- 
-  font-family: Comic sans MS;
-  font-size: 45px;
-  text-align: center;
- 
- 
- 
-}
- 
 .col{
  
   float: right;
   width: 33.33%;
 }
- 
 .col p{
  
   font-family:Comic sans MS;
@@ -148,23 +130,17 @@ footer{
   display: flex;
 }
 /*booking start*/
-.content-form h1{
-  font-size: 64px;
-  line-height: 20px;
-  text-align: center;
-  font-weight: bold;
-  padding-bottom: 12px;
-  border-bottom: 1px solid rgb(86, 83, 109);
-}
+
 .content-form h3{
   font-size: 35px;
   line-height: 30px;
   text-align: center;
 }
 .content-form{
+  margin-left: 50%;
   max-width: 650px;
   padding: 28px;
-  margin: 0 28px;
+  margin: 0 28px ;
   border-radius: 10px;
   overflow: hidden;
   background: rgba(10, 0, 0, 0.2);
