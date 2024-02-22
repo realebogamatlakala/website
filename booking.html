@@ -37,34 +37,65 @@
         <form action="" method="post">
             <h1>Bookings</h1>
             <h3><i>Book your trip with Techno Champs Tours<br>Discover the world with us</i></h3>
-            <div class="form">
-                <div class="input-box">
+            <div class="form"> 
+                <div class="row">
+                  <div class="input-label">
                     <label for="fname">First Name: </label>
+                  </div>
+                  <div class="input-box">
                     <input type="text" id="fname" placeholder="Your name.." required>
+                  </div>
                 </div>
-                <div class="input-box">
+
+                <div class="row">
+                  <div class="input-label">
                     <label for="lname">Last Name: </label>
+                  </div>
+                  <div class="input-box">
                     <input type="text" id="lname" placeholder="Your last name.." required>
+                  </div>
                 </div>
-                <div class="input-box">
+                
+
+                <div class="row">
+                  <div class="input-label">
                     <label for="email">Email address: </label>
+                  </div>
+                  <div class="input-box">
                     <input type="email" id="email" required placeholder="example@gmail.com">
+                  </div>
                 </div>
-                <div class="input-box">
+                
+                <div class="row">
+                  <div class="input-label">
                     <label for="phone">Cellphone Number: </label>
+                  </div>
+                  <div class="input-box">
                     <input type="tel" id="phone" placeholder="123-456-7890" required>
+                  </div>
                 </div>
-                <span class="ethinicity">Ethinicity</span>
-                <div class="ethinicity-box">
+                
+
+                <div class="row">
+                  <div class="input-label">
+                  <span class="ethinicity">Ethinicity</span>
+                  </div>
+                  <div class="input-box">
                     <label for="race1"> White</label>
                     <input type="radio" id="race1" name="race1" required>
                     <label for="race2"> Black</label>
                     <input type="radio" id="race2" name="race2" required>
                     <label for="race3"> Coloured</label>
                     <input type="radio" id="race3" name="race3" required>
+                  </div>
                 </div>
-                <div class="select-option">
+
+
+                <div class="row">
+                  <div class="input-label">
                     <label for="number">Number of people</label>
+                  </div>
+                  <div class="input-box">
                     <select id="number" required>
                     <option value="one">1</option>
                     <option value="two">2</option>
@@ -72,9 +103,16 @@
                     <option value="four">4</option>
                     <option value="five">5</option>
                     </select>
+                  </div>
                 </div>
-                <div class="destination-box">
+                
+
+                <div class="row">
+
+                  <div class="input-label">
                     <label for="place">Destination</label>
+                  </div>
+                  <div class="input-box">
                     <select id="place" name="place" required>
                     <option value="suncity">Sun City</option>
                     <option value="shaka">uShaka</option>
@@ -82,23 +120,47 @@
                     <option value="draken">Drankensburg</option>
                     <option value="vna">V&A Waterfront</option>
                     </select>
+                  </div>
                 </div>
-                <div class="date-box">
+                
+                <div class="row">
+                  <div class="input-label">
                     <label for="date">Arrival date:</label>
+                  </div>
+                  <div class="input-box">
                     <input type="date" id="date" name="Date" required>
+                  </div>
                 </div>
-                <div class="date-box">
+                
+
+                <div class="row">
+                  <div class="input-label">
                     <label for="date">Depature date:</label>
+                  </div>
+                  <div class="input-box">
                     <input type="date" id="date" name="Date" required>
+                  </div>
                 </div>
-                <div class="text-box">
+
+                <div class="row">
+
+                  <div class="input-label">
                     <label for="comment"> Leave a message:</label><br>
+                  </div>
+                  <div class="input-box">
                     <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
-                    </div>
+                  </div>
+                </div>
+                
+                
             
-            <div class="button">
+            <div class="button-sub">
                     <input type="submit" onclick="alert('Thank you for filling out the form. We will contact you shortly.')">
-                    <button type="reset">Reset</button>
+                    
+            </div>
+            <div class="button-res">
+
+              <button type="reset">Reset</button>
             </div>
             </div>
         </form> 
