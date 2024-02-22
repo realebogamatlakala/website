@@ -170,7 +170,6 @@ footer{
   overflow: hidden;
   background: rgba(10, 0, 0, 0.2);
   box-shadow: 0 15px 20px rgba(10, 0, 0, 0.6);
-  background-color: aqua;
   margin-left: 25%;
 
 
@@ -178,6 +177,8 @@ footer{
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
+  font-weight: bold;
+  font-size: medium;
 }
 
 input[type=submit] {
@@ -188,32 +189,36 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   float: left;
-  margin-left: 40%;
+  margin-left: 25%;
+}
+
+input[type=submit]:hover {
+  background-color: #566ce6;
 }
 
 input[type=text], select, textarea {
-  width: 100%;
+  width: 35%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
 }
 input[type=email]{
-  width: 100%;
+  width: 35%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
 }
 input[type=tel]{
-  width: 100%;
+  width: 35%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
 }
 input[type=date]{
-  width: 100%;
+  width: 35%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -225,12 +230,17 @@ button[type="reset"]{
   background-color: #b4bdf0;
   color: white;
   padding: 12px 20px;
-  margin-left: 40%;
+  margin-left: 5%;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   float: left;
 }
+button[type=reset]:hover {
+  background-color: #566ce6;
+}
+
+
 .input-label{
   float: left;
   width: 25%;

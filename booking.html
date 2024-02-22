@@ -76,15 +76,15 @@
 
                 <div class="row">
                   <div class="input-label">
-                  <span class="ethinicity">Ethinicity</span>
+                  <label for="ethinicity">Ethinicity</label>
                   </div>
                   <div class="input-box">
                     <label for="race1"> White</label>
-                    <input type="radio" id="race1" name="race1" required>
+                    <input type="radio" id="race1" name="race1">
                     <label for="race2"> Black</label>
-                    <input type="radio" id="race2" name="race2" required>
+                    <input type="radio" id="race2" name="race2">
                     <label for="race3"> Coloured</label>
-                    <input type="radio" id="race3" name="race3" required>
+                    <input type="radio" id="race3" name="race3">
                   </div>
                 </div>
 
@@ -149,11 +149,13 @@
                     <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
                   </div>
                 </div>
+                <br/>
+                <br/>
                 
                 
             
             <div class="button-sub">
-                    <input type="submit" onclick="alert('Thank you for filling out the form. We will contact you shortly.')">
+                    <input type="submit" required>
                     
             </div>
             <div class="button-res">
