@@ -116,14 +116,15 @@ footer{
 }
 .contactus {
   background-color: #cddff0;
-  height: 700px;
+  height: 750px;
+  padding: 5px 10px;
 }
 .contactus h1{
   font-size: 64px;
   line-height: 80px;
   text-align: center;}
   
-  .contactus h2{
+.contactus h2{
     font-size: 24px;
     line-height: 1.5px;
     text-align: center;
@@ -150,7 +151,7 @@ footer{
 .content-form{
   margin-left: 50%;
   max-width: 650px;
-  padding: 28px;
+  padding: 100px;
   margin: 0 500px ;
   border-radius: 10px;
   overflow: hidden;
