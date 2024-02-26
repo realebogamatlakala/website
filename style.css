@@ -31,7 +31,6 @@ a{
 .d-flex{
   display: flex !important;
 }
-
 nav {
   padding: 20px 0px;
   display: flex;
@@ -51,6 +50,7 @@ nav a {
   font-size: 20px;
   text-decoration: none;
   text-align: center;
+  color: black;
 }
 
 a:hover, nav li.active a  {
