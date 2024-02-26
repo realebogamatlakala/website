@@ -2,9 +2,7 @@
 .content{
   background-color: #cddff0;
   clear: both;
-  display:inline-block;
- 
-  
+  display:inline-block; 
 }
 .content h1 {
   font-size: 64px;
@@ -24,40 +22,41 @@
 a{
   text-decoration: none;
 }
-nav {
-  padding: 5px 10px;
-}
 .logo {
   max-height: 100px;
+}
+.justify-content-between{
+  justify-content: space-between !important;
+}
+.d-flex{
+  display: flex !important;
+}
+
+nav {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: flex-end;
 }
 nav ul {
   padding: 0;
   margin: 0;
-  height: 120px;
-  
 }
 nav li {
-  display: inline-block;
+  display: inline;
   list-style: none;
   line-height: 42px;
-  margin-left: 15px;      
-  float: right;                                                                                                                                                                                                                                                                                                       
-}
-a:hover {
-  background-color: #d0e1eb;
+  margin-left: 15px; 
 }
 nav a {
-  color: #020202;
-  display: block;
-  text-align: center;
   font-size: 20px;
-  padding: 14px 16px;
   text-decoration: none;
-  float: left;
-   
+  text-align: center;
+}
+
+a:hover, nav li.active a  {
+  color: #71bfec;
 }
 .home h1 {
-  
   color: #ffffff;
   text-align: center;
   font-family: Comic sans MS;
@@ -69,7 +68,6 @@ nav a {
   text-align: center;
   font-family: Comic sans MS;
   font-size: 25px;
-
 }
 .home{
   background-image: url(/images/back2.jpg);
@@ -95,19 +93,16 @@ content: "";
 clear:both;
 display:inline-block;
 }
- 
 .service-pics {
   float: right;
   width: 33.33%;
   text-align: center;
-
 }
 .reviews p{
   font-size: 20px;
  }
 .reviews h2{
   font-size: 40px;
- 
 }
 .social-links{
   padding: 5px;
@@ -116,8 +111,7 @@ display:inline-block;
 .footer p{
   margin: 60px 0;
   text-align: center;
-  display: blockgg;
- 
+  display: block;
 }
 
 footer{
@@ -255,3 +249,30 @@ button[type=reset]:hover {
 }
 
 /*booking end*/
+@media (max-width: 900px) {
+  .home h1{
+    font-size: 35px;
+  }
+  h1{
+    font-size: 35px; 
+  }
+  h2 {
+    font-size: 44px;
+  }
+  p{
+    font-size: 18px;
+  }
+  .home {
+    padding: 80px 20px;
+  }
+  .content {
+    text-align: center;
+    padding: 80px 20px;
+  }
+  nav a {
+    font-size: 14px;
+  }
+  .about-us img{
+    display: none;
+  }
+}
