@@ -23,7 +23,7 @@ a{
   text-decoration: none;
 }
 .logo {
-  max-height: 100px;
+  max-height: 80px;
 }
 .justify-content-between{
   justify-content: space-between !important;
