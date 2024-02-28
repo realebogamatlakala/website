@@ -107,10 +107,10 @@ a:hover, nav li.active a  {
 
 .places-info{
   height: 80px;
-  padding: 30px;
+  padding: 45px;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 30px;
-  background-color: #cfa658;
+  font-size: 42px;
+  color: #af8028;
   text-align: center;
 }
 
@@ -123,7 +123,7 @@ a:hover, nav li.active a  {
 }
 
 .places-south-africa h1{
-  color: #af8028;
+  color: #000000;
   text-align: center;
   font-family:'Times New Roman', Times, serif;
   font-size: 30px;
@@ -155,7 +155,7 @@ a:hover, nav li.active a  {
 
 .places-south-africa p{
 
-  color: #af8028;
+  color: #694f1d;
   text-align: left;
   margin-right: 50%;
   text-align: center;
