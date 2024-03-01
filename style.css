@@ -1,9 +1,10 @@
 
 .content{
   background-color: #cddff0;
-  clear: both;
-  display:inline-block; 
-}
+  height: 2500px;
+  padding: 5px 10px;
+  margin: bottom 15px;}
+
 .content h1 {
   font-size: 64px;
   line-height: 80px;
@@ -19,6 +20,8 @@
   text-align: center;
   font-size: 25px;
 }
+
+/*NAV*/
 a{
   text-decoration: none;
 }
@@ -47,27 +50,36 @@ nav li {
   margin-left: 15px; 
 }
 nav a {
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   text-align: center;
   color: black;
 }
 
-a:hover, nav li.active a  {
+a:hover, nav li.active a {
   color: #71bfec;
 }
+
+.logo {
+height: 100px;
+
+}
+/*END OF NAV*/
+
+/*HOME*/
 .home h1 {
   color: #ffffff;
   text-align: center;
   font-family: Comic sans MS;
-  font-size: 50px;
+  font-size: 60px;
+  padding-top: 110px;
 }
 
 .home p{
   color: #ffffff;
   text-align: center;
   font-family: Comic sans MS;
-  font-size: 25px;
+  font-size: 40px;
 }
 .home{
   background-image: url(/images/back2.jpg);
@@ -89,6 +101,7 @@ a:hover, nav li.active a  {
   padding: 300px 200px;
   border-radius: 5px;
   height:200px;
+  background-color: #cddff0;
 }
 
 .places h1{
@@ -148,10 +161,6 @@ a:hover, nav li.active a  {
   text-align: center;
   font-family:'Times New Roman', Times, serif;
   font-size: 50px;
-
-  
-
-
 }
 
 .places-south-africa p{
@@ -195,16 +204,74 @@ a:hover, nav li.active a  {
   border-radius: 70%;
   width: 220px;
 }
-.service-icons{
-content: "";
-clear:both;
-display:inline-block;
+/*OUR SERVICES*/
+.service-content{
+  height: 1500px;
+  padding: 5px 10px;
+  margin: bottom 15px;
 }
+.service-box{
+  display: flex;
+  flex-wrap: wrap; 
+}
+.service-wc{
+  margin-top: 5px;
+}
+hr {
+  color: default ;
+}
+.service-box div{
+  color: white;
+  background-color: rgb(40, 155, 201);
+  border-style: solid;
+  border-radius: 5px;
+  text-align: center;
+  padding:20px;
+  
+  font-size: 30px;
+  display: inline-block;
+  width: 200px;                                
+  
+}
+.grid-container {
+  display: grid;
+  height: 350px;
+  background-color: #566ce6;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+ 
+.grid-container div{
+
+  border: black;
+  border-style: solid;
+  text-align: center;
+
+ 
+  font-size: 30px;
+  
+
+}
+
 .service-pics {
   float: right;
   width: 33.33%;
   text-align: center;
 }
+.basic{
+  background-color: rgb(117, 189, 117);
+  width: 60%;
+  height: fit-content;
+  
+}
+.standard{
+  background-color: rgb(61, 148, 219);
+}
+.premium{
+  background-color:#d6ad60;
+}
+/*REVIEWS*/
 .reviews p{
   font-size: 20px;
  }
@@ -227,9 +294,10 @@ footer{
 }
 .contactus {
   background-color: #cddff0;
-  height: 750px;
-  padding: 5px 10px;
-}
+  height: 1500px;
+  padding-top: 80px;
+  }
+
 .contactus h1{
   font-size: 64px;
   line-height: 80px;
@@ -321,11 +389,12 @@ footer{
   margin: 0 500px ;
   border-radius: 10px;
   overflow: hidden;
-  background: rgba(10, 0, 0, 0.2);
+  background-color: rgba(10, 0, 0, 0.2);
   box-shadow: 0 15px 20px rgba(10, 0, 0, 0.6);
   clear: both;
   display:inline-block;
 }
+
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
