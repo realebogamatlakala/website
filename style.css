@@ -1,34 +1,31 @@
-
-.content{
+.content {
   background-color: #cddff0;
-  clear: both;
-  display:inline-block; 
 }
 .content h1 {
   font-size: 64px;
   line-height: 80px;
   text-align: center;
 }
-.content h2{
+.content h2 {
   font-size: 24px;
   line-height: 1.5px;
   text-align: center;
   padding: 20px 0;
 }
-.content p{
+.content p {
   text-align: center;
   font-size: 25px;
 }
-a{
+a {
   text-decoration: none;
 }
 .logo {
   max-height: 80px;
 }
-.justify-content-between{
+.justify-content-between {
   justify-content: space-between !important;
 }
-.d-flex{
+.d-flex {
   display: flex !important;
 }
 nav {
@@ -44,7 +41,7 @@ nav li {
   display: inline;
   list-style: none;
   line-height: 42px;
-  margin-left: 15px; 
+  margin-left: 15px;
 }
 nav a {
   font-size: 20px;
@@ -53,7 +50,8 @@ nav a {
   color: black;
 }
 
-a:hover, nav li.active a  {
+a:hover,
+nav li.active a {
   color: #71bfec;
 }
 .home h1 {
@@ -63,13 +61,13 @@ a:hover, nav li.active a  {
   font-size: 50px;
 }
 
-.home p{
+.home p {
   color: #ffffff;
   text-align: center;
   font-family: Comic sans MS;
   font-size: 25px;
 }
-.home{
+.home {
   background-image: url(/images/back2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,97 +79,88 @@ a:hover, nav li.active a  {
 
 /*Places to visit*/
 
-.places{
+.places {
   background-image: url(/images/bwave.gif);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment:scroll;
+  background-attachment: scroll;
   padding: 300px 200px;
   border-radius: 5px;
-  height:200px;
+  height: 200px;
 }
 
-.places h1{
+.places h1 {
   color: #af8028;
   text-align: center;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 120px;
 }
 
-.places p{
+.places p {
   color: #af8028;
   text-align: center;
-  font-family:cursive;
+  font-family: cursive;
   font-size: 55px;
 }
 
-.places-info{
+.places-info {
   height: 80px;
   padding: 30px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   background-color: #cfa658;
   text-align: center;
 }
 
-.places-info cite{
+.places-info cite {
   height: 80px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 30px;
 
   text-align: center;
 }
 
-.places-south-africa h1{
+.places-south-africa h1 {
   color: #af8028;
   text-align: center;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   margin-top: 60px;
   margin-right: 50%;
-
-
 }
-.places-south-africa img{
+.places-south-africa img {
   float: right;
   border-radius: 5px;
-
-
 }
-.places-locations{
+.places-locations {
   margin-top: 200px;
 }
 
-.places-locations h1{
+.places-locations h1 {
   color: #af8028;
   text-align: center;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 50px;
-
-  
-
-
 }
 
-.places-south-africa p{
-
+.places-south-africa p {
   color: #af8028;
   text-align: left;
   margin-right: 50%;
   text-align: center;
-  font-family:cursive;
+  font-family: cursive;
   font-size: 25px;
 }
 
 .overlay {
-  position: absolute; 
-  bottom: 0; 
+  position: absolute;
+  bottom: 0;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
+  color: #f1f1f1;
   width: 100%;
-  transition: .5s ease;
-  opacity:0;
+  transition: 0.5s ease;
+  opacity: 0;
   color: white;
   font-size: 20px;
   padding: 20px;
@@ -181,46 +170,59 @@ a:hover, nav li.active a  {
   opacity: 1;
 }
 
-
 /*Places to visit end section*/
 
-.about-us figure{
-  padding: 5px;
-  display: flex;
- 
-}
-.about-us img{
+.about-us img {
   line-height: 2.5px;
   border-radius: 70%;
   width: 220px;
-}
-.service-icons{
-content: "";
-clear:both;
-display:inline-block;
-}
-.service-pics {
-  float: right;
-  width: 33.33%;
   text-align: center;
 }
-.reviews p{
+
+/*our services*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-sm-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+.card {
+  border: 2px solid rgba(107, 85, 163, 0.2);
+  background-color: #099e88;
+  border-radius: 10px;
+  padding: 100px 15px 100px;
+  transition: all 150ms ease-in-out;
+  text-align: center;
+  margin: 10px;
+}
+.standard {
+  background-color: #af8028;
+}
+.premium {
+  background-color: red;
+}
+
+/*reviews*/
+.reviews p {
   font-size: 20px;
- }
-.reviews h2{
+}
+.reviews h2 {
   font-size: 40px;
 }
-.social-links{
+.social-links {
   padding: 5px;
   text-align: center;
 }
-.footer p{
+.footer p {
   margin: 60px 0;
   text-align: center;
   display: block;
 }
 
-footer{
+footer {
   margin: 60px 0;
   text-align: center;
 }
@@ -229,19 +231,19 @@ footer{
   height: 750px;
   padding: 5px 10px;
 }
-.contactus h1{
+.contactus h1 {
   font-size: 64px;
   line-height: 80px;
-  text-align: center;}
-  
-.contactus h2{
-    font-size: 24px;
-    line-height: 1.5px;
-    text-align: center;
-    padding: 20px 0;
-  } 
-.col{
- 
+  text-align: center;
+}
+
+.contactus h2 {
+  font-size: 24px;
+  line-height: 1.5px;
+  text-align: center;
+  padding: 20px 0;
+}
+.col {
   width: 100%;
   height: auto;
   float: left;
@@ -252,8 +254,7 @@ footer{
   width: 50%;
 }
 
-.locations{
-
+.locations {
   position: relative;
   width: 50%;
   width: 100%;
@@ -270,7 +271,6 @@ footer{
   height: auto;
 }
 
-
 .overlay {
   position: absolute;
   top: 0;
@@ -280,8 +280,8 @@ footer{
   height: auto;
   width: auto;
   opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+  transition: 0.5s ease;
+  background-color: #008cba;
 }
 
 .locations:hover .overlay {
@@ -300,30 +300,28 @@ footer{
   text-align: center;
 }
 
-.col p{
- 
-  font-family:Comic sans MS;
+.col p {
+  font-family: Comic sans MS;
   font-size: 15px;
 }
 /*booking start*/
 
-.content-form h3{
+.content-form h3 {
   font-size: 35px;
   line-height: 30px;
   text-align: center;
-  
 }
-.content-form{
+.content-form {
   margin-left: 50%;
   max-width: 650px;
   padding: 100px;
-  margin: 0 500px ;
+  margin: 0 500px;
   border-radius: 10px;
   overflow: hidden;
   background: rgba(10, 0, 0, 0.2);
   box-shadow: 0 15px 20px rgba(10, 0, 0, 0.6);
   clear: both;
-  display:inline-block;
+  display: inline-block;
 }
 label {
   padding: 12px 12px 12px 0;
@@ -332,7 +330,7 @@ label {
   font-size: medium;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: #b4bdf0;
   color: white;
   padding: 12px 20px;
@@ -343,32 +341,34 @@ input[type=submit] {
   margin-left: 25%;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #566ce6;
 }
 
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 35%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
 }
-input[type=email]{
+input[type="email"] {
   width: 35%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
 }
-input[type=tel]{
+input[type="tel"] {
   width: 35%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
 }
-input[type=date]{
+input[type="date"] {
   width: 35%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -376,8 +376,7 @@ input[type=date]{
   resize: vertical;
 }
 
-button[type="reset"]{
-
+button[type="reset"] {
   background-color: #b4bdf0;
   color: white;
   padding: 12px 20px;
@@ -387,17 +386,16 @@ button[type="reset"]{
   cursor: pointer;
   float: left;
 }
-button[type=reset]:hover {
+button[type="reset"]:hover {
   background-color: #566ce6;
 }
 
-
-.input-label{
+.input-label {
   float: left;
   width: 25%;
   margin-top: 6px;
 }
-.input-box{
+.input-box {
   float: left;
   width: 75%;
   margin-top: 6px;
@@ -411,16 +409,16 @@ button[type=reset]:hover {
 
 /*booking end*/
 @media (max-width: 900px) {
-  .home h1{
+  .home h1 {
     font-size: 35px;
   }
-  h1{
-    font-size: 35px; 
+  h1 {
+    font-size: 35px;
   }
   h2 {
     font-size: 44px;
   }
-  p{
+  p {
     font-size: 18px;
   }
   .home {
@@ -433,8 +431,7 @@ button[type=reset]:hover {
   nav a {
     font-size: 14px;
   }
-  .about-us img{
+  .about-us img {
     display: none;
   }
-  
 }
