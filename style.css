@@ -1,13 +1,6 @@
 .content {
   background-color: #cddff0;
-<<<<<<< HEAD
 }
-=======
-  height: 2500px;
-  padding: 5px 10px;
-  margin: bottom 15px;}
-
->>>>>>> a7a47005d329ff4397c0aebdf5f734d155f9d3da
 .content h1 {
   font-size: 64px;
   line-height: 80px;
@@ -23,13 +16,7 @@
   text-align: center;
   font-size: 25px;
 }
-<<<<<<< HEAD
 a {
-=======
-
-/*NAV*/
-a{
->>>>>>> a7a47005d329ff4397c0aebdf5f734d155f9d3da
   text-decoration: none;
 }
 .logo {
@@ -57,41 +44,28 @@ nav li {
   margin-left: 15px;
 }
 nav a {
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
   text-align: center;
   color: black;
 }
 
-<<<<<<< HEAD
 a:hover,
 nav li.active a {
-=======
-a:hover, nav li.active a {
->>>>>>> a7a47005d329ff4397c0aebdf5f734d155f9d3da
   color: #71bfec;
 }
-
-.logo {
-height: 100px;
-
-}
-/*END OF NAV*/
-
-/*HOME*/
 .home h1 {
   color: #ffffff;
   text-align: center;
   font-family: Comic sans MS;
-  font-size: 60px;
-  padding-top: 110px;
+  font-size: 50px;
 }
 
 .home p {
   color: #ffffff;
   text-align: center;
   font-family: Comic sans MS;
-  font-size: 40px;
+  font-size: 25px;
 }
 .home {
   background-image: url(/images/back2.jpg);
@@ -112,32 +86,18 @@ height: 100px;
   background-attachment: scroll;
   padding: 300px 200px;
   border-radius: 5px;
-<<<<<<< HEAD
   height: 200px;
 }
 
 .places h1 {
   color: #af8028;
-=======
-  height:200px;
-  background-color: #cddff0;
-}
-
-.places h1{
-  color: #000000;
->>>>>>> a7a47005d329ff4397c0aebdf5f734d155f9d3da
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 120px;
 }
 
-<<<<<<< HEAD
 .places p {
   color: #af8028;
-=======
-.places p{
-  color: #000000;
->>>>>>> a7a47005d329ff4397c0aebdf5f734d155f9d3da
   text-align: center;
   font-family: cursive;
   font-size: 55px;
@@ -145,17 +105,10 @@ height: 100px;
 
 .places-info {
   height: 80px;
-<<<<<<< HEAD
   padding: 30px;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   background-color: #cfa658;
-=======
-  padding: 45px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 42px;
-  color: #af8028;
->>>>>>> a7a47005d329ff4397c0aebdf5f734d155f9d3da
   text-align: center;
 }
 
@@ -170,29 +123,14 @@ height: 100px;
 .places-south-africa h1 {
   color: #af8028;
   text-align: center;
-<<<<<<< HEAD
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   margin-top: 60px;
   margin-right: 50%;
-=======
-  font-family:'Times New Roman', Times, serif;
-  font-size: 40px;
-  margin-top: 100px;
-
-
-
->>>>>>> a7a47005d329ff4397c0aebdf5f734d155f9d3da
 }
 .places-south-africa img {
   float: right;
   border-radius: 5px;
-<<<<<<< HEAD
-=======
-  margin-top: 2px;
-
-
->>>>>>> a7a47005d329ff4397c0aebdf5f734d155f9d3da
 }
 .places-locations {
   margin-top: 200px;
@@ -205,14 +143,8 @@ height: 100px;
   font-size: 50px;
 }
 
-<<<<<<< HEAD
 .places-south-africa p {
   color: #af8028;
-=======
-.places-south-africa p{
-
-  color: #694f1d;
->>>>>>> a7a47005d329ff4397c0aebdf5f734d155f9d3da
   text-align: left;
   margin-right: 50%;
   text-align: center;
@@ -244,7 +176,6 @@ height: 100px;
   line-height: 2.5px;
   border-radius: 70%;
   width: 220px;
-<<<<<<< HEAD
   text-align: center;
 }
 
@@ -260,7 +191,10 @@ height: 100px;
 }
 .card {
   border: 2px solid rgba(107, 85, 163, 0.2);
-  background-color: #099e88;
+  background-image: url(/images/Mpumalanga/giraffe.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
   border-radius: 10px;
   padding: 100px 15px 100px;
   transition: all 150ms ease-in-out;
@@ -268,86 +202,21 @@ height: 100px;
   margin: 10px;
 }
 .standard {
-  background-color: #af8028;
+  background-image: url(/images/Mpumalanga/greens.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 .premium {
-  background-color: red;
+  background-image: url(images/Mpumalanga/falls.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
+
 
 /*reviews*/
 .reviews p {
-=======
-}
-/*OUR SERVICES*/
-.service-content{
-  height: 1500px;
-  padding: 5px 10px;
-  margin: bottom 15px;
-}
-.service-box{
-  display: flex;
-  flex-wrap: wrap; 
-}
-.service-wc{
-  margin-top: 5px;
-}
-hr {
-  color: default ;
-}
-.service-box div{
-  color: white;
-  background-color: rgb(40, 155, 201);
-  border-style: solid;
-  border-radius: 5px;
-  text-align: center;
-  padding:20px;
-  
-  font-size: 30px;
-  display: inline-block;
-  width: 200px;                                
-  
-}
-.grid-container {
-  display: grid;
-  height: 350px;
-  background-color: #566ce6;
-  align-content: center;
-  grid-template-columns: auto auto auto;
-  gap: 10px;
-}
- 
-.grid-container div{
-
-  border: black;
-  border-style: solid;
-  text-align: center;
-
- 
-  font-size: 30px;
-  
-
-}
-
-.service-pics {
-  float: right;
-  width: 33.33%;
-  text-align: center;
-}
-.basic{
-  background-color: rgb(117, 189, 117);
-  width: 60%;
-  height: fit-content;
-  
-}
-.standard{
-  background-color: rgb(61, 148, 219);
-}
-.premium{
-  background-color:#d6ad60;
-}
-/*REVIEWS*/
-.reviews p{
->>>>>>> a7a47005d329ff4397c0aebdf5f734d155f9d3da
   font-size: 20px;
 }
 .reviews h2 {
@@ -369,18 +238,10 @@ footer {
 }
 .contactus {
   background-color: #cddff0;
-<<<<<<< HEAD
   height: 750px;
   padding: 5px 10px;
 }
 .contactus h1 {
-=======
-  height: 1500px;
-  padding-top: 80px;
-  }
-
-.contactus h1{
->>>>>>> a7a47005d329ff4397c0aebdf5f734d155f9d3da
   font-size: 64px;
   line-height: 80px;
   text-align: center;
@@ -445,6 +306,7 @@ footer {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -453,8 +315,8 @@ footer {
   font-family: Comic sans MS;
   font-size: 15px;
 }
-/*booking start*/
-
+.reviews h2 {
+  f
 .content-form h3 {
   font-size: 35px;
   line-height: 30px;
@@ -467,19 +329,17 @@ footer {
   margin: 0 500px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: rgba(10, 0, 0, 0.2);
+  background: rgba(10, 0, 0, 0.2);
   box-shadow: 0 15px 20px rgba(10, 0, 0, 0.6);
   clear: both;
   display: inline-block;
 }
-
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
   font-weight: bold;
   font-size: medium;
 }
-
 input[type="submit"] {
   background-color: #b4bdf0;
   color: white;
@@ -490,11 +350,9 @@ input[type="submit"] {
   float: left;
   margin-left: 25%;
 }
-
 input[type="submit"]:hover {
   background-color: #566ce6;
 }
-
 input[type="text"],
 select,
 textarea {
@@ -525,7 +383,6 @@ input[type="date"] {
   border-radius: 4px;
   resize: vertical;
 }
-
 button[type="reset"] {
   background-color: #b4bdf0;
   color: white;
@@ -539,12 +396,7 @@ button[type="reset"] {
 button[type="reset"]:hover {
   background-color: #566ce6;
 }
-
-<<<<<<< HEAD
 .input-label {
-=======
-.input-label{
->>>>>>> a7a47005d329ff4397c0aebdf5f734d155f9d3da
   float: left;
   width: 25%;
   margin-top: 6px;
@@ -554,14 +406,12 @@ button[type="reset"]:hover {
   width: 75%;
   margin-top: 6px;
 }
-
 .row::after {
   content: "";
   display: table;
   clear: both;
 }
-
-/*booking end*/
+  margin-left:
 @media (max-width: 900px) {
   .home h1 {
     font-size: 35px;
