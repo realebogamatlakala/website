@@ -191,27 +191,48 @@ nav li.active a {
 }
 .card {
   border: 2px solid rgba(107, 85, 163, 0.2);
-  background-image: url(/images/Mpumalanga/giraffe.avif);
+  background-image: url(/images/Table_mountain_cable_way_with_lions_head.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color:white;
   border-radius: 10px;
   padding: 100px 15px 100px;
   transition: all 150ms ease-in-out;
   text-align: center;
   margin: 10px;
 }
+button{
+  border: none;
+  background-color: #38a4e2;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
 .standard {
   background-image: url(/images/Mpumalanga/greens.avif);
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color:white;
 }
 .premium {
-  background-image: url(images/Mpumalanga/falls.avif);
+  background-image: url(images/Mpumalanga/panaroma\ view.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color:white;
+}
+div li{
+  font-weight: 500;
+  list-style: none;
+  font-size: 30px;
+  text-align: start;
 }
 
 
