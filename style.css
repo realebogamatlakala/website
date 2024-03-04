@@ -116,7 +116,6 @@ nav li.active a {
   height: 80px;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
-
   text-align: center;
 }
 
@@ -234,6 +233,7 @@ div li{
   font-size: 30px;
   text-align: start;
 }
+/*our services*/
 
 
 /*reviews*/
@@ -257,6 +257,8 @@ footer {
   margin: 60px 0;
   text-align: center;
 }
+
+/*contact*/
 .contactus {
   background-color: #cddff0;
   height: 750px;
@@ -284,17 +286,8 @@ footer {
   position: relative;
   width: 50%;
 }
+/*end of contact*/
 
-.locations {
-  position: relative;
-  width: 50%;
-  width: 100%;
-  height: auto;
-  float: left;
-  padding: 45px;
-  text-align: center;
-  width: 24.99999%;
-}
 
 .image {
   display: block;
@@ -431,7 +424,7 @@ button[type="reset"]:hover {
   display: table;
   clear: both;
 }
-  margin-left:
+/*end of bookings*/
 @media (max-width: 900px) {
   .home h1 {
     font-size: 35px;
