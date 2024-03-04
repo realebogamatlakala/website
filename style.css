@@ -5,19 +5,23 @@
   font-size: 64px;
   line-height: 80px;
   text-align: center;
+  font-family: 'Times New Roman', Times, serifgi;
 }
 .content h2 {
   font-size: 24px;
   line-height: 1.5px;
   text-align: center;
   padding: 20px 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 .content p {
   text-align: center;
   font-size: 25px;
+  font-family:sans-serif;
 }
 a {
   text-decoration: none;
+  font-size: 20px;
 }
 .logo {
   max-height: 80px;
@@ -88,21 +92,21 @@ nav li.active a {
   border-radius: 5px;
   height: 200px;
 }
-
+ 
 .places h1 {
   color: #af8028;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 120px;
 }
-
+ 
 .places p {
   color: #af8028;
   text-align: center;
   font-family: cursive;
   font-size: 55px;
 }
-
+ 
 .places-info {
   height: 80px;
   padding: 30px;
@@ -111,14 +115,14 @@ nav li.active a {
   background-color: #cfa658;
   text-align: center;
 }
-
+ 
 .places-info cite {
   height: 80px;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   text-align: center;
 }
-
+ 
 .places-south-africa h1 {
   color: #af8028;
   text-align: center;
@@ -134,14 +138,14 @@ nav li.active a {
 .places-locations {
   margin-top: 200px;
 }
-
+ 
 .places-locations h1 {
   color: #af8028;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 50px;
 }
-
+ 
 .places-south-africa p {
   color: #af8028;
   text-align: left;
@@ -150,7 +154,7 @@ nav li.active a {
   font-family: cursive;
   font-size: 25px;
 }
-
+ 
 .overlay {
   position: absolute;
   bottom: 0;
