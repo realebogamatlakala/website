@@ -92,6 +92,16 @@ nav li.active a {
   border-radius: 5px;
   height: 200px;
 }
+
+.locations{
+display: inline-block;
+
+margin-left: 115px;
+
+
+  
+
+}
  
 .places h1 {
   color: #af8028;
