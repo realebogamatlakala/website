@@ -134,7 +134,7 @@ a:hover, nav li.active a  {
 }
 .places-south-africa img{
   float: right;
-  border-radius: 5px;
+  border-radius: 50px;
   margin-top: 2px;
 
 
@@ -171,8 +171,8 @@ a:hover, nav li.active a  {
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #f1f1f1; 
   width: 100%;
-  transition: .5s ease;
-  opacity:0;
+  transition: .6s ease;
+  opacity:2;
   color: white;
   font-size: 20px;
   padding: 20px;
