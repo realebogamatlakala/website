@@ -1,34 +1,35 @@
-
-.content{
+.content {
   background-color: #cddff0;
-  clear: both;
-  display:inline-block; 
 }
 .content h1 {
   font-size: 64px;
   line-height: 80px;
   text-align: center;
+  font-family: 'Times New Roman', Times, serifgi;
 }
-.content h2{
+.content h2 {
   font-size: 24px;
   line-height: 1.5px;
   text-align: center;
   padding: 20px 0;
+  font-family: 'Times New Roman', Times, serif;
 }
-.content p{
+.content p {
   text-align: center;
   font-size: 25px;
+  font-family:sans-serif;
 }
-a{
+a {
   text-decoration: none;
+  font-size: 20px;
 }
 .logo {
   max-height: 80px;
 }
-.justify-content-between{
+.justify-content-between {
   justify-content: space-between !important;
 }
-.d-flex{
+.d-flex {
   display: flex !important;
 }
 nav {
@@ -44,7 +45,7 @@ nav li {
   display: inline;
   list-style: none;
   line-height: 42px;
-  margin-left: 15px; 
+  margin-left: 15px;
 }
 nav a {
   font-size: 20px;
@@ -53,7 +54,8 @@ nav a {
   color: black;
 }
 
-a:hover, nav li.active a  {
+a:hover,
+nav li.active a {
   color: #71bfec;
 }
 .home h1 {
@@ -63,13 +65,13 @@ a:hover, nav li.active a  {
   font-size: 50px;
 }
 
-.home p{
+.home p {
   color: #ffffff;
   text-align: center;
   font-family: Comic sans MS;
   font-size: 25px;
 }
-.home{
+.home {
   background-image: url(/images/back2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,95 +83,87 @@ a:hover, nav li.active a  {
 
 /*Places to visit*/
 
-.places{
+.places {
   background-image: url(/images/bwave.gif);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment:scroll;
+  background-attachment: scroll;
   padding: 300px 200px;
   border-radius: 5px;
-  height:200px;
+  height: 200px;
 }
-
-.places h1{
-  color: #000000;
+ 
+.places h1 {
+  color: #af8028;
   text-align: center;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 120px;
 }
-
-.places p{
-  color: #000000;
+ 
+.places p {
+  color: #af8028;
   text-align: center;
-  font-family:cursive;
+  font-family: cursive;
   font-size: 55px;
 }
-
-.places-info{
+ 
+.places-info {
   height: 80px;
-  padding: 45px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 42px;
-  color: #af8028;
-  text-align: center;
-}
-
-.places-info cite{
-  height: 80px;
-  font-family: 'Times New Roman', Times, serif;
+  padding: 30px;
+  font-family: "Times New Roman", Times, serif;
   font-size: 30px;
-
+  background-color: #cfa658;
   text-align: center;
 }
-
-.places-south-africa h1{
+ 
+.places-info cite {
+  height: 80px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  text-align: center;
+}
+ 
+.places-south-africa h1 {
   color: #af8028;
   text-align: center;
-  font-family:'Times New Roman', Times, serif;
-  font-size: 40px;
-  margin-top: 100px;
-
-
-
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  margin-top: 60px;
+  margin-right: 50%;
 }
-.places-south-africa img{
+.places-south-africa img {
   float: right;
   border-radius: 50px;
   margin-top: 2px;
 
 
 }
-.places-locations{
+.places-locations {
   margin-top: 200px;
 }
-
-.places-locations h1{
+ 
+.places-locations h1 {
   color: #af8028;
   text-align: center;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 50px;
-
-  
-
-
 }
-
-.places-south-africa p{
-
-  color: #694f1d;
+ 
+.places-south-africa p {
+  color: #af8028;
   text-align: left;
   margin-right: 50%;
   text-align: center;
-  font-family:cursive;
+  font-family: cursive;
   font-size: 25px;
 }
-
+ 
 .overlay {
-  position: absolute; 
-  bottom: 0; 
+  position: absolute;
+  bottom: 0;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
+  color: #f1f1f1;
   width: 100%;
   transition: .6s ease;
   opacity:2;
@@ -182,67 +176,114 @@ a:hover, nav li.active a  {
   opacity: 1;
 }
 
-
 /*Places to visit end section*/
 
-.about-us figure{
-  padding: 5px;
-  display: flex;
- 
-}
-.about-us img{
+.about-us img {
   line-height: 2.5px;
   border-radius: 70%;
   width: 220px;
-}
-.service-icons{
-content: "";
-clear:both;
-display:inline-block;
-}
-.service-pics {
-  float: right;
-  width: 33.33%;
   text-align: center;
 }
-.reviews p{
+
+/*our services*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-sm-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+.card {
+  border: 2px solid rgba(107, 85, 163, 0.2);
+  background-image: url(/images/Table_mountain_cable_way_with_lions_head.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  border-radius: 10px;
+  padding: 100px 15px 100px;
+  transition: all 150ms ease-in-out;
+  text-align: center;
+  margin: 10px;
+}
+button{
+  border: none;
+  background-color: #38a4e2;
+  color: white;
   font-size: 20px;
- }
-.reviews h2{
+  border-radius: 20px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+.standard {
+  background-image: url(/images/Mpumalanga/greens.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+}
+.premium {
+  background-image: url(images/Mpumalanga/panaroma\ view.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+}
+div li{
+  font-weight: 500;
+  list-style: none;
+  font-size: 30px;
+  text-align: start;
+}
+/*our services*/
+
+
+/*reviews*/
+.reviews p {
+  font-size: 20px;
+}
+.reviews h2 {
   font-size: 40px;
 }
-.social-links{
+.social-links {
   padding: 5px;
   text-align: center;
 }
-.footer p{
+.footer p {
   margin: 60px 0;
   text-align: center;
   display: block;
 }
 
-footer{
+footer {
   margin: 60px 0;
   text-align: center;
 }
+
+/*contact*/
 .contactus {
   background-color: #cddff0;
   height: 750px;
   padding: 5px 10px;
 }
-.contactus h1{
+.contactus h1 {
   font-size: 64px;
   line-height: 80px;
-  text-align: center;}
-  
-.contactus h2{
-    font-size: 24px;
-    line-height: 1.5px;
-    text-align: center;
-    padding: 20px 0;
-  } 
-.col{
- 
+  text-align: center;
+}
+
+.contactus h2 {
+  font-size: 24px;
+  line-height: 1.5px;
+  text-align: center;
+  padding: 20px 0;
+}
+.col {
   width: 100%;
   height: auto;
   float: left;
@@ -252,25 +293,13 @@ footer{
   position: relative;
   width: 50%;
 }
-
-.locations{
-
-  position: relative;
-  width: 50%;
-  width: 100%;
-  height: auto;
-  float: left;
-  padding: 45px;
-  text-align: center;
-  width: 24.99999%;
-}
+/*end of contact*/
 
 .image {
   display: block;
   width: 50%;
   height: auto;
 }
-
 
 .overlay {
   position: absolute;
@@ -281,8 +310,8 @@ footer{
   height: auto;
   width: auto;
   opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+  transition: 0.5s ease;
+  background-color: #008cba;
 }
 
 .locations:hover .overlay {
@@ -297,34 +326,30 @@ footer{
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.col p{
- 
-  font-family:Comic sans MS;
+.col p {
+  font-family: Comic sans MS;
   font-size: 15px;
 }
-/*booking start*/
-
-.content-form h3{
-  font-size: 35px;
-  line-height: 30px;
+/*start of booking page*/
+.content-form h4 {
+  font-size: 20px;
+  line-height: 20px;
   text-align: center;
-  
 }
-.content-form{
-  margin-left: 50%;
-  max-width: 650px;
-  padding: 100px;
-  margin: 0 500px ;
+.content-form {
+  padding:30px 100px;
+  margin: 0 400px;
   border-radius: 10px;
   overflow: hidden;
   background: rgba(10, 0, 0, 0.2);
   box-shadow: 0 15px 20px rgba(10, 0, 0, 0.6);
   clear: both;
-  display:inline-block;
+  display: flex;
 }
 label {
   padding: 12px 12px 12px 0;
@@ -333,95 +358,89 @@ label {
   font-size: medium;
 }
 
-input[type=submit] {
-  background-color: #b4bdf0;
-  color: white;
-  padding: 12px 20px;
-  border: none;
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button[type="submit"] {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 10px 18px;
+  margin-left: 20%;
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
   float: left;
-  margin-left: 25%;
-}
+  display: inline-block;
+  transition: .4s ease;
 
-input[type=submit]:hover {
+}
+button[type="submit"]:hover {
   background-color: #566ce6;
 }
-
-input[type=text], select, textarea {
-  width: 35%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-input[type=email]{
-  width: 35%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-input[type=tel]{
-  width: 35%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-input[type=date]{
-  width: 35%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-button[type="reset"]{
-
-  background-color: #b4bdf0;
-  color: white;
-  padding: 12px 20px;
-  margin-left: 5%;
+button[type="reset"] {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 10px 18px;
+  margin-left: 20%;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
   float: left;
+  display: inline-block;
+  transition: .4s ease;
+
 }
-button[type=reset]:hover {
+button[type="reset"]:hover {
   background-color: #566ce6;
 }
-
-
-.input-label{
+.input-label {
   float: left;
   width: 25%;
   margin-top: 6px;
 }
-.input-box{
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
 
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-/*booking end*/
+/*end of bookings*/
 @media (max-width: 900px) {
-  .home h1{
+  .home h1 {
     font-size: 35px;
   }
-  h1{
-    font-size: 35px; 
+  h1 {
+    font-size: 35px;
   }
   h2 {
     font-size: 44px;
   }
-  p{
+  p {
     font-size: 18px;
   }
   .home {
@@ -434,8 +453,7 @@ button[type=reset]:hover {
   nav a {
     font-size: 14px;
   }
-  .about-us img{
+  .about-us img {
     display: none;
   }
-  
 }
