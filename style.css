@@ -1,5 +1,5 @@
 .content {
-  background-color: #cddff0;
+  background-color: #364655;
 }
 .content h1 {
   font-size: 64px;
@@ -35,6 +35,7 @@ a {
 nav {
   padding: 20px 0px;
   display: flex;
+  position: sticky;
   justify-content: flex-end;
 }
 nav ul {
@@ -56,17 +57,17 @@ nav a {
 
 a:hover,
 nav li.active a {
-  color: #71bfec;
+  color: #ffffff;
 }
 .home h1 {
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   font-family: Comic sans MS;
   font-size: 50px;
 }
 
 .home p {
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   font-family: Comic sans MS;
   font-size: 25px;
@@ -95,11 +96,46 @@ nav li.active a {
 
 .locations{
 display: inline-block;
-
 margin-left: 115px;
 
+}
 
-  
+.locations:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
+  color: #f1f1f1;
+  width: 72%;
+  transition: .7s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.locations:hover .overlay {
+  opacity: 1;
+}
+
+.locations{
+  text-align: center;
+  font: 80px;
+  color: black; 
+  padding: 50px;
+  transition: transform .2s;
+  margin: 0 auto;
+  margin-left: 40px;
 
 }
  
@@ -168,23 +204,7 @@ margin-left: 115px;
   font-size: 25px;
 }
  
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: .6s ease;
-  opacity:2;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-.col:hover .overlay {
-  opacity: 1;
-}
+
 
 /*Places to visit end section*/
 
@@ -311,18 +331,7 @@ footer {
   height: auto;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: auto;
-  width: auto;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #008cba;
-}
+
 
 .locations:hover .overlay {
   opacity: 1;
@@ -466,4 +475,56 @@ button[type="reset"]:hover {
   .about-us img {
     display: none;
   }
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #bda01e;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: rgb(8, 6, 6);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(211, 163, 31);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(211, 163, 31);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(2, 2, 1);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
