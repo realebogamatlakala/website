@@ -1,6 +1,5 @@
 .content {
   background-color: #364655;
-  width: auto;
 }
 .content h1 {
   font-size: 64px;
@@ -226,19 +225,10 @@ margin-left: 115px;
   margin-left: 20px;
   margin-right: 20px;
 }
-.review1{
+.review{
   border-radius: 20px;
   background-color: #445a66;
   margin-right: 10px;
-}
-.review2{
-  border-radius: 20px;
-  background-color: #445a66;
-  margin-right: 10px;
-}
-.review3{
-  border-radius: 20px;
-  background-color: #445a66;
 }
 .reviews p {
   font-size: 20px;
@@ -250,6 +240,12 @@ margin-left: 115px;
 /* end of about us*/
 
 /*our services*/
+.services{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 180px;
+}
+
 .card {
   border: 2px solid rgba(107, 85, 163, 0.2);
   background-image: url(/images/Table_mountain_cable_way_with_lions_head.jpg);
@@ -257,10 +253,11 @@ margin-left: 115px;
   background-size: cover;
   color:white;
   border-radius: 10px;
-  padding: 100px 15px 100px;
+  padding: 10px 15px 10px;
   transition: all 150ms ease-in-out;
   text-align: center;
   margin: 10px;
+  width: 40%;
 }
 button{
   border: none;
@@ -277,14 +274,8 @@ button{
   cursor: pointer;
   
 }
-.standard {
+.basic {
   background-image: url(/images/Mpumalanga/greens.avif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color:white;
-}
-.premium {
-  background-image: url(images/Mpumalanga/panaroma\ view.webp);
   background-repeat: no-repeat;
   background-size: cover;
   color:white;
@@ -494,16 +485,16 @@ button[type="reset"]:hover {
   }
 }
 
-
-ul {
+/* navbar ul and services ul*/
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #bda01e;
+  background-color: #d8bf42;
 }
 
-li {
+nav li {
   float: left;
 }
 
@@ -516,7 +507,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(211, 163, 31);
+  background-color: #d3a31f;
 }
 
 li.dropdown {
@@ -526,7 +517,7 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(211, 163, 31);
+  background-color: #d3a31f;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
