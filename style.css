@@ -176,7 +176,7 @@ margin-left: 115px;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
-  margin-top: 60px;
+  margin-top: 180px;
   margin-right: 50%;
 }
 .places-south-africa img {
@@ -197,6 +197,9 @@ margin-left: 115px;
   font-size: 50px;
 }
  
+.places-south-africa p {
+  margin-top: 70px;
+}
 .places-south-africa p {
   color: #af8028;
   text-align: left;
@@ -537,4 +540,39 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+#myBtn{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn1{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
 }
