@@ -62,14 +62,14 @@ nav li.active a {
   color: #ffffff;
 }
 .home h1 {
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   font-family: Comic sans MS;
   font-size: 50px;
 }
 
 .home p {
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   font-family: Comic sans MS;
   font-size: 25px;
@@ -201,7 +201,7 @@ margin-left: 115px;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.8); /* Black see-through */
   color: #f1f1f1;
-  width: 72%;
+  width: 80%;
   transition: .7s ease;
   opacity:0;
   color: white;
@@ -296,6 +296,11 @@ margin-left: 115px;
   font-family: cursive;
   font-size: 25px;
 }
+
+
+#more {
+  display: none;
+}
  
 /*Places to visit end section*/
 
@@ -359,6 +364,7 @@ margin-left: 115px;
   transition: all 150ms ease-in-out;
   text-align: center;
   margin: 10px;
+  margin-left: 60px;
   width: 40%;
   
 }
@@ -378,17 +384,18 @@ button{
   
 }
 .basic2{
-  background-image: url(/images/premium_photo.avif);
-  filter: blur(2px);
+  background-image: url(/images/Mpumalanga/realeboga.avif);
   background-repeat: no-repeat;
   background-size: cover;
   color:white;
+  
 }
 .basic {
-  background-image: url(/images/capetown/CPT\ beach.jpg);
+  background-image: url(/images/Mpumalanga/realeboga.avif);
   background-repeat: no-repeat;
   background-size: cover;
   color:white;
+ 
 }
 div li{
   font-weight: 500;
@@ -491,6 +498,107 @@ footer {
   width: 24.99999%;
   position: relative;
   width: 50%;
+}
+/* IMAGE PARALLAX*/
+.parallax {
+  /* The image used */
+  background-image: url("../../media/back2.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px 200px;
+  border-radius: 5px;
+  height: auto;
+}
+/* LINE */
+.line{
+  background-color: #ffffff;
+  height: 1px;
+  width:100%;
+  padding: 3px 8px;
+  float: right;
+}
+body {
+  font-family: Arial;
+  background-image: url('image/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+ 
+.container1 {
+  width: 950px;
+  margin: 80px auto;
+  color: white;
+  line-height: 1.5;
+}
+ 
+.text-center {
+  text-align: center;
+}
+ 
+.content1 {
+  display: flex;
+  margin-top: 40px;
+}
+ 
+.icon {
+  background-color: white;
+  border-radius: 30px;
+  padding: 15px;
+  vertical-align: top;
+}
+ 
+.contact-info {
+  display: inline-block;
+  padding: 4px 20px 0px 20px;
+  color: rgb(12, 11, 11);
+}
+ 
+.address-line {
+  margin-top: 40px;
+}
+ 
+.col-1 {
+  width: 530px;
+}
+ 
+.col-2 {
+  flex: 1 1 auto;
+  background-color: white;
+}
+ 
+.form-container {
+  color: #000;
+  padding: 30px;
+}
+ 
+.contact-info-title {
+  color: #01bdd4;
+}
+ 
+.form-row {
+  padding-bottom: 30px;
+}
+ 
+.form-field {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+ 
+.send-btn {
+  border: 0px;
+  border-radius: 12px;
+  padding: 12px 26px;
+  background-color: #01bdd4;
+  color: rgb(17, 16, 16);
 }
 /*end of contact*/
 
@@ -652,7 +760,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #d8bf42;
+  background-color: #ffffff;
 }
 
 nav li {
@@ -717,6 +825,7 @@ li.dropdown {
 #myBtn1{
   background-color: #38a4e2;
 }
+
 #myBtn:hover {
   background-color: #555;
 }

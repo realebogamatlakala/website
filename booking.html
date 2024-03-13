@@ -37,11 +37,10 @@
 <!-- End of Nav bar-->
     <div class="content">
       <div class="content-form">
-        <form action="" method="post">
-            <h1>Bookings</h1>
-            <h4><i>Book your trip with Techno Champs Tours<br>Discover the world with us</i></h4>
-            <div class="form"> 
-      
+        <form id="ourForm" action="javascript:void(0)" method="POST">
+          <h1>Bookings</h1>
+          <h4><i>Book your trip with Techno Champs Tours<br>Discover the world with us</i></h4>
+          <div class="form">
                     <label for="fname">First Name: </label>
                     <input type="text" id="fname" placeholder="Enter your name.." required>
                   
@@ -92,14 +91,14 @@
                 
                 
             
-            <div class="button-sub">
-                    <button type="submit">Submit</button>
-                    
-            </div>
-            <div class="button-res">
-
-              <button type="reset">Reset</button>
-            </div>
+                
+                    <div class="button-sub">
+                      <button type="button" onclick="displayInformation()">Submit</button>  
+                    </div>
+         
+                    <div class="button-res">
+                    <button type="button">Reset</button>
+                    </div>
             </div>
         </form> 
       </div>  
