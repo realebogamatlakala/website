@@ -1,5 +1,5 @@
 .content {
-  background-color: #364655;
+  
   
   
 }
@@ -264,6 +264,7 @@ margin-left: 115px;
   text-align: center;
   margin: 10px;
   width: 40%;
+  
 }
 button{
   border: none;
@@ -280,8 +281,15 @@ button{
   cursor: pointer;
   
 }
+.basic2{
+  background-image: url(/images/premium_photo.avif);
+  filter: blur(2px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+}
 .basic {
-  background-image: url(/images/Mpumalanga/greens.avif);
+  background-image: url(/images/capetown/CPT\ beach.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color:white;
@@ -292,6 +300,57 @@ div li{
   font-size: 30px;
   text-align: start;
 }
+
+.gallery-container {
+  position: relative;
+  display: flex;
+}
+
+
+.scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+}
+
+.image-item {
+  margin-right: 10px; /* Adjust the spacing between images as needed */
+}
+
+.double {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  cursor: pointer;
+  color: #364655;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.right-arrow:hover,.left-arrow:hover {
+background-color: white;
+}
+
+/* ... your existing CSS code ... */
+
+.image-item {
+margin-right: 10px;
+transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+.image-item:hover {
+transform: scale(0.9); /* Scale the image on hover */
+}
+
 /*our services*/
 
 .social-links {
