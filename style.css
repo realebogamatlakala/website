@@ -18,7 +18,7 @@
 }
 .content p {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-family:sans-serif;
 }
 a {
@@ -83,17 +83,104 @@ nav li.active a {
   border-radius: 5px;
   height: 750px;
 }
+/* Quotes slideshow */
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  font-size: 24px;
+}
+ 
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  padding-top: 30px;
+  text-align: center;
+}
+ 
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+ 
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+ 
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+ 
+.prev {
+  position: absolute;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+ 
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+ 
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+ 
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+ 
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+ 
+q {
+  font-style: italic;
+}
+ 
+.author {
+  color: cornflowerblue;
+}
 
 /*Places to visit*/
 
 .places {
-  background-image: url(/images/bwave.gif);
+  background-image: url(/images/Mpumalanga/panaroma\ bridge.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   padding: 300px 200px;
   border-radius: 5px;
-  height: 200px;
+  height: 300px;
+  
 }
 
 .locations{
@@ -156,8 +243,9 @@ margin-left: 115px;
 }
  
 .places-info {
-  height: 80px;
+  height: 150px;
   padding: 30px;
+  margin-top: 100px;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   background-color: #cfa658;
@@ -214,14 +302,21 @@ margin-left: 115px;
 /*about us*/
 .about-us img {
   line-height: 2.5px;
-  border-radius: 60%;
+  border-radius: 10%;
   width: 200px;
   display: inline-block;
+ 
 
 }
 .our-images {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-evenly; 
+}
+.captions {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 50px;
+
 }
 .reviews{
   display: flex;
@@ -232,11 +327,12 @@ margin-left: 115px;
 }
 .review{
   border-radius: 20px;
-  background-color: #445a66;
+  background-color: #68747a;
   margin-right: 10px;
 }
-.reviews p {
+.our-images  p {
   font-size: 20px;
+  align-items: center;
 }
 .reviews h2 {
   font-size: 40px;
