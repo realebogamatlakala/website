@@ -196,4 +196,6 @@ function displayInformation() {
   // Show a pop-up message
   alert("Thank you! Check if you have filled in all your details before submitting.");
 }
-
+function resetFunction() {
+  document.getElementById("ourForm").reset();
+}
