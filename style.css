@@ -802,7 +802,6 @@ li.dropdown {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: orange;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -810,7 +809,9 @@ li.dropdown {
 }
 
 #myBtn1{
-  background-color: #38a4e2;
+  background-color: orange;
+  display: flex;
+  float: right;
 }
 
 #myBtn:hover {

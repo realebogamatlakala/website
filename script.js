@@ -190,12 +190,34 @@ function displayInformation() {
   // Create a URL for the Blob object
   var url = URL.createObjectURL(blob);
 
+  // Show a pop-up message
+  alert("Thank you! Check if you have filled in all your details before submitting.");
+
   // Open the URL in a new tab
   window.open(url, '_blank');
 
-  // Show a pop-up message
-  alert("Thank you! Check if you have filled in all your details before submitting.");
 }
 function resetFunction() {
   document.getElementById("ourForm").reset();
 }
+
+// Get the button
+let mybutton = document.getElementById("myBtn1");
+ 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+ 
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+ 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+ 
