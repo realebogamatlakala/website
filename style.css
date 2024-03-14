@@ -384,14 +384,14 @@ button{
   
 }
 .basic2{
-  background-image: url(/images/Mpumalanga/realeboga.avif);
+  background-image: url(/images/Mpumalanga/greens.avif);
   background-repeat: no-repeat;
   background-size: cover;
   color:white;
   
 }
 .basic {
-  background-image: url(/images/Mpumalanga/realeboga.avif);
+  background-image: url(/images/capetown/CPT\ beach.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color:white;
@@ -565,7 +565,7 @@ body {
 }
  
 .col-1 {
-  width: 530px;
+  width: 500px;
 }
  
 .col-2 {
@@ -633,12 +633,14 @@ body {
 }
 /*start of booking page*/
 .content-form h4 {
+
   font-size: 20px;
   line-height: 20px;
   text-align: center;
 }
 .content-form {
   padding:30px 100px;
+  margin-top: 100px;
   margin: 0 400px;
   border-radius: 10px;
   overflow: hidden;
@@ -684,7 +686,7 @@ input[type="date"] {
   border-radius: 4px;
   box-sizing: border-box;
 }
-button[type="submit"] {
+button[type="button"] {
   background-color: white;
   color: black;
   text-decoration: none;
@@ -698,26 +700,10 @@ button[type="submit"] {
   transition: .4s ease;
 
 }
-button[type="submit"]:hover {
+button[type="button"]:hover {
   background-color: #566ce6;
 }
-button[type="reset"] {
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  padding: 10px 18px;
-  margin-left: 20%;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  float: left;
-  display: inline-block;
-  transition: .4s ease;
 
-}
-button[type="reset"]:hover {
-  background-color: #566ce6;
-}
 .input-label {
   float: left;
   width: 25%;

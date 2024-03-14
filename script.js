@@ -180,8 +180,9 @@ function displayInformation() {
   var datetwo = document.getElementById("date").value;
   var comment = document.getElementById("comment").value;
 
+
   // Construct the information string
-  var information = "<strong>Name:</strong> " + name + "<br><strong>Last Name:</strong> " + surname + "<br><strong>Email:</strong> " + email + "<br><strong>Phone No.:</strong> " + phone + "<br><strong>Arrival date:</strong> " + date + "<br><strong>Depature date:</strong> " + date;
+  var information = "<strong>Name:</strong> " + name + "<br><strong>Last Name:</strong> " + surname + "<br><strong>Email:</strong> " + email + "<br><strong>Phone No.:</strong> " + phone + "<br><strong>Arrival date:</strong> " + date + "<br><strong>Depature date:</strong> " + date +  "<br><strong>Message:</strong> " + comment ;
 
   // Create a Blob object containing the information string
   var blob = new Blob([information], { type: 'text/html' });
