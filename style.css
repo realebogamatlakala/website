@@ -1,5 +1,4 @@
 .content {
-  
   margin-top: 1px;
   
 }
@@ -57,7 +56,6 @@ nav a {
   text-align: center;
   color: black;
 }
-
 a:hover,
 nav li.active a {
   color: #ffffff;
@@ -473,79 +471,45 @@ footer {
 }
 
 /*contact*/
-.contactus {
-  background-color: #cddff0;
-  height: 750px;
-  padding: 5px 10px;
-}
-.contactus h1 {
-  font-size: 64px;
-  line-height: 80px;
-  text-align: center;
-}
 
-.contactus h2 {
-  font-size: 24px;
-  line-height: 1.5px;
-  text-align: center;
-  padding: 20px 0;
-}
-.col {
-  width: 100%;
-  height: auto;
-  float: left;
-  padding: 45px;
-  text-align: center;
-  width: 24.99999%;
-  position: relative;
-  width: 50%;
-}
 /* IMAGE PARALLAX*/
 .parallax {
-  /* The image used */
-  background-image: url("../../media/back2.jpg");
-  /* Set a specific height */
-  min-height: 500px;
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 300px 200px;
   border-radius: 5px;
   height: auto;
 }
-/* LINE */
-.line{
-  background-color: #ffffff;
-  height: 1px;
-  width:100%;
-  padding: 3px 8px;
-  float: right;
-}
 body {
   font-family: Arial;
-  background-image: url('image/bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
- 
-.container1 {
+.container-contact h1{
+  margin-top: 0;
+
+  font-size: 64px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.container-contact {
   width: 950px;
-  margin: 80px auto;
-  color: white;
+  
+  color: rgb(5, 5, 5);
   line-height: 1.5;
-}
- 
-.text-center {
   text-align: center;
+  margin-left: 250px;
+  margin-top: 0;
 }
  
-.content1 {
+.content-contact{
   display: flex;
-  margin-top: 40px;
+ 
+}
+.address-line{
+  margin-top: 0;
 }
  
 .icon {
@@ -564,14 +528,15 @@ body {
 .address-line {
   margin-top: 40px;
 }
- 
+.col-1 a:hover{
+color: orange;
+}
 .col-1 {
-  width: 500px;
+  width: 530px;
 }
  
 .col-2 {
   flex: 1 1 auto;
-  background-color: white;
 }
  
 .form-container {
@@ -580,16 +545,18 @@ body {
 }
  
 .contact-info-title {
-  color: #01bdd4;
+  color: #000000;
+  font-weight: bolder;
 }
  
 .form-row {
   padding-bottom: 30px;
+ 
 }
  
 .form-field {
   width: 100%;
-  padding: 10px;
+  padding: 1px;
   border: none;
   border-bottom: 1px solid #000;
 }
@@ -598,7 +565,7 @@ body {
   border: 0px;
   border-radius: 12px;
   padding: 12px 26px;
-  background-color: #01bdd4;
+  background-color: #cfa658;
   color: rgb(17, 16, 16);
 }
 /*end of contact*/
@@ -616,7 +583,7 @@ body {
 }
 
 .text {
-  color: white;
+  color: rgb(233, 15, 15);
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -645,7 +612,7 @@ body {
   margin: 0 400px;
   border-radius: 10px;
   overflow: hidden;
-  background: rgba(10, 0, 0, 0.2);
+  background: #cfa658;
   box-shadow: 0 15px 20px rgba(10, 0, 0, 0.6);
   clear: both;
   display: flex;
@@ -787,7 +754,7 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {background-color: #ffffff;}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -809,7 +776,7 @@ li.dropdown {
 }
 
 #myBtn10{
-  background-color: orange;
+  background-color: #cfa658;
   display: flex;
   float: right;
 }

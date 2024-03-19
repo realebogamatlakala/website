@@ -197,6 +197,8 @@ function displayInformation() {
   window.open(url, '_blank');
 
 }
+
+
 function resetFunction() {
   document.getElementById("ourForm").reset();
 }
