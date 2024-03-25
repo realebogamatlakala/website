@@ -47,67 +47,63 @@
               <div class="contact-info-title">Address</div>
               <div>97 Durham Ave,</div>
               <div> Salt River, Cape Town, </div>
-              <div>7925.</div>
+              <div>7925</div>
             </div>
           </div>
           <div class="address-line">
             <div class="contact-info">
               <div class="contact-info-title">Phone</div>
-              <div>12523-4566-8954-8956.</div>
+              <div> (021) 003 7509</div>
             </div>
           </div>
           <div class="address-line">
             <div class="contact-info">
               <div class="contact-info-title">Email</div>
               <a href="mailto:technochampstours@gmail.com">
-                <img src="/images/email (1).png" alt="Email Logo" width="50px" height="60px">
+                <img src="/images/email (1).png" alt="Email Logo" width="50px" height="70px">
                 <figcaption>
                   technochampstours@gmail.com</a>
-                </figcaption>
-            </div>
-          </div>
-          <div class="address-line">
-            <div class="contact-info">
-              <div class="contact-info-title">Our Social Media</div>
+                </figcaption><br>
+              <div class="contact-info-title">Twitter</div>
               <a href=https://www.twitter.com/@technochamps_tours>
                 <img src="/images/twitr.jfif" alt="Twitter Logo" width="50px" height="60px">
                 <figcaption>
                   technochampstours</a> <!-- href ending here closes link -->
-                </figcaption>
-                <h3>Instagram</h3>
+                </figcaption><br>
+              <div class="contact-info-title">Instagram</div>
               <a href="https://www.Instagram.com/@technochamps_tours">
                <img src="/images/instagram (1).png" alt="Instagram Logo" width="50px" height="60px">
                <figcaption>
                 technochamps_tours</a> <!-- href ending here closes link -->
-               </figcaption>
+               </figcaption><br>
             </div>
           </div>
         </div>
         <div class="col-2">
-          <form>
-            <div class="form-container">
+          <div class="form-container">
+            <form onsubmit="return validateForm()">
               <h2>Send Message</h2>
               <div class="form-row">
-                <label>Full Name</label>
+                <label for="name">Full Name</label>
                 <div>
-                  <input type="text" class="form-field" required>
+                  <input type="text" id="name" name="name" class="form-field" required>
                 </div>
               </div>
               <div class="form-row">
-                <label>Email</label>
+                <label for="email">Email</label>
                 <div>
-                  <input type="email" class="form-field" required>
+                  <input type="email" id="email" name="email" class="form-field" required>
                 </div>
               </div>
               <div class="form-row">
                 <label>Type your message...</label>
                 <div>
-                  <textarea class="form-field" rows="6" required></textarea>
+                  <textarea class="form-field" rows="4" required></textarea>
                 </div>
               </div>
-              <button type="submit" class="send-btn">Submit</button>
-            </div>
-          </form>
+              <button type="submit" value="submit" class="send-btn">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
       </div>

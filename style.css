@@ -173,8 +173,8 @@ q {
 
 .places {
   background-image: url(/images/Mpumalanga/panaroma\ bridge.webp);
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: scroll;
   padding: 300px 200px;
   border-radius: 5px;
@@ -263,18 +263,18 @@ margin-left: 115px;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
-  margin-top: 180px;
+  margin-top: 80px;
   margin-right: 50%;
 }
 .places-south-africa img {
   float: right;
   border-radius: 50px;
   margin-top: 2px;
-
-
+  margin-right: 45px;
 }
 .places-locations {
   margin-top: 200px;
+
 }
  
 .places-locations h1 {
@@ -283,9 +283,12 @@ margin-left: 115px;
   font-family: "Times New Roman", Times, serif;
   font-size: 50px;
 }
+.places-south-africa{
+  margin-top: 20px;
+}
  
 .places-south-africa p {
-  margin-top: 70px;
+  margin-top: 20px;
 }
 .places-south-africa p {
   color: #af8028;
@@ -294,6 +297,7 @@ margin-left: 115px;
   text-align: center;
   font-family: cursive;
   font-size: 25px;
+  margin-left: 10px;
 }
 
 
@@ -490,13 +494,11 @@ body {
 }
 .container-contact h1{
   margin-top: 0;
-
   font-size: 64px;
   font-family: 'Times New Roman', Times, serif;
 }
 .container-contact {
   width: 950px;
-  
   color: rgb(5, 5, 5);
   line-height: 1.5;
   text-align: center;
@@ -508,10 +510,6 @@ body {
   display: flex;
  
 }
-.address-line{
-  margin-top: 0;
-}
- 
 .icon {
   background-color: white;
   border-radius: 30px;
@@ -521,18 +519,23 @@ body {
  
 .contact-info {
   display: inline-block;
-  padding: 4px 20px 0px 20px;
   color: rgb(12, 11, 11);
+  margin-left: 8px;
 }
  
 .address-line {
   margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 .col-1 a:hover{
 color: orange;
 }
 .col-1 {
-  width: 530px;
+  width: 500px;
+  margin: 50px;
+  background-color: #cfa658;
+  border-radius: 10px;
 }
  
 .col-2 {
@@ -541,22 +544,24 @@ color: orange;
  
 .form-container {
   color: #000;
-  padding: 30px;
+  width: 60%;
+  margin: 0 auto;
 }
  
 .contact-info-title {
   color: #000000;
   font-weight: bolder;
+  margin-bottom: 10px;
 }
  
 .form-row {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
  
 }
  
-.form-field {
-  width: 100%;
-  padding: 1px;
+.form-field, textarea{
+  
+  padding: 8px;
   border: none;
   border-bottom: 1px solid #000;
 }
@@ -576,29 +581,6 @@ color: orange;
   height: auto;
 }
 
-
-
-.locations:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: rgb(233, 15, 15);
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.col p {
-  font-family: Comic sans MS;
-  font-size: 15px;
-}
 /*start of booking page*/
 .content-form h4 {
 

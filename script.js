@@ -1,6 +1,6 @@
 
 
-// Get the button
+// Our services slide show. Get the button
 document.addEventListener("DOMContentLoaded", function () {
   const scrollContainer = document.getElementById("scrollContainer");
   const leftArrow = document.querySelector(".left-arrow");
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
  
   // Debounce function to limit the rate at which scrollGallery is called
   function debounce(func, wait) {
-    let timeout;
+    let timeout; 
     return function () {
       const context = this;
       const args = arguments;
@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//Reviews
-var slideIndex = 1;
+// Home page. Reviews
+let slideIndex = 1;
 showSlides(slideIndex);
  
 function plusSlides(n) {
@@ -56,9 +56,9 @@ function currentSlide(n) {
 }
  
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
@@ -71,10 +71,11 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
+// our services packages
 function myFunction() {
-  var dots = document.getElementById("dots1");
-  var moreText = document.getElementById("more1");
-  var btnText = document.getElementById("myBtn1");
+  let dots = document.getElementById("dots1");
+  let moreText = document.getElementById("more1");
+  let btnText = document.getElementById("myBtn1");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
@@ -88,9 +89,9 @@ function myFunction() {
 }
 
 function myFunction2() {
-  var dots = document.getElementById("dots2");
-  var moreText = document.getElementById("more2");
-  var btnText = document.getElementById("myBtn2");
+  let dots = document.getElementById("dots2");
+  let moreText = document.getElementById("more2");
+  let btnText = document.getElementById("myBtn2");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
@@ -105,9 +106,9 @@ function myFunction2() {
 
 
 function myFunction3() {
-  var dots = document.getElementById("dots3");
-  var moreText = document.getElementById("more3");
-  var btnText = document.getElementById("myBtn3");
+  let dots = document.getElementById("dots3");
+  let moreText = document.getElementById("more3");
+  let btnText = document.getElementById("myBtn3");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
@@ -122,9 +123,9 @@ function myFunction3() {
 
 
 function myFunction4() {
-  var dots = document.getElementById("dots4");
-  var moreText = document.getElementById("more4");
-  var btnText = document.getElementById("myBtn4");
+  let dots = document.getElementById("dots4");
+  let moreText = document.getElementById("more4");
+  let btnText = document.getElementById("myBtn4");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
@@ -139,9 +140,9 @@ function myFunction4() {
 
 
 function myFunction5() {
-  var dots = document.getElementById("dots5");
-  var moreText = document.getElementById("more5");
-  var btnText = document.getElementById("myBtn5");
+  let dots = document.getElementById("dots5");
+  let moreText = document.getElementById("more5");
+  let btnText = document.getElementById("myBtn5");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
@@ -155,9 +156,9 @@ function myFunction5() {
 }
 
 function myFunction6() {
-  var dots = document.getElementById("dots6");
-  var moreText = document.getElementById("more6");
-  var btnText = document.getElementById("myBtn6");
+  let dots = document.getElementById("dots6");
+  let moreText = document.getElementById("more6");
+  let btnText = document.getElementById("myBtn6");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
@@ -169,26 +170,28 @@ function myFunction6() {
     moreText.style.display = "inline";
   }
 }
+// end our sevices
 
+//Bookings
 function displayInformation() {
   // Get the input values
-  var name = document.getElementById("name").value;
-  var surname = document.getElementById("surname").value;
-  var email = document.getElementById("email").value;
-  var phone = document.getElementById("phone").value;
-  var date = document.getElementById("date").value;
-  var datetwo = document.getElementById("date").value;
-  var comment = document.getElementById("comment").value;
+  let name = document.getElementById("name").value;
+  let surname = document.getElementById("surname").value;
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
+  let date = document.getElementById("date").value;
+  let datetwo = document.getElementById("date").value;
+  let comment = document.getElementById("comment").value;
 
 
   // Construct the information string
-  var information = "<strong>Name:</strong> " + name + "<br><strong>Last Name:</strong> " + surname + "<br><strong>Email:</strong> " + email + "<br><strong>Phone No.:</strong> " + phone + "<br><strong>Arrival date:</strong> " + date + "<br><strong>Depature date:</strong> " + date +  "<br><strong>Message:</strong> " + comment ;
+  let information = "<strong>Name:</strong> " + name + "<br><strong>Last Name:</strong> " + surname + "<br><strong>Email:</strong> " + email + "<br><strong>Phone No.:</strong> " + phone + "<br><strong>Arrival date:</strong> " + date + "<br><strong>Depature date:</strong> " + date +  "<br><strong>Message:</strong> " + comment ;
 
   // Create a Blob object containing the information string
-  var blob = new Blob([information], { type: 'text/html' });
+  let blob = new Blob([information], { type: 'text/html' });
 
   // Create a URL for the Blob object
-  var url = URL.createObjectURL(blob);
+  let url = URL.createObjectURL(blob);
 
   // Show a pop-up message
   alert("Thank you! Check if you have filled in all your details before submitting.");
@@ -221,5 +224,39 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+//end of booking
+
+// contact form
+function validateForm() {
+  let nameField = document.getElementById("name");
+  let nameRegex = /^[A-Za-z]+$/; // Regular expression to match only alphabetic characters
+  let nameValue = nameField.value;
+  let emailField = document.getElementById("email");
+  let emailValue = emailField.value;
+  let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Regular expression for validating email
+
+  // Resetting styles
+  nameField.style.border = "1px solid #ced4da"; // Reset border color
+  emailField.style.border = "1px solid #ced4da"; // Reset border color
+ 
+ 
+  // Name validation
+  if (!nameRegex.test(nameValue)) {
+    alert("Please enter a valid name with only alphabetic characters.");
+    nameField.style.border = "1px solid red"; // Change border color to red
+    return false;
+  }
+ 
+  // Email validation
+  if (!emailRegex.test(emailValue)) {
+    alert("Please enter a valid email address.");
+    emailField.style.border = "1px solid red"; // Change border color to red
+    return false;
+  } 
+
+  alert("Thank you for contacting us. We'll get back to you.");
+ 
+  return true;
 }
  
