@@ -550,6 +550,11 @@ color: orange;
   width: 60%;
   margin: 0 auto;
 }
+.iframe{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
  
 .contact-info-title {
   color: #000000;
