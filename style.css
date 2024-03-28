@@ -172,7 +172,7 @@ q {
 /*Places to visit*/
 
 .places {
-  background-image: url(/images/Mpumalanga/panaroma\ bridge.webp);
+  background-image: url(/images/leo.avif);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -240,6 +240,7 @@ margin-left: 115px;
   font-family: cursive;
   font-size: 55px;
 }
+
  
 .places-info {
   height: 150px;
@@ -263,13 +264,12 @@ margin-left: 115px;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
-  margin-top: 80px;
+  margin-top: 100px;
   margin-right: 50%;
 }
 .places-south-africa img {
   float: right;
   border-radius: 50px;
-  margin-top: 2px;
   margin-right: 45px;
 }
 .places-locations {
@@ -283,12 +283,15 @@ margin-left: 115px;
   font-family: "Times New Roman", Times, serif;
   font-size: 50px;
 }
-.places-south-africa{
+.places-south-africa h1{
   margin-top: 20px;
+  text-align: center;
+  
 }
  
 .places-south-africa p {
-  margin-top: 20px;
+  margin-top: 60px;
+  
 }
 .places-south-africa p {
   color: #af8028;
@@ -298,6 +301,7 @@ margin-left: 115px;
   font-family: cursive;
   font-size: 25px;
   margin-left: 10px;
+  flex-direction: row-reverse;
 }
 
 
@@ -394,7 +398,7 @@ button{
   color:white;  
 }
 .basic {
-  background-image: url(/images/capetown/CPT\ beach.jpg);
+  background-image: url(/images/cape1.avif);
   background-repeat: no-repeat;
   background-size: cover;
   color:white;
