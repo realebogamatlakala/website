@@ -34,7 +34,7 @@
 <!-- End of Nav bar-->
     <div class="content">
       <div class="content-form">
-        <form id="ourForm" action="javascript:void(0)" method="POST">
+        <form onsubmit="return validateBookingForm()" id="ourForm" action="javascript:void(0)" method="POST">
           <h1>Bookings</h1>
           <h4><i>Book your trip with Techno Champs Tours<br>Discover the world with us</i></h4>
           <div class="form">
@@ -57,23 +57,27 @@
                     <option value="two">2</option>
                     <option value="three">3</option>
                     <option value="four">4</option>
-                    <option value="five">5</option>
+                    <option value="five">5+</option>
                     </select>
                   
-                    <label for="place">Destination</label>
+                    <label for="place">Packages</label>
                     <select id="place" name="place" required>
-                    <option value="suncity">Sun City</option>
-                    <option value="shaka">uShaka</option>
-                    <option value="table">Table Mountain</option>
-                    <option value="draken">Drankensburg</option>
-                    <option value="vna">V&A Waterfront</option>
+                    <option value="p1">Western Cape Basic Package</option>
+                    <option value="p4">Mpumalanga Basic Package</option>
+                    <option value="p2">Western Cape Standard Package</option>
+                    <option value="p5">Mpumalanga Standard Package</option>
+                    <option value="p3">Western Cape Premium Package</option> 
+                    <option value="p6">Mpumalanga Premium Package</option>
+                    
+                    
+                   
                     </select>
-                  
+                   
                     <label for="date">Arrival date:</label>
-                    <input type="date" id="date" name="Date" min="2024-03-18" required>
+                    <input type="date" id="date" name="Date" min="2024-03-27" required>
               
                     <label for="date">Depature date:</label>
-                    <input type="date" id="date" name="Date" min="2024-03-18" required>
+                    <input type="date" id="datetwo" name="Date" min="2024-03-28" required>
                  
                     <label for="comment"> Leave a message:</label><br>
                     <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
@@ -83,7 +87,7 @@
             
                 
                     <div class="button-sub">
-                      <button type="button" onclick="displayInformation()">Submit</button>  
+                      <button type="button" onclick="validateBookingForm() ; displayInformation(); " value="submit">Submit</button>  
                     </div>
          
                     <div class="button-res">
