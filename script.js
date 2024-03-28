@@ -3,7 +3,7 @@
 // Our services slide show. Get the button
 document.addEventListener("DOMContentLoaded", function () {
   const scrollContainer = document.getElementById("scrollContainer");
-  const leftArrow = document.querySelector(".left-arrow");
+  const leftArrow = document.querySelector(".left-arrow");  
   const rightArrow = document.querySelector(".right-arrow");
  
   const imageWidth = 400; // Width of each image
@@ -146,29 +146,20 @@ function topFunction() {
 
 // contact form
 function validateForm() {
-  let nameField = document.getElementById("name");
-  let nameRegex = /^[A-Za-z]+$/; // Regular expression to match only alphabetic characters
-  let nameValue = nameField.value;
-  let emailField = document.getElementById("email");
-  let emailValue = emailField.value;
-  let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Regular expression for validating email
-
-  // Resetting styles
-  nameField.style.border = "1px solid #ced4da"; // Reset border color
-  emailField.style.border = "1px solid #ced4da"; // Reset border color
- 
+  let nameField = document.getElementById("name").value;
+  let nameRegex = /^[A-Za-z\s]+$/; // Regular expression to match only alphabetic characters
+  let emailField = document.getElementById("email").value;
+  let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Regular expression for validating email                                                                                                         
  
   // Name validation
-  if (!nameRegex.test(nameValue)) {
+  if (!nameRegex.test(nameField)) {
     alert("Please enter a valid name with only alphabetic characters.");
-    nameField.style.border = "1px solid red"; // Change border color to red
     return false;
   }
  
   // Email validation
-  if (!emailRegex.test(emailValue)) {
+  if (!emailRegex.test(emailField)) {
     alert("Please enter a valid email address.");
-    emailField.style.border = "1px solid red"; // Change border color to red
     return false;
   } 
 
@@ -176,4 +167,24 @@ function validateForm() {
  
   return true;
 }
+
+function validateName() {  
+   let nameField = document.getElementById("name");   
+   let nameRegex = /^[A-Za-z\s]+$/; // Regular expression to match alphabetic characters and spacesif 
+   if (nameRegex.test(nameField.value)) {     
+     nameField.style.borderColor = "green";   
+    } 
+    else {     
+      nameField.style.borderColor = "red";   } 
+  } 
+    function validateEmail() {  
+       let emailField = document.getElementById("email");   
+       let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Regular expression for validating email
+       if (emailRegex.test(emailField.value)) {    
+         emailField.style.borderColor = "green";   
+      } 
+       else {     
+        emailField.style.borderColor = "red";   
+      } 
+  }
  
