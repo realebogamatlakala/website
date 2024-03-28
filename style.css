@@ -95,7 +95,7 @@ body {
  
 .slideshow-container {
   position: relative;
-  background: #f1f1f1f1;
+  background: #cfa658;
   padding-top: 30px;
   text-align: center;
 }
@@ -114,7 +114,7 @@ body {
   width: auto;
   margin-top: -30px;
   padding: 16px;
-  color: #888;
+  color: #cfa658;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -158,7 +158,7 @@ body {
  
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color: #c99028;
 }
  
 q {
@@ -203,7 +203,7 @@ margin-left: 115px;
   width: 80%;
   transition: .7s ease;
   opacity:0;
-  color: white;
+  color: #cfa658;
   font-size: 20px;
   padding: 20px;
   padding-bottom: 20px;
@@ -378,7 +378,7 @@ margin-left: 115px;
 }
 button{
   border: none;
-  background-color: #38a4e2;
+  background-color: #cfa658;
   color: white;
   font-size: 20px;
   border-radius: 20px;
@@ -450,7 +450,7 @@ div li{
 }
 
 .right-arrow:hover,.left-arrow:hover {
-background-color: white;
+background-color: #cfa658;
 }
 
 /* ... your existing CSS code ... */
