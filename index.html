@@ -34,7 +34,6 @@
         </div>
       </nav>
     <!-- End of Nav bar-->
-
     <!--Homepage -->
     <div class="home">
 
@@ -45,11 +44,7 @@
         If you are struggling to find a perfect place to visit we are here for
         you.
       </p>
-
-     
-
     </div>
-    
       <!--Reviews-->
   <div class="slideshow-container">
     <div class="mySlides">
@@ -91,12 +86,20 @@
     <div class="footer">
     <footer><small> <p>&copy; 2024 Techno Champs Tours</p></small></footer>
     </div>
-     
-
-
     <!--End of Homepage -->
-
-    
   </body>
   <script src="script.js"></script>
+  <script>
+    // Array of images
+    var images = ["/images/capeTownSandy.jpg", "/images/back2.jpg", "/images/godsWindow.jpg"];
+    var index = 0;
+
+    // Function to change the background image
+    function changeBackground() {
+      document.querySelector(".home").style.backgroundImage = "url(" + images[index] + ")";
+      index = (index + 1) % images.length;
+    }
+    // Change the background image every 5 seconds
+    setInterval(changeBackground, 3000);
+  </script>
 </html>
