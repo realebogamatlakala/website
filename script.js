@@ -1,4 +1,14 @@
 
+//hamburger
+function navFunction() {
+  let x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+//end of hamburger
 
 // Our services slide show. Get the button
 document.addEventListener("DOMContentLoaded", function () {
@@ -123,8 +133,9 @@ function displayInformation() {
 function resetFunction() {
   document.getElementById("ourForm").reset();
 }
+//end of booking
 
-// Get the button
+// Scroll to top button
 let mybutton = document.getElementById("myBtn1");
  
 // When the user scrolls down 20px from the top of the document, show the button
@@ -143,7 +154,8 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-//end of booking
+// end of scroll to top
+
 
 // contact form
 function validateForm() {
