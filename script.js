@@ -103,7 +103,7 @@ function displayInformation() {
 
 
   // Construct the information string
-  let information = "<strong>Name:</strong> " + name + "<br><br><strong>Last Name:</strong> " + surname + "<br><br><strong>Email:</strong> " + email + "<br><br><strong>Package:</strong> "+ package +"<br><br><strong>Phone No.:</strong> "  + phone + "<br><br><strong>Number of People:</strong> " + number + "<br><br><strong>Arrival date:</strong> " + date + "<br><br><strong>Depature date:</strong> " + date +  "<br><br><strong>Message:</strong> " + comment ;
+  let information = "<strong>Name:</strong> " + name + "<br><br><strong>Last Name:</strong> " + surname + "<br><br><strong>Email:</strong> " + email + "<br><br><strong>Package:</strong> "+ package +"<br><br><strong>Phone No:</strong> "  + phone + "<br><br><strong>Number of People:</strong> " + number + "<br><br><strong>Arrival date:</strong> " + date + "<br><br><strong>Depature date:</strong> " + date +  "<br><br><strong>Message:</strong> " + comment ;
 
   // Create a Blob object containing the information string
   let blob = new Blob([information], { type: 'text/html' });
@@ -213,10 +213,20 @@ function validateName() {
       surnameField.style.borderColor = "red";   } 
    }
 
+   function validateNumber() {  
+    let numberField = document.getElementById("phone");   
+    let numberRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im; // Regular expression to match alphabetic characters and spacesif 
+    if (numberRegex.test(numberField.value)) {     
+      numberField.style.borderColor = "green";   
+     } 
+     else {     
+      numberField.style.borderColor = "red";   } 
+   }
+
    //Date picker function
    function dateFunction(){
    var dateToday = new Date();
-var dates = $("#date, #datetwoooo").datepicker({
+var dates = $("#date, #datetwo").datepicker({
     defaultDate: "+1w",
     changeMonth: true,
     numberOfMonths: 1,
