@@ -8,29 +8,30 @@
     <title>Places To Visit</title>
 </head>
 <body> <!-- Navigation bar that scrolls down to sections on page-->
-  <div class="container">
-    <nav role="navigation" aria-label="main menu" class="d-flex justify-content-between">
-      <!--Logo-->
-      <a href="index.html">
-        <img src="/images/Techno.png" alt="Techno Champs Tours Logo" class="logo">
+  <nav role="navigation" aria-label="main menu" class="d-flex justify-content-between" >
+    <!--Logo-->
+    <a href="index.html">
+      <img src="/images/Techno.png" alt="Techno Champs Tours Logo" class="logo">
+    </a>
+    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+      <i class="fa fa-bars"></i>
       </a>
-     
-      <ul>
-        <li><a href="about.html">ABOUT US</a></li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">OUR SERVICES</a>
-          <div class="dropdown-content">
-            <a href="services.html">PACKAGES</a>
-            <a href="services.html">GALLERY</a>
-          </div>
-        </li>
-        <li><a href="places.html">PLACES TO VISIT</a></li>
-        
-        <li><a href="booking.html">BOOKING</a></li>
-        <li><a href="contacts.html">CONTACT US</a></li>  
-      </ul>
-    </nav>
-  </div>
+    <div class="container" id="myLinks">
+    <ul>
+      <li><a href="about.html">ABOUT US</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">OUR SERVICES</a>
+        <div class="dropdown-content">
+          <a href="services.html">PACKAGES</a>
+          <a href="services.html">GALLERY</a>
+        </div>
+      </li>
+      <li><a href="places.html">PLACES TO VISIT</a></li> 
+      <li><a href="booking.html">BOOKING</a></li>
+      <li><a href="contacts.html">CONTACT US</a></li>  
+    </ul>
+    </div>
+  </nav>
   <!-- End of Nav bar-->
  
    <!--Destination Introduction-->

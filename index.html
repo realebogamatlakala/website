@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    <script src="https://kit.fontawesome.com/a04d21dfd1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Techno Champ Tours</title>
   </head>
  
     <!-- Navigation bar that scrolls down to sections on page-->
-    <div class="container">
-      <nav role="navigation" aria-label="main menu" class="d-flex justify-content-between">
+      <nav role="navigation" aria-label="main menu" class="d-flex justify-content-between" >
         <!--Logo-->
         <a href="index.html">
           <img src="/images/Techno.png" alt="Techno Champs Tours Logo" class="logo">
         </a>
-        
+        <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+          <i class="fa fa-bars"></i>
+          </a>
+        <div class="container" id="myLinks">
         <ul>
           <li><a href="about.html">ABOUT US</a></li>
           <li class="dropdown">
@@ -29,8 +31,8 @@
           <li><a href="booking.html">BOOKING</a></li>
           <li><a href="contacts.html">CONTACT US</a></li>  
         </ul>
+        </div>
       </nav>
-    </div>
     <!-- End of Nav bar-->
 
     <!--Homepage -->

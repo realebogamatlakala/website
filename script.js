@@ -1,4 +1,14 @@
 
+//hamburger
+function navFunction() {
+  let x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+//end of hamburger
 
 // Our services slide show. Get the button
 document.addEventListener("DOMContentLoaded", function () {
@@ -122,8 +132,9 @@ function displayInformation() {
 function resetFunction() {
   document.getElementById("ourForm").reset();
 }
+//end of booking
 
-// Get the button
+// Scroll to top button
 let mybutton = document.getElementById("myBtn1");
  
 // When the user scrolls down 20px from the top of the document, show the button
@@ -142,7 +153,8 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-//end of booking
+// end of scroll to top
+
 
 // contact form
 function validateForm() {
@@ -169,37 +181,6 @@ function validateForm() {
   if (!emailRegex.test(emailValue)) {
     alert("Please enter a valid email address.");
     emailField.style.border = "1px solid red"; // Change border color to red
-    return false;
-  } 
-
-  alert("Thank you for contacting us. We'll get back to you.");
- 
-  return true;
-}
-
-//Validate Booking Form
-function validateBookingForm() {
-  let nameField = document.getElementById("name");
-  let nameRegex = /^[a-z ,.'-]+$/i; // Regular expression to match only alphabetic characters
-  let nameValue = nameField.value;
-  let emailField = document.getElementById("email");
-  let emailValue = emailField.value;
-  let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Regular expression for validating email
-
-  // Resetting styles
-  nameField.style.border = "1px solid #ced4da"; // Reset border color
-  emailField.style.border = "1px solid #ced4da"; // Reset border color
- 
- 
-  // Name validation
-  if (!nameRegex.test(nameField)) {
-    alert("Please enter a valid name with only alphabetic characters.");
-    return false;
-  }
- 
-  // Email validation
-  if (!emailRegex.test(emailField)) {
-    alert("Please enter a valid email address.");
     return false;
   } 
 

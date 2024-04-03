@@ -1,6 +1,5 @@
 .content {
-  margin-top: 1px;
-  
+  margin-top: 1px; 
 }
 .content h1 {
   font-size: 64px;
@@ -60,6 +59,10 @@ a:hover,
 nav li.active a {
   color: #ffffff;
 }
+.icon {
+  display: none;
+}
+
 .home h1 {
   color: #ffffff;
   text-align: center;
@@ -374,7 +377,6 @@ margin-left: 115px;
   margin: 10px;
   margin-left: 60px;
   width: 40%;
-  
 }
 button{
   border: none;
@@ -697,9 +699,45 @@ button[type="button"]:hover {
   nav a {
     font-size: 14px;
   }
+  .icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    margin-top: 25px;
+  }
+  .container {
+    display: none;
+  }
+  .logo {
+    max-height: 70px;
+  }
   .about-us img {
     display: none;
   }
+  .captions{
+    display: list-item;
+    justify-content: center;
+    list-style: none;
+  }
+  .card {
+    margin-left: 0;
+    height: min-content;
+    width: min-content;
+  }
+  .card h1{
+    font-size: 55px;
+  }
+  .services{
+    display: block;
+    margin-left: 1px;
+  }
+  .gallery-container {
+    display: flex;
+  }
+
 }
 
 /* navbar ul and services ul*/
