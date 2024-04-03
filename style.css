@@ -226,25 +226,19 @@ margin-left: 115px;
   padding: 50px;
   transition: transform .2s;
   margin: auto;
- 
-
 }
- 
 .places h1 {
   color: #af8028;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 120px;
-}
- 
-.places p {
+} 
+.destination p {
   color: #af8028;
   text-align: center;
   font-family: cursive;
   font-size: 55px;
 }
-
- 
 .places-info {
   height: 150px;
   padding: 30px;
@@ -253,6 +247,7 @@ margin-left: 115px;
   font-size: 30px;
   background-color: #cfa658;
   text-align: center;
+  margin-top: 20px;
 }
  
 .places-info cite {
@@ -261,25 +256,15 @@ margin-left: 115px;
   font-size: 30px;
   text-align: center;
 }
- 
-.places-south-africa h1 {
-  color: #af8028;
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 30px;
-  margin-top: 100px;
-  margin-right: 50%;
-}
-.places-south-africa img {
+.map{
   float: right;
   border-radius: 50px;
   margin-right: 45px;
+  margin-top: 60px;
 }
 .places-locations {
-  margin-top: 200px;
-
+  margin-top: 110px;
 }
- 
 .places-locations h1 {
   color: #af8028;
   text-align: center;
@@ -289,12 +274,6 @@ margin-left: 115px;
 .places-south-africa h1{
   margin-top: 20px;
   text-align: center;
-  
-}
- 
-.places-south-africa p {
-  margin-top: 60px;
-  
 }
 .places-south-africa p {
   color: #af8028;
@@ -305,13 +284,11 @@ margin-left: 115px;
   font-size: 25px;
   margin-left: 10px;
   flex-direction: row-reverse;
+  margin-top: 20px;
 }
-
-
 #more {
   display: none;
 }
- 
 /*Places to visit end section*/
 
 /*about us*/
@@ -320,19 +297,33 @@ margin-left: 115px;
   border-radius: 10%;
   width: 200px;
   display: inline-block;
- 
-
 }
+ 
+.image-container {
+  text-align: center;
+  margin: 10px; /* Adjust margin as needed */
+  flex: 1;
+}
+ 
+.image-container img {
+  border-radius: 10%;
+  width: 200px;
+  display: inline-block;
+} 
 .our-images {
   display: flex;
-  justify-content: space-evenly; 
+  justify-content: center; /* Center horizontally */
+  flex-wrap: wrap;
 }
 .captions {
   display: flex;
   justify-content: space-around;
   margin-right: 50px;
-
+  text-align: center; /* Center the text */
+ 
 }
+
+
 .reviews{
   display: flex;
   margin-top: 40px;
@@ -517,7 +508,7 @@ body {
  
 .content-contact{
   display: flex;
- 
+
 }
 .icon {
   background-color: white;
@@ -538,7 +529,7 @@ body {
   text-align: center;
 }
 .col-1 a:hover{
-color: orange;
+color: rgb(255, 255, 254);
 }
 .col-1 {
   width: 500px;
@@ -597,7 +588,6 @@ color: orange;
 
 /*start of booking page*/
 .content-form h4 {
-
   font-size: 20px;
   line-height: 20px;
   text-align: center;
@@ -662,7 +652,6 @@ button[type="button"] {
   float: left;
   display: inline-block;
   transition: .4s ease;
-
 }
 button[type="button"]:hover {
   background-color: #566ce6;
@@ -700,7 +689,7 @@ button[type="button"]:hover {
     font-size: 14px;
   }
   .icon {
-    background: black;
+    background: rgb(0, 0, 0);
     display: block;
     position: absolute;
     right: 0;
@@ -708,14 +697,16 @@ button[type="button"]:hover {
     border-radius: 0;
     margin-top: 25px;
   }
+
   .container {
     display: none;
   }
   .logo {
     max-height: 70px;
   }
-  .about-us img {
-    display: none;
+  
+  .content {
+    padding:0%;
   }
   .captions{
     display: list-item;
@@ -723,9 +714,9 @@ button[type="button"]:hover {
     list-style: none;
   }
   .card {
-    margin-left: 0;
-    height: min-content;
-    width: min-content;
+   flex: 1;
+   margin: 0 10px;
+   width: 400px;
   }
   .card h1{
     font-size: 55px;
@@ -736,6 +727,79 @@ button[type="button"]:hover {
   }
   .gallery-container {
     display: flex;
+  }
+  /*Contact*/
+  .content-contact{
+    display: block;
+  }
+  .col-1 {
+    width: 350px;
+    margin: 40px;
+    background-color: #cfa658;
+    border-radius: 10px;
+  }
+  .iframe {
+    width: 380px;
+    margin-left: 20px;
+  }
+  .container-contact {
+    color: rgb(5, 5, 5);
+    line-height: 1.5;
+    text-align: center;
+    width: 280px;
+    margin-left: 55px;
+    margin-top: 0;
+  }
+  .container-contact h1{
+    margin-left: 5px ;
+    margin-top: 0;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  #myForm h2 {
+    font-size: 37px;
+  }
+  .content-form {
+    margin-left: 5px;
+    width: min-content;
+    height: min-content;
+    padding:10px 80px;
+  }
+  button[type="button"] {
+   display: block;
+  }
+  .places-south-africa p{
+    margin-left: 60px;
+    width: 300px;
+    padding-top: 10px;
+    
+  }
+  .destination p {
+    font-size: 28px;
+    width: 550px;
+    padding-right: 100px;
+    
+  }
+  .map{
+    margin-right: 5px;
+    margin-left: 1px;
+    margin-top: 50px;
+    width: 420px;
+    margin-bottom: 25px;
+  }
+  .locations {
+    padding-left: 15px;
+    margin-top: 10px;
+  }
+  .places-locations{
+    margin-top: 10px;
+  }
+  .places-locations h1{
+    margin-left: 50px;
+  }
+  .places h1{
+    font-size: 50px;
+    
   }
 
 }
