@@ -394,17 +394,24 @@ button{
   
 }
 .basic2{
-  background-image: url(/images/Mpumalanga/springboks2.avif);
+  background-image: url(/images/fall.avif);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  color:white;  
+  color:white;
+  font-size: 50px;
 }
 .basic {
-  background-image: url(/images/cape1.avif);
+  background-image: url(/images/cpt-wall1.avif);
   background-repeat: no-repeat;
   background-size: cover;
   color:white;
- 
+  font-size: 50px;
+}
+.basic h1,h3{
+  color: #af8028;
+}
+.basic2 h1,h3{
+  color: #af8028;
 }
 div li{
   font-weight: 500;
