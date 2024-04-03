@@ -50,7 +50,7 @@
                     <input type="email" id="email"  placeholder="example@gmail.com"  oninput="validateEmail()"required>
                   
                     <label for="phone">Cellphone Number: </label>
-                    <input type="tel" id="phone" placeholder="123-456-7890" required><br>
+                    <input type="tel" id="phone" placeholder="123-456-7890" required oninput="validateNumber()"><br>
                 
                     
                     <label for="number">Number of people</label>
@@ -66,7 +66,7 @@
                     <select id="package" name="package" required>
                     <option value="Western Cape Basic">Western Cape Basic Package</option>
                     <option value="Mpumalanga Basic Package">Mpumalanga Basic Package</option>
-                    <option value="Western Cape standard">Western Cape Standard Package</option>
+                    <option value="Western Cape Standard">Western Cape Standard Package</option>
                     <option value="Mpumalanga Standard Package">Mpumalanga Standard Package</option>
                     <option value="Western Cape Premium">Western Cape Premium Package</option> 
                     <option value="Mpumalanga Premium Package">Mpumalanga Premium Package</option>
@@ -76,7 +76,7 @@
                     </select>
                    
                     <label for="date">Arrival date:</label>
-                    <input type="date" id="date" name="Date" min="2024-04-04" required>
+                    <input type="date" id="date" name="Date" oninput="validateDate()" min="2024-04-04" required>
               
                     <label for="date">Depature date:</label>
                     <input type="date" id="datetwo" name="Date" min="2024-04-04" required>
