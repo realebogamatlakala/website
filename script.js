@@ -1,4 +1,14 @@
 
+//hamburger
+function navFunction() {
+  let x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+//end of hamburger
 
 // Our services slide show. Get the button
 document.addEventListener("DOMContentLoaded", function () {
@@ -96,13 +106,14 @@ function displayInformation() {
   let surname = document.getElementById("surname").value;
   let email = document.getElementById("email").value;
   let phone = document.getElementById("phone").value;
+  let number = document.getElementById("number").value;
   let date = document.getElementById("date").value;
-  let datetwo = document.getElementById("datetwo").value;
+  let package = document.getElementById("package").value;
   let comment = document.getElementById("comment").value;
 
 
   // Construct the information string
-  let information = "<strong>Name:</strong> " + name + "<br><strong>Last Name:</strong> " + surname + "<br><strong>Email:</strong> " + email + "<br><strong>Phone No.:</strong> " + phone + "<br><strong>Arrival date:</strong> " + date + "<br><strong>Depature date:</strong> " + date +  "<br><strong>Message:</strong> " + comment ;
+  let information = "<strong>Name:</strong> " + name + "<br><br><strong>Last Name:</strong> " + surname + "<br><br><strong>Email:</strong> " + email + "<br><br><strong>Package:</strong> "+ package +"<br><br><strong>Phone No.:</strong> "  + phone + "<br><br><strong>Number of People:</strong> " + number + "<br><br><strong>Arrival date:</strong> " + date + "<br><br><strong>Depature date:</strong> " + date +  "<br><br><strong>Message:</strong> " + comment ;
 
   // Create a Blob object containing the information string
   let blob = new Blob([information], { type: 'text/html' });
@@ -122,8 +133,9 @@ function displayInformation() {
 function resetFunction() {
   document.getElementById("ourForm").reset();
 }
+//end of booking
 
-// Get the button
+// Scroll to top button
 let mybutton = document.getElementById("myBtn1");
  
 // When the user scrolls down 20px from the top of the document, show the button
@@ -142,13 +154,17 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-//end of booking
+// end of scroll to top
+
 
 // contact form
 function validateForm() {
   let nameField = document.getElementById("name");
   let nameRegex = /^[a-z ,.'-]+$/i; // Regular expression to match only alphabetic characters
   let nameValue = nameField.value;
+
+
+
   let emailField = document.getElementById("email");
   let emailValue = emailField.value;
   let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Regular expression for validating email
@@ -178,35 +194,7 @@ function validateForm() {
 }
 
 //Validate Booking Form
-function validateBookingForm() {
-  let nameField = document.getElementById("name");
-  let nameRegex = /^[a-z ,.'-]+$/i; // Regular expression to match only alphabetic characters
-  let nameValue = nameField.value;
-  let emailField = document.getElementById("email");
-  let emailValue = emailField.value;
-  let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Regular expression for validating email
 
-  // Resetting styles
-  nameField.style.border = "1px solid #ced4da"; // Reset border color
-  emailField.style.border = "1px solid #ced4da"; // Reset border color
- 
- 
-  // Name validation
-  if (!nameRegex.test(nameField)) {
-    alert("Please enter a valid name with only alphabetic characters.");
-    return false;
-  }
- 
-  // Email validation
-  if (!emailRegex.test(emailField)) {
-    alert("Please enter a valid email address.");
-    return false;
-  } 
-
-  alert("Thank you for contacting us. We'll get back to you.");
- 
-  return true;
-}
 
 function validateName() {  
    let nameField = document.getElementById("name");   
@@ -227,4 +215,30 @@ function validateName() {
         emailField.style.borderColor = "red";   
       } 
   }
- 
+  function validateSurname() {  
+    let surnameField = document.getElementById("surname");   
+    let surnameRegex = /^[A-Za-z\s]+$/; // Regular expression to match alphabetic characters and spacesif 
+    if (surnameRegex.test(surnameField.value)) {     
+      surnameField.style.borderColor = "green";   
+     } 
+     else {     
+      surnameField.style.borderColor = "red";   } 
+   }
+
+   //Date picker function
+   function dateFunction(){
+   var dateToday = new Date();
+var dates = $("#date, #datetwoooo").datepicker({
+    defaultDate: "+1w",
+    changeMonth: true,
+    numberOfMonths: 1,
+    minDate: dateToday,
+    onSelect: function(selectedDate) {
+        var option = this.id == "date" ? "minDate" : "maxDate",
+            instance = $(this).data("datepicker"),
+            date = $.datepicker.parseDate(instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
+        dates.not(this).datepicker("option", option, date);
+    }
+  
+});
+}
