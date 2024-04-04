@@ -179,10 +179,9 @@ q {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  padding: 300px 200px;
+  padding: 300px 10px 300px 10px;
   border-radius: 5px;
   height: 300px;
-  
 }
 
 .locations{
@@ -235,9 +234,9 @@ margin-left: 115px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 120px;
-}
- 
-.places p {
+  
+} 
+.destination p {
   color: #af8028;
   text-align: center;
   font-family: cursive;
@@ -419,7 +418,7 @@ button{
   
 }
 .basic2{
-  background-image: url(/images/Mpumalanga/springboks2.avif);
+  background-image: url(/images/wall1.avif);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color:white;  
@@ -731,7 +730,7 @@ button[type="button"]:hover {
   }
  
   .icon {
-    background: black;
+    background: #cfa658;
     display: block;
     position: absolute;
     right: 0;
@@ -740,6 +739,37 @@ button[type="button"]:hover {
     margin-top: 25px;
   }
 
+  .container {
+    display: none;
+  }
+  .logo {
+    max-height: 70px;
+  }
+  
+  .content {
+    padding:0%;
+  }
+  .captions{
+    display: list-item;
+    justify-content: center;
+    list-style: none;
+  }
+  .card {
+   flex: 1;
+   margin: 0 10px;
+   width: 400px;
+   margin-bottom: 10px;
+  }
+  .card h1{
+    font-size: 55px;
+  }
+  .services{
+    display: block;
+    margin-left: 1px;
+  }
+  .gallery-container {
+    display: flex;
+  }
   /*Contact*/
   .content-contact{
     display: block;
@@ -776,19 +806,63 @@ button[type="button"]:hover {
   #myForm h2 {
     font-size: 37px;
   }
-
-/*About*/
-.content {
-  padding:0%;
-    }
-  .about-us img {
-    display:grid;
+  .content-form {
+    margin-left: 5px;
+    width: min-content;
+    height: min-content;
+    padding:10px 80px;
   }
-
+  button[type="button"] {
+   display: block;
+  }
+  .places-info{
+    padding-top: 10px;
+  }
+  .places-south-africa p{
+    margin-left: 60px;
+    width: 300px;
+    padding-top: 10px;
+    
+  }
+  .destination p {
+    font-size: 28px;
+    width: 550px;
+    padding-right: 100px;
+    
+  }
+  .map{
+    margin-right: 5px;
+    margin-left: 1px;
+    margin-top: 50px;
+    width: 420px;
+    margin-bottom: 25px;
+  }
+  .locations {
+    padding-left: 15px;
+    margin-top: 10px;
+  }
+  .places-locations{
+    margin-top: 10px;
+  }
+  .places-locations h1{
+    margin-left: 50px;
+  }
+  .places h1{
+    font-size: 55px;
+    margin-right: 25px;
+    margin-top: 1px;
+    color: goldenrod;
+  }
+  .places img{
+    background-image: url(/images/leo.avif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    padding: 100px 10px 100px 10px;
+    border-radius: 5px;
+    height: 300px;
+  }
 }
-
-
-
 
 /* navbar ul and services ul*/
 nav ul {
@@ -800,15 +874,18 @@ nav ul {
 }
 
 nav li {
-float: left;
-;
- 
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display:flex;
 }
 
 li a, .dropbtn {
   display: inline-block;
   color: rgb(8, 6, 6);
   text-align: center;
+
   padding: 14px 16px;
   text-decoration: none;
 }

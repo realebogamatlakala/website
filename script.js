@@ -252,3 +252,15 @@ var dates = $("#date, #datetwo").datepicker({
   
 });
 }
+
+// Array of images
+var images = ["/images/capeTownSandy.jpg", "/images/capeTownTourists.jpg", "/images/back2.jpg", "/images/godsWindow.jpg","/images/mpumalangaTourist.jpg"];
+var index = 0;
+
+// Function to change the background image
+function changeBackground() {
+  document.querySelector(".home").style.backgroundImage = "url(" + images[index] + ")";
+  index = (index + 1) % images.length;
+}
+// Change the background image every 5 seconds
+setInterval(changeBackground, 3000);
