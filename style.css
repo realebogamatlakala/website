@@ -416,7 +416,6 @@ div li{
 
 .gallery-container {
   position: relative;
-  display: flex;
 }
 
 
@@ -428,7 +427,7 @@ div li{
 }
 
 .image-item {
-  margin-right: 10px; /* Adjust the spacing between images as needed */
+  margin-right: 10px ; /* Adjust the spacing between images as needed */
 }
 
 .double {

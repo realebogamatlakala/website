@@ -194,8 +194,6 @@ function validateForm() {
 }
 
 //Validate Booking Form
-
-
 function validateName() {  
    let nameField = document.getElementById("name");   
    let nameRegex = /^[A-Za-z\s]+$/; // Regular expression to match alphabetic characters and spacesif 
