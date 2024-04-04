@@ -776,6 +776,9 @@ button[type="button"]:hover {
   button[type="button"] {
    display: block;
   }
+  .places-info{
+    padding-top: 10px;
+  }
   .places-south-africa p{
     margin-left: 60px;
     width: 300px;
