@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css" />
     <title>Techno Champ Tours</title>
   </head>
- 
     <!-- Navigation bar that scrolls down to sections on page-->
       <nav role="navigation" aria-label="main menu" class="d-flex justify-content-between" >
         <!--Logo-->
@@ -41,15 +40,16 @@
         <i>Your trip is our priority. Let us be your travel companion.</i>
       </h1>
       <p>
-        If you are struggling to find a perfect place to visit we are here for
+        If you are struggling to find a perfect place to visit, we are here for
         you.
       </p>
+      <button class="pause-button">Paused</button>
     </div>
       <!--Reviews-->
   <div class="slideshow-container">
     <div class="mySlides">
-      <q>"Wow Techno Champ Tours. I thank you for all your effort and travel information. <br>
-        I really wasn’t expecting that you do this. So thank you very much."</q>
+      <q>Wow Techno Champ Tours. I thank you for all your effort and travel information. <br>
+        I really wasn’t expecting that you do this. So thank you very much.</q>
       <p class="author">- Pablo Escobar</p>
     </div>
     <div class="mySlides">
@@ -88,16 +88,28 @@
   </body>
   <script src="script.js"></script>
   <script>
-    // Array of images
-    var images = ["/images/capeTownSandy.jpg", "/images/capeTownTourists.jpg", "/images/back2.jpg", "/images/godsWindow.jpg","/images/mpumalangaTourist.jpg"];
-    var index = 0;
+// Array of images
+var images = ["/images/capeTownSandy.jpg", "/images/capeTownTourists.jpg", "/images/back2.jpg", "/images/godsWindow.jpg","/images/mpumalangaTourist.jpg"];
+var index = 0;
+var intervalId;
 
-    // Function to change the background image
-    function changeBackground() {
-      document.querySelector(".home").style.backgroundImage = "url(" + images[index] + ")";
-      index = (index + 1) % images.length;
-    }
-    // Change the background image every 5 seconds
-    setInterval(changeBackground, 3000);
+// Function to change the background image
+function changeBackground() {
+  document.querySelector(".home").style.backgroundImage = "url(" + images[index] + ")";
+  index = (index + 1) % images.length;
+}
+
+// Change the background image every 3 seconds
+intervalId = setInterval(changeBackground, 3000);
+
+// Pause on hover
+document.querySelector(".home").addEventListener("mouseover", function() {
+  clearInterval(intervalId);
+});
+
+// Resume when not hovering
+document.querySelector(".home").addEventListener("mouseout", function() {
+  intervalId = setInterval(changeBackground, 3000);
+});
   </script>
 </html>
