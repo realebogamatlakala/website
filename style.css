@@ -1,5 +1,5 @@
 .content {
-  margin-top: 1px; 
+  margin-top: 1px;
 }
 .content h1 {
   font-size: 64px;
@@ -62,14 +62,14 @@ nav li.active a {
 .icon {
   display: none;
 }
-
+ 
 .home h1 {
   color: #ffffff;
   text-align: center;
   font-family: Comic sans MS;
   font-size: 50px;
 }
-
+ 
 .home p {
   color: #ffffff;
   text-align: center;
@@ -184,32 +184,31 @@ q {
 .author {
   color: cornflowerblue;
 }
-
+ 
 /*Places to visit*/
-
+ 
 .places {
   background-image: url(/images/leo.avif);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  padding: 300px 200px;
+  padding: 300px 10px 300px 10px;
   border-radius: 5px;
   height: 300px;
-  
 }
-
+ 
 .locations{
 display: inline-block;
 margin-left: 115px;
-
+ 
 }
-
+ 
 .locations:hover {
   -ms-transform: scale(1.2); /* IE 9 */
   -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
-
+ 
 .overlay {
   position: absolute;
   bottom: 0;
@@ -226,16 +225,16 @@ margin-left: 115px;
   margin-bottom: 55px;
   text-align: center;
 }
-
+ 
 /* When you mouse over the container, fade in the overlay title */
 .locations:hover .overlay {
   opacity: 1;
 }
-
+ 
 .locations{
   text-align: center;
   font: 80px;
-  color: black; 
+  color: black;
   padding: 50px;
   transition: transform .2s;
   margin: auto;
@@ -245,7 +244,8 @@ margin-left: 115px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 120px;
-} 
+ 
+}
 .destination p {
   color: #af8028;
   text-align: center;
@@ -303,7 +303,7 @@ margin-left: 115px;
   display: none;
 }
 /*Places to visit end section*/
-
+ 
 /*about us*/
 .about-us img {
   line-height: 2.5px;
@@ -322,7 +322,7 @@ margin-left: 115px;
   border-radius: 10%;
   width: 200px;
   display: inline-block;
-} 
+}
 .our-images {
   display: flex;
   justify-content: center; /* Center horizontally */
@@ -335,8 +335,8 @@ margin-left: 115px;
   text-align: center; /* Center the text */
  
 }
-
-
+ 
+ 
 .reviews{
   display: flex;
   margin-top: 40px;
@@ -355,10 +355,10 @@ margin-left: 115px;
 }
 .reviews h2 {
   font-size: 40px;
-  
+ 
 }
 /* end of about us*/
-
+ 
 /*our services*/
 .services{
   display: flex;
@@ -395,7 +395,7 @@ button{
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  
+ 
 }
 .basic2{
   background-image: url(/images/fall.avif);
@@ -426,24 +426,23 @@ div li{
 .more-text {
   display: none;
 }
-
+ 
 .gallery-container {
   position: relative;
-  display: flex;
 }
-
-
+ 
+ 
 .scroll-container {
   display: flex;
   overflow-x: scroll;
   width: 100%;
   height: 400px; /* Adjust the height as needed */
 }
-
+ 
 .image-item {
-  margin-right: 10px; /* Adjust the spacing between images as needed */
+  margin-right: 10px ; /* Adjust the spacing between images as needed */
 }
-
+ 
 .double {
   font-size: 50px;
   position: absolute;
@@ -453,32 +452,32 @@ div li{
   cursor: pointer;
   color: #364655;
 }
-
+ 
 .left-arrow {
   left: 10px;
 }
-
+ 
 .right-arrow {
   right: 10px;
 }
-
+ 
 .right-arrow:hover,.left-arrow:hover {
 background-color: #cfa658;
 }
-
+ 
 /* ... your existing CSS code ... */
-
+ 
 .image-item {
 margin-right: 10px;
 transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
 }
-
+ 
 .image-item:hover {
 transform: scale(0.9); /* Scale the image on hover */
 }
-
+ 
 /*our services*/
-
+ 
 .social-links {
   padding: 5px;
   text-align: center;
@@ -488,14 +487,14 @@ transform: scale(0.9); /* Scale the image on hover */
   text-align: center;
   display: block;
 }
-
+ 
 footer {
   margin: 60px 0;
   text-align: center;
 }
-
+ 
 /*contact*/
-
+ 
 /* IMAGE PARALLAX*/
 .parallax {
   background-attachment: fixed;
@@ -528,7 +527,7 @@ body {
  
 .content-contact{
   display: flex;
-
+ 
 }
 .icon {
   background-color: white;
@@ -587,7 +586,7 @@ color: rgb(255, 255, 254);
 }
  
 .form-field, textarea{
-  
+ 
   padding: 8px;
   border: none;
   border-bottom: 1px solid #000;
@@ -601,13 +600,13 @@ color: rgb(255, 255, 254);
   color: rgb(17, 16, 16);
 }
 /*end of contact*/
-
+ 
 .image {
   display: block;
   width: 50%;
   height: auto;
 }
-
+ 
 /*start of booking page*/
 .content-form h4 {
   font-size: 20px;
@@ -631,7 +630,7 @@ label {
   font-weight: bold;
   font-size: medium;
 }
-
+ 
 input[type="text"],
 select,
 textarea {
@@ -678,14 +677,14 @@ button[type="button"] {
 button[type="button"]:hover {
   background-color: #566ce6;
 }
-
+ 
 .input-label {
   float: left;
   width: 25%;
   margin-top: 6px;
 }
-
-
+ 
+ 
 /*end of bookings*/
 @media (max-width: 900px) {
   .home h1 {
@@ -711,7 +710,7 @@ button[type="button"]:hover {
     font-size: 14px;
   }
   .icon {
-    background: rgb(0, 0, 0);
+    background: #cfa658;
     display: block;
     position: absolute;
     right: 0;
@@ -719,14 +718,14 @@ button[type="button"]:hover {
     border-radius: 0;
     margin-top: 25px;
   }
-
+ 
   .container {
     display: none;
   }
   .logo {
     max-height: 70px;
   }
-  
+ 
   .content {
     padding:0%;
   }
@@ -739,6 +738,7 @@ button[type="button"]:hover {
    flex: 1;
    margin: 0 10px;
    width: 400px;
+   margin-bottom: 10px;
   }
   .card h1{
     font-size: 55px;
@@ -790,17 +790,20 @@ button[type="button"]:hover {
   button[type="button"] {
    display: block;
   }
+  .places-info{
+    padding-top: 10px;
+  }
   .places-south-africa p{
     margin-left: 60px;
     width: 300px;
     padding-top: 10px;
-    
+   
   }
   .destination p {
     font-size: 28px;
     width: 550px;
     padding-right: 100px;
-    
+   
   }
   .map{
     margin-right: 5px;
@@ -820,12 +823,22 @@ button[type="button"]:hover {
     margin-left: 50px;
   }
   .places h1{
-    font-size: 50px;
-    
+    font-size: 55px;
+    margin-right: 25px;
+    margin-top: 1px;
+    color: goldenrod;
   }
-
+  .places img{
+    background-image: url(/images/leo.avif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    padding: 100px 10px 100px 10px;
+    border-radius: 5px;
+    height: 300px;
+  }
 }
-
+ 
 /* navbar ul and services ul*/
 nav ul {
   list-style-type: none;
@@ -834,27 +847,32 @@ nav ul {
   overflow: hidden;
   background-color: #ffffff;
 }
-
+ 
 nav li {
   float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display:flex;
 }
-
+ 
 li a, .dropbtn {
   display: inline-block;
   color: rgb(8, 6, 6);
   text-align: center;
+ 
   padding: 14px 16px;
   text-decoration: none;
 }
-
+ 
 li a:hover, .dropdown:hover .dropbtn {
   background-color: #d3a31f;
 }
-
+ 
 li.dropdown {
   display: inline-block;
 }
-
+ 
 .dropdown-content {
   display: none;
   position: absolute;
@@ -863,7 +881,7 @@ li.dropdown {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
+ 
 .dropdown-content a {
   color: rgb(2, 2, 1);
   padding: 12px 16px;
@@ -871,13 +889,13 @@ li.dropdown {
   display: block;
   text-align: left;
 }
-
+ 
 .dropdown-content a:hover {background-color: #ffffff;}
-
+ 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+ 
 #myBtn{
   display: none;
   position: fixed;
@@ -892,13 +910,13 @@ li.dropdown {
   padding: 15px;
   border-radius: 4px;
 }
-
+ 
 #myBtn10{
   background-color: #cfa658;
   display: flex;
   float: right;
 }
-
+ 
 #myBtn:hover {
   background-color: #555;
 }
