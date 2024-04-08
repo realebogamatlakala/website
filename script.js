@@ -1,4 +1,17 @@
 
+// Array of images
+var images = ["/images/capeTownSandy.jpg", "/images/capeTownTourists.jpg", "/images/back2.jpg", "/images/godsWindow.jpg","/images/mpumalangaTourist.jpg"];
+var index = 0;
+
+// Function to change the background image
+function changeBackground() {
+  document.querySelector(".home").style.backgroundImage = "url(" + images[index] + ")";
+  index = (index + 1) % images.length;
+}
+// Change the background image every 5 seconds
+setInterval(changeBackground, 3000);
+
+
 //hamburger
 function navFunction() {
   let x = document.getElementById("myLinks");
@@ -9,7 +22,7 @@ function navFunction() {
   }
 }
 //end of hamburger
-
+ 
 // Our services slide show. Get the button
 document.addEventListener("DOMContentLoaded", function () {
   const scrollContainer = document.getElementById("scrollContainer");
@@ -22,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
  
   // Debounce function to limit the rate at which scrollGallery is called
   function debounce(func, wait) {
-    let timeout; 
+    let timeout;
     return function () {
       const context = this;
       const args = arguments;
@@ -51,8 +64,8 @@ document.addEventListener("DOMContentLoaded", function () {
     debouncedScrollGallery(1);
   });
 });
-
-
+ 
+ 
 // Home page. Reviews
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -80,7 +93,7 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-
+ 
 // our services packages
 function myFunction(num) {
   let dots = document.getElementById("dots" + num);
@@ -98,7 +111,7 @@ function myFunction(num) {
   }
 }
 // end our sevices
-
+ 
 //Bookings
 function displayInformation() {
   // Get the input values
@@ -110,31 +123,31 @@ function displayInformation() {
   let date = document.getElementById("date").value;
   let package = document.getElementById("package").value;
   let comment = document.getElementById("comment").value;
-
-
+ 
+ 
   // Construct the information string
   let information = "<strong>Name:</strong> " + name + "<br><br><strong>Last Name:</strong> " + surname + "<br><br><strong>Email:</strong> " + email + "<br><br><strong>Package:</strong> "+ package +"<br><br><strong>Phone No:</strong> "  + phone + "<br><br><strong>Number of People:</strong> " + number + "<br><br><strong>Arrival date:</strong> " + date + "<br><br><strong>Depature date:</strong> " + date +  "<br><br><strong>Message:</strong> " + comment ;
-
+ 
   // Create a Blob object containing the information string
   let blob = new Blob([information], { type: 'text/html' });
-
+ 
   // Create a URL for the Blob object
   let url = URL.createObjectURL(blob);
-
+ 
   // Show a pop-up message
   alert("Thank you! Check if you have filled in all your details before submitting.");
-
+ 
   // Open the URL in a new tab
   window.open(url, '_blank');
-
+ 
 }
-
-
+ 
+ 
 function resetFunction() {
   document.getElementById("ourForm").reset();
 }
 //end of booking
-
+ 
 // Scroll to top button
 let mybutton = document.getElementById("myBtn1");
  
@@ -155,20 +168,20 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 // end of scroll to top
-
-
+ 
+ 
 // contact form
 function validateForm() {
   let nameField = document.getElementById("name");
   let nameRegex = /^[a-z ,.'-]+$/i; // Regular expression to match only alphabetic characters
   let nameValue = nameField.value;
-
-
-
+ 
+ 
+ 
   let emailField = document.getElementById("email");
   let emailValue = emailField.value;
   let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Regular expression for validating email
-
+ 
   // Resetting styles
   nameField.style.border = "1px solid #ced4da"; // Reset border color
   emailField.style.border = "1px solid #ced4da"; // Reset border color
@@ -186,53 +199,53 @@ function validateForm() {
     alert("Please enter a valid email address.");
     emailField.style.border = "1px solid red"; // Change border color to red
     return false;
-  } 
-
+  }
+ 
   alert("Thank you for contacting us. We'll get back to you.");
  
   return true;
 }
-
+ 
 //Validate Booking Form
 function validateName() {  
-   let nameField = document.getElementById("name");   
-   let nameRegex = /^[A-Za-z\s]+$/; // Regular expression to match alphabetic characters and spacesif 
-   if (nameRegex.test(nameField.value)) {     
-     nameField.style.borderColor = "green";   
-    } 
-    else {     
-      nameField.style.borderColor = "red";   } 
-  } 
+   let nameField = document.getElementById("name");  
+   let nameRegex = /^[A-Za-z\s]+$/; // Regular expression to match alphabetic characters and spacesif
+   if (nameRegex.test(nameField.value)) {    
+     nameField.style.borderColor = "green";  
+    }
+    else {    
+      nameField.style.borderColor = "red";   }
+  }
     function validateEmail() {  
-       let emailField = document.getElementById("email");   
+       let emailField = document.getElementById("email");  
        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Regular expression for validating email
        if (emailRegex.test(emailField.value)) {    
-         emailField.style.borderColor = "green";   
-      } 
-       else {     
-        emailField.style.borderColor = "red";   
-      } 
+         emailField.style.borderColor = "green";  
+      }
+       else {    
+        emailField.style.borderColor = "red";  
+      }
   }
   function validateSurname() {  
-    let surnameField = document.getElementById("surname");   
-    let surnameRegex = /^[A-Za-z\s]+$/; // Regular expression to match alphabetic characters and spacesif 
-    if (surnameRegex.test(surnameField.value)) {     
-      surnameField.style.borderColor = "green";   
-     } 
-     else {     
-      surnameField.style.borderColor = "red";   } 
+    let surnameField = document.getElementById("surname");  
+    let surnameRegex = /^[A-Za-z\s]+$/; // Regular expression to match alphabetic characters and spacesif
+    if (surnameRegex.test(surnameField.value)) {    
+      surnameField.style.borderColor = "green";  
+     }
+     else {    
+      surnameField.style.borderColor = "red";   }
    }
-
+ 
    function validateNumber() {  
-    let numberField = document.getElementById("phone");   
-    let numberRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im; // Regular expression to match alphabetic characters and spacesif 
-    if (numberRegex.test(numberField.value)) {     
-      numberField.style.borderColor = "green";   
-     } 
-     else {     
-      numberField.style.borderColor = "red";   } 
+    let numberField = document.getElementById("phone");  
+    let numberRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im; // Regular expression to match alphabetic characters and spacesif
+    if (numberRegex.test(numberField.value)) {    
+      numberField.style.borderColor = "green";  
+     }
+     else {    
+      numberField.style.borderColor = "red";   }
    }
-
+ 
    //Date picker function
    function dateFunction(){
    var dateToday = new Date();
@@ -247,6 +260,6 @@ var dates = $("#date, #datetwo").datepicker({
             date = $.datepicker.parseDate(instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
         dates.not(this).datepicker("option", option, date);
     }
-  
+ 
 });
 }
