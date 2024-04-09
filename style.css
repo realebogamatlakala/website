@@ -74,7 +74,7 @@ nav li.active a {
   color: #ffffff;
   text-align: center;
   font-family: Comic sans MS;
-  font-size: 25px;
+  font-size: 39px;
 }
 .home {
   background-image: url(/images/back2.jpg);
@@ -84,6 +84,19 @@ nav li.active a {
   padding: 300px 200px;
   border-radius: 5px;
   height: 750px;
+  position: relative; /* Make the home div a positioning context for the button */
+}
+.pause-button {
+  position: absolute; /* Position the button absolutely within the home div */
+  top: 90%; /* Center the button vertically */
+  left: 50%; /* Center the button horizontally */
+  transform: translate(-50%, -50%); /* Ensure the button is centered */
+  display: none; /* Hide the button by default */
+  /* Style the button as needed */
+}
+
+.home:hover .pause-button {
+  display: block; /* Show the button when the home div is hovered over */
 }
 /* Quotes slideshow */
 * {
@@ -577,6 +590,8 @@ color: rgb(255, 255, 254);
   color: #000;
   width: 60%;
   margin: 0 auto;
+  outline: black solid 1px;
+  border-radius: 5px;
 }
 .iframe{
   display: flex;
