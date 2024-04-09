@@ -256,6 +256,25 @@ margin-left: 115px;
   font-size: 30px;
   text-align: center;
 }
+.places-info1 {
+  height: 150px;
+  padding: 10px;
+  margin-top: 150px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  background-color: #cfa658;
+  text-align: center;
+  margin-top: 80px;
+}
+ 
+.places-info cite {
+  height: 220px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+
 .map{
   float: right;
   border-radius: 50px;
@@ -368,6 +387,7 @@ margin-left: 115px;
   margin: 10px;
   margin-left: 60px;
   width: 40%;
+  font-family:cursive;
 }
 button{
   border: none;
@@ -385,11 +405,12 @@ button{
  
 }
 .basic2{
-  background-image: url(/images/fall.avif);
+  background-image: url(/images/wall1.avif);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color:white;
   font-size: 50px;
+  font-family:cursive;
 }
 .basic {
   background-image: url(/images/cpt-wall1.avif);
@@ -397,18 +418,22 @@ button{
   background-size: cover;
   color:white;
   font-size: 50px;
+  font-family:cursive;
 }
 .basic h1,h3{
   color: #af8028;
+  font-family:cursive;
 }
 .basic2 h1,h3{
   color: #af8028;
+  font-family:cursive;
 }
 div li{
   font-weight: 500;
   list-style: none;
   font-size: 30px;
   text-align: start;
+  
 }
 .more-text {
   display: none;
