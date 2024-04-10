@@ -200,7 +200,9 @@ q {
 .locations{
 display: inline-block;
 margin-left: 115px;
- 
+}
+.locations img{
+ border-radius: 50px;
 }
  
 .locations:hover {
@@ -335,8 +337,6 @@ margin-left: 115px;
   text-align: center; /* Center the text */
  
 }
- 
- 
 .reviews{
   display: flex;
   margin-top: 40px;
