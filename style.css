@@ -803,7 +803,6 @@ button[type="button"] {
   border-radius: 10px;
   cursor: pointer;
   float: left;
-  display: inline-block;
   transition: .4s ease;
 }
 button[type="button"]:hover {
