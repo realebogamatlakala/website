@@ -1,193 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a04d21dfd1.js" crossorigin="anonymous"></script>
     <link  rel="stylesheet" href="style.css">
-    <title>Our Services</title>
-  </head>
-  <body>
-     <!-- Navigation bar that scrolls down to sections on page-->
-     <nav role="navigation" aria-label="main menu" class="d-flex justify-content-between" >
-      <!--Logo-->
-      <a href="index.html">
-        <img src="/images/Techno.png" alt="Techno Champs Tours Logo" class="logo">
-      </a>
-      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
-        <i class="fa fa-bars"></i>
-        </a>
-      <div class="container" id="myLinks">
-      <ul>
-        <li><a href="about.html">ABOUT US</a></li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">OUR SERVICES</a>
-          <div class="dropdown-content">
-            <a href="services.html">PACKAGES</a>
-            <a href=#Gallery>GALLERY</a>
-            <a href="Itinerary.html">COUPLE'S ITINERARY</a>
-          </div>
-        </li>
-        <li><a href="places.html">PLACES TO VISIT</a></li>
-        <li><a href="booking.html">BOOKING</a></li>
-        <li><a href="contacts.html">CONTACT US</a></li>  
-      </ul>
-      </div>
-    </nav>
-   <!-- End of Nav bar-->
-    <div class="content">
-      <div class="service-content">
-        <h1>Our Services</h1>
-       
-        <p>Techno Champs Tours services provide travelers with an opportunity to explore different parts of South Africa. <br>
-          Checkout our package deals below.<br>
-        </p>
-        <h1>Packages</h1>
-            <div class="services">
-              <div class="card basic">
-                <h1>Western Cape</h1>
-                <h3><b>Basic</b></h3>
-                <p>
-                  Red Bus Tour<br><br>
-                  Southern Sun Hotel Nights x5<br><br>
-                  Stellenbosch Wine Farm<br><br>
-                  <span id="dots1"></span>
-                  <span class="more-text" id="more1">
-                    Table Mountain<br><br>
-                    Iziko Museum<br><br>
-                    Bo-kaap Tour<br><br>
-                    <b><i>Price: R10 000p/p</i></b>
-                  </span>
-                </p>
-                <button onclick="myFunction(1)" id="myBtn1">Read more</button>
-                <hr>
-                <h3><b>Standard</b></h3>
-                <p>
-                  Red Bus Tour<br><br>
-                  President Hotel Nights x5<br><br>
-                  Stellenbosch Wine Farm<br><br>
-                  <span id="dots2"></span>
-                  <span class="more-text" id="more2">
-                    Atlantis Dunes<br><br>
-                    Muizenburg Beach<br><br>
-                    Garden Route<br><br>
-                    <b><i>Price: R25 000p/p</i></b>
-                  </span>
-                </p>
-                <button onclick="myFunction(2)" id="myBtn2">Read more</button>
-                <hr>
-                <h3><b>Premium</b></h3>
-                <p>
-                  Red Bus Tour<br><br>
-                  The Silo nights x5<br><br>
-                  Ferris Wheel<br><br>
-                  <span id="dots3"></span>
-                  <span class="more-text" id="more3">
-                    Boat Cruise<br><br>
-                    Two Oceans Aquarium<br><br>
-                    Cape of Good Hope<br><br>
-                    Robben Island<br><br>
-                    Iziko Museum<br><br>
-                    Kirstenbosch Botanical Garden<br><br>
-                    <b><i>Price: R38 000p/p</i></b>
-                  </span>
-                </p>
-                <button onclick="myFunction(3)" id="myBtn3">Read more</button>
-              </div>
-         
-         
-              <div class="card basic2">
-                <h1>Mpumalanga</h1>
-                <h3><b>Basic</b></h3>
-                <p>Fly-Fishing<br><br>
-                  Umbhaba Eco Lodge Nights x5 <br><br>
-                  Long Tom Toboggan<br><br>
-                  <span id="dots4"></span>
-                  <span class="more-text" id="more4">
-                    Zip Line<br><br>
-                    Blyde River Canyon Boat<br><br>
-                    <b><i>Price: R20 000p/p</i></b>
-                  </span>
-                </p>
-                <button onclick="myFunction(4)" id="myBtn4">Read more</button>
-                <hr>
-                <h3><b>Standard</b></h3>
-                <p>Safari Ride (Big Five)<br><br>
-                   Mbizi Bush Lodge Nights x5<br><br>
-                   Hot-Air Balloon<br><br>
-                  <span id="dots5"></span>
-                  <span class="more-text" id="more5">
-                    Lone Creek Waterfall<br><br>
-                    Panorama Bridge<br><br>
-                    Sudwala Caves<br><br>
-                    <b><i>Price: R35 000p/p</i></b>
-                  </span>
-                </p>
-                <button onclick="myFunction(5)" id="myBtn5">Read more</button>
-                <hr>
-                <h3><b>Premium</b></h3>
-                <p>Kruger National Park<br><br>
-                  Ivory River Rock Lodgex5 nights <br><br>
-                  God's Window<br><br>
-                  <span id="dots6"></span>
-                  <span class="more-text" id="more6">
-                  Safari Ride<br><br>
-                  Quad-Biking<br><br>
-                  Sudwala Caves<br><br>
-                  Graskop Gorge Lift Co.<br><br>
-                  Lowveld National Botanical Garden<br><br>
-                  Three Rondavels<br><br>
-                  <b><i>Price: R45 000p/p</i></b>
-                  </span>
-                </p>
-                <button onclick="myFunction(6)" id="myBtn6">Read more</button>
-              </div>
-          </div>
-          </div>
-      <br>
-      <!--Quote-->
-      <div class="places-info">
  
-        <blockquote>
-          <p>
-            “For all its problems, I found South Africa a beautiful country, interesting and inspiring.”
-          <cite>- David Harewood</cite>
-        </p>
-      </blockquote>
-   
-      </div>
-       <!-- End Quote-->
 
-  <section id="Gallery">
-      <h1>Gallery</h1>
- 
-    <div class="gallery-container">
-      <div class="scroll-container" id="scrollContainer">
-        <img src="images/capetown/CPT beach.jpg" alt="2oceans" class="image-item" width="450px">
-        <img src="images/Mpumalanga/falls.avif" alt="2oceans" class="image-item" width="400px">
-        <img src="images/dunes.jpg" alt="2oceans" class="image-item" width="330px">
-        <img src="images/Mpumalanga/springboks.avif" alt="2oceans" class="image-item" width="330px">
-        <img src="images/capetown/2oceans.avif" alt="2oceans" class="image-item" width="400px">
-        <img src="images/Mpumalanga/panaroma bridge.webp" alt="2oceans" class="image-item" width="330px">
-        <img src="images/capetown/turtle.avif" alt="2oceans" class="image-item" width="330px">
-        <img src="images/Mpumalanga/misty mountain.jpg" alt="2oceans" class="image-item" width="330px">
-        <img src="images/Mpumalanga/greens.avif" alt="2oceans" class="image-item" width="330px">
-        <img src="images/capetown/color houses.jpg" alt="2oceans" class="image-item" width="330px">
-        <img src="images/capetown/silo.avif" alt="2oceans" class="image-item" width="330px">
-      </div>
- 
-      <button class="arrow double left-arrow" onclick="scrollGallery(-1)">&#171;</button>
-      <button class="arrow double right-arrow" onclick="scrollGallery(1)">&#187;</button>
- 
-   
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+    
+   <!-- Navigation bar that scrolls down to sections on page-->
+   <nav role="navigation" aria-label="main menu" class="d-flex justify-content-between" >
+    <!--Logo-->
+    <a href="index.html">
+      <img src="/images/Techno.png" alt="Techno Champs Tours Logo" class="logo">
+    </a>
+    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+      <i class="fa fa-bars"></i>
+      </a>
+    <div class="container" id="myLinks">
+    <ul>
+      <li><a href="about.html">ABOUT US</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">OUR SERVICES</a>
+        <div class="dropdown-content">
+          <a href="services.html">PACKAGES</a>
+          <a href=#Gallery>GALLERY</a>
+          <a href="itinerary.html">COUPLE'S ITINERARY</a>
+        </div>
+      </li>
+      <li><a href="places.html">PLACES TO VISIT</a></li>
+      <li><a href="booking.html">BOOKING</a></li>
+      <li><a href="contacts.html">CONTACT US</a></li>  
+    </ul>
     </div>
-  </section>
+  </nav>
+ <!-- End of Nav bar-->
+  <div class="content">
+    <div class="service-content">
+      <h1>Our Services</h1>
+     
+      <p>Techno Champs Tours services provide travelers with an opportunity to explore different parts of South Africa. <br>
+        Checkout our package deals below.<br>
+      </p>
+      <h1>Packages</h1>
+          <div class="services">
+            <div class="card basic">
+              <h1>Western Cape</h1>
+              <h3><b>Basic</b></h3>
+              <p>
+                Red Bus Tour<br><br>
+                Southern Sun Hotel Nights x5<br><br>
+                Stellenbosch Wine Farm<br><br>
+                <span id="dots1"></span>
+                <span class="more-text" id="more1">
+                  Table Mountain<br><br>
+                  Iziko Museum<br><br>
+                  Bo-kaap Tour<br><br>
+                  <b><i>Price: R10 000p/p</i></b>
+                </span>
+              </p>
+              <button onclick="myFunction(1)" id="myBtn1">Read more</button>
+              <hr>
+              <h3><b>Standard</b></h3>
+              <p>
+                Red Bus Tour<br><br>
+                President Hotel Nights x5<br><br>
+                Stellenbosch Wine Farm<br><br>
+                <span id="dots2"></span>
+                <span class="more-text" id="more2">
+                  Atlantis Dunes<br><br>
+                  Muizenburg Beach<br><br>
+                  Garden Route<br><br>
+                  <b><i>Price: R25 000p/p</i></b>
+                </span>
+              </p>
+              <button onclick="myFunction(2)" id="myBtn2">Read more</button>
+              <hr>
+              <h3><b>Premium</b></h3>
+              <p>
+                Red Bus Tour<br><br>
+                The Silo nights x5<br><br>
+                Ferris Wheel<br><br>
+                <span id="dots3"></span>
+                <span class="more-text" id="more3">
+                  Boat Cruise<br><br>
+                  Two Oceans Aquarium<br><br>
+                  Cape of Good Hope<br><br>
+                  Robben Island<br><br>
+                  Iziko Museum<br><br>
+                  Kirstenbosch Botanical Garden<br><br>
+                  <b><i>Price: R38 000p/p</i></b>
+                </span>
+              </p>
+              <button onclick="myFunction(3)" id="myBtn3">Read more</button>
+            </div>
+       
+       
+            <div class="card basic2">
+              <h1>Mpumalanga</h1>
+              <h3><b>Basic</b></h3>
+              <p>Fly-Fishing<br><br>
+                Umbhaba Eco Lodge Nights x5 <br><br>
+                Long Tom Toboggan<br><br>
+                <span id="dots4"></span>
+                <span class="more-text" id="more4">
+                  Zip Line<br><br>
+                  Blyde River Canyon Boat<br><br>
+                  <b><i>Price: R20 000p/p</i></b>
+                </span>
+              </p>
+              <button onclick="myFunction(4)" id="myBtn4">Read more</button>
+              <hr>
+              <h3><b>Standard</b></h3>
+              <p>Safari Ride (Big Five)<br><br>
+                 Mbizi Bush Lodge Nights x5<br><br>
+                 Hot-Air Balloon<br><br>
+                <span id="dots5"></span>
+                <span class="more-text" id="more5">
+                  Lone Creek Waterfall<br><br>
+                  Panorama Bridge<br><br>
+                  Sudwala Caves<br><br>
+                  <b><i>Price: R35 000p/p</i></b>
+                </span>
+              </p>
+              <button onclick="myFunction(5)" id="myBtn5">Read more</button>
+              <hr>
+              <h3><b>Premium</b></h3>
+              <p>Kruger National Park<br><br>
+                Ivory River Rock Lodgex5 nights <br><br>
+                God's Window<br><br>
+                <span id="dots6"></span>
+                <span class="more-text" id="more6">
+                Safari Ride<br><br>
+                Quad-Biking<br><br>
+                Sudwala Caves<br><br>
+                Graskop Gorge Lift Co.<br><br>
+                Lowveld National Botanical Garden<br><br>
+                Three Rondavels<br><br>
+                <b><i>Price: R45 000p/p</i></b>
+                </span>
+              </p>
+              <button onclick="myFunction(6)" id="myBtn6">Read more</button>
+            </div>
+        </div>
+        </div>
+    <br>
+    <!--Quote-->
+    <div class="places-info">
+
+      <blockquote>
+        <p>
+          “For all its problems, I found South Africa a beautiful country, interesting and inspiring.”
+        <cite>- David Harewood</cite>
+      </p>
+    </blockquote>
  
-  <button onclick="topFunction()" id="myBtn10" title="Go to top">Top</button>  
-                                   
     </div>
-    <footer><small></small>&copy; 2024 Techno Champs Tours</small></footer>  
-  </body>
-  <script src="script.js"></script>
+     <!-- End Quote-->
+  
+<section id="Gallery">
+    <h1>Gallery</h1>
+
+  <div class="gallery-container">
+    <div class="scroll-container" id="scrollContainer">
+      <img src="images/capetown/CPT beach.jpg" alt="2oceans" class="image-item" width="450px">
+      <img src="images/Mpumalanga/falls.avif" alt="2oceans" class="image-item" width="400px">
+      <img src="images/dunes.jpg" alt="2oceans" class="image-item" width="330px">
+      <img src="images/Mpumalanga/springboks.avif" alt="2oceans" class="image-item" width="330px">
+      <img src="images/capetown/2oceans.avif" alt="2oceans" class="image-item" width="400px">
+      <img src="images/Mpumalanga/panaroma bridge.webp" alt="2oceans" class="image-item" width="330px">
+      <img src="images/capetown/turtle.avif" alt="2oceans" class="image-item" width="330px">
+      <img src="images/Mpumalanga/misty mountain.jpg" alt="2oceans" class="image-item" width="330px">
+      <img src="images/Mpumalanga/greens.avif" alt="2oceans" class="image-item" width="330px">
+      <img src="images/capetown/color houses.jpg" alt="2oceans" class="image-item" width="330px">
+      <img src="images/capetown/silo.avif" alt="2oceans" class="image-item" width="330px">
+    </div>
+
+    <button class="arrow double left-arrow" onclick="scrollGallery(-1)">&#171;</button>
+    <button class="arrow double right-arrow" onclick="scrollGallery(1)">&#187;</button>
+
+  </div>
+
+</section>
+
+<button onclick="topFunction()" id="myBtn10" title="Go to top">Top</button>  
+                                 
+  </div>
+  <footer><small></small>&copy; 2024 Techno Champs Tours</small></footer>  
+</div>
+</div>
+  </div>
+</body>
+<script src="script.js"></script>
 </html>
- 

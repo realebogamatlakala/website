@@ -184,6 +184,10 @@ q {
 .author {
   color: cornflowerblue;
 }
+.toggleButton{
+
+  margin-left: 50%;
+}
  
 /*Places to visit*/
  
@@ -199,6 +203,15 @@ q {
 
 .places1 {
   background-image: url(/images/capetown/couple.avif);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding: 300px 10px 300px 10px;
+  border-radius: 5px;
+  height: 300px;
+}
+.places2 {
+  background-image: url(/images/Mpumalanga/mpumalangaCouple.avif);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -285,6 +298,13 @@ margin-left: 115px;
  
 }
 .places1 h1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: cursive;
+  font-size: 120px;
+ 
+}
+.places2 h1 {
   color: #ffffff;
   text-align: center;
   font-family: cursive;
@@ -498,6 +518,7 @@ button{
   cursor: pointer;
  
 }
+
 .basic2{
   background-image: url(/images/wall1.avif);
   background-repeat: no-repeat;
@@ -814,6 +835,14 @@ button[type="button"]:hover {
   width: 25%;
   margin-top: 6px;
 }
+
+/*Toggle Show and Hide */
+.page {
+  display: none;
+}
+.visible {
+  display: block;
+}
  
  
 /*end of bookings*/
@@ -1050,4 +1079,50 @@ li.dropdown {
  
 #myBtn:hover {
   background-color: #555;
+}
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #cfa658;
+  border-bottom: 16px solid #cfa658;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
 }
