@@ -1,15 +1,68 @@
 
 // Array of images
-var images = ["/images/capeTownSandy.jpg", "/images/capeTownTourists.jpg", "/images/back2.jpg", "/images/godsWindow.jpg","/images/mpumalangaTourist.jpg"];
+var images = ["/images/capeTownSandy.jpg", "/images/back2.jpg", "/images/mpumalangaTourist.jpg", "/images/capeTownTourists.jpg", "/images/stell.jpg", "/images/knp.webp"];
+var captions = ["Table Mountain", "Kruger National Park", "Gods Window", "Table Mountain", "Stellenbosch Wine Farm", "Kruger National Park"];
 var index = 0;
+var slideInterval;
 
-// Function to change the background image
+// Function to change the background image and caption
 function changeBackground() {
-  document.querySelector(".home").style.backgroundImage = "url(" + images[index] + ")";
-  index = (index + 1) % images.length;
+    document.querySelector(".home").style.backgroundImage = "url(" + images[index] + ")";
+    document.getElementById("caption").textContent = captions[index];
+    updateImageDots(); // Update the active dot
+    index = (index + 1) % images.length;
 }
-// Change the background image every 5 seconds
-setInterval(changeBackground, 3000);
+
+// Function to dynamically create dot navigation
+function createDots() {
+    var dotContainer = document.createElement('div');
+    dotContainer.classList.add('dot-container');
+
+    for (var i = 0; i < images.length; i++) {
+        var dot = document.createElement('span');
+        dot.classList.add('dot');
+        dot.dataset.index = i; // Set data-index attribute to correspond with image index
+        dot.addEventListener('click', function() {
+            clearInterval(slideInterval); // Stop the automatic slideshow
+            index = parseInt(this.dataset.index); // Get the index from data-index attribute
+            changeBackground(); // Change the background based on the clicked dot
+            slideInterval = setInterval(changeBackground, 3000); // Resume slideshow
+        });
+        dotContainer.appendChild(dot);
+    }
+
+    document.querySelector('.home').appendChild(dotContainer);
+}
+
+// Change the background image and caption every 3 seconds
+slideInterval = setInterval(changeBackground, 3000);
+
+// Function to update the active dot
+function updateImageDots() {
+    var dots = document.querySelectorAll('.home .dot');
+    // Remove 'active' class from all dots
+    dots.forEach(dot => dot.classList.remove('active'));
+    // Add 'active' class to the current image dot
+    dots[index].classList.add('active');
+}
+
+// Function to initialize the dot navigation
+document.addEventListener('DOMContentLoaded', function() {
+    createDots();
+});
+
+
+// Move the slideshow container just underneath the captions
+function moveSlideshow() {
+    var slideshowContainer = document.querySelector('.home .slideshow-container');
+    var captionHeight = document.querySelector('.home .caption').offsetHeight;
+    slideshowContainer.style.marginTop = captionHeight + 'px';
+}
+
+// Call the function when the DOM content is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    moveSlideshow();
+});
 
 
 //hamburger
@@ -26,42 +79,27 @@ function navFunction() {
 // Our services slide show. Get the button
 document.addEventListener("DOMContentLoaded", function () {
   const scrollContainer = document.getElementById("scrollContainer");
-  const leftArrow = document.querySelector(".left-arrow");  
+  const leftArrow = document.querySelector(".left-arrow");
   const rightArrow = document.querySelector(".right-arrow");
- 
   const imageWidth = 400; // Width of each image
-  const imagesToShow = 1; // Number of images to show at a time
   let scrollPosition = 0;
- 
-  // Debounce function to limit the rate at which scrollGallery is called
-  function debounce(func, wait) {
-    let timeout;
-    return function () {
-      const context = this;
-      const args = arguments;
-      clearTimeout(timeout);
-      timeout = setTimeout(function () {
-        func.apply(context, args);
-      }, wait);
-    };
-  }
- 
+
   function scrollGallery(offset) {
     scrollPosition += offset * imageWidth;
-    // Ensure scrollPosition is a multiple of imageWidth
-    scrollPosition = Math.round(scrollPosition / imageWidth) * imageWidth;
-    scrollContainer.scrollLeft = scrollPosition;
+    // Ensure scrollPosition is within bounds
+    scrollPosition = Math.max(0, Math.min(scrollPosition, scrollContainer.scrollWidth - scrollContainer.clientWidth));
+    scrollContainer.scrollTo({
+      left: scrollPosition,
+      behavior: 'smooth'
+    });
   }
- 
-  // Debounce the scrollGallery function to prevent frequent calls
-  const debouncedScrollGallery = debounce(scrollGallery, 200);
- 
+
   leftArrow.addEventListener("click", function () {
-    debouncedScrollGallery(-1);
+    scrollGallery(-1);
   });
- 
+
   rightArrow.addEventListener("click", function () {
-    debouncedScrollGallery(1);
+    scrollGallery(1);
   });
 });
  
