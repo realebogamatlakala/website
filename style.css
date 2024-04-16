@@ -6,7 +6,7 @@
   font-size: 64px;
   line-height: 80px;
   text-align: center;
-  font-family: 'Times New Roman', Times, serifgi;
+  font-family: 'Times New Roman', Times, serif;
   margin-top: 1px;
 }
 .content h2 {
@@ -79,23 +79,8 @@ nav li.active a {
   color: #ffffff;
   text-align: center;
   font-family: Comic sans MS;
-  font-size: 34px;
-  margin-top: 10%;
+  font-size: 39px;
 }
-
-/*Home page images*/
-.home {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  position: relative; /* Ensure the positioning works properly */
-}
-
-
-
-/*End of homepage images*/
-
 .home {
   background-image: url(/images/back2.jpg);
   background-repeat: no-repeat;
@@ -104,6 +89,19 @@ nav li.active a {
   padding: 300px 200px;
   border-radius: 5px;
   height: 750px;
+  position: relative; /* Make the home div a positioning context for the button */
+}
+.pause-button {
+  position: absolute; /* Position the button absolutely within the home div */
+  top: 90%; /* Center the button vertically */
+  left: 50%; /* Center the button horizontally */
+  transform: translate(-50%, -50%); /* Ensure the button is centered */
+  display: none; /* Hide the button by default */
+  /* Style the button as needed */
+}
+
+.home:hover .pause-button {
+  display: block; /* Show the button when the home div is hovered over */
 }
 /* Quotes slideshow */
 * {
@@ -261,6 +259,10 @@ q {
 .author {
   color: cornflowerblue;
 }
+.toggleButton{
+
+  margin-left: 50%;
+}
  
 /*Places to visit*/
  
@@ -273,10 +275,32 @@ q {
   border-radius: 5px;
   height: 300px;
 }
+
+.places1 {
+  background-image: url(/images/capetown/couple.avif);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding: 300px 10px 300px 10px;
+  border-radius: 5px;
+  height: 300px;
+}
+.places2 {
+  background-image: url(/images/Mpumalanga/mpumalangaCouple.avif);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding: 300px 10px 300px 10px;
+  border-radius: 5px;
+  height: 300px;
+}
  
 .locations{
 display: inline-block;
 margin-left: 115px;
+}
+.locations img{
+ border-radius: 50px;
 }
  
 .locations:hover {
@@ -292,7 +316,7 @@ margin-left: 115px;
   background: rgba(0, 0, 0, 0.8); /* Black see-through */
   color: #f1f1f1;
   width: 80%;
-  transition: .7s ease;
+  transition: .3s ease;
   opacity:0;
   color: #cfa658;
   font-size: 20px;
@@ -305,15 +329,41 @@ margin-left: 115px;
 /* When you mouse over the container, fade in the overlay title */
 .locations:hover .overlay {
   opacity: 1;
+  border-radius: 0 0 18% 18%;
+}
+
+.overlay1 {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
+  color: #f1f1f1;
+  width: 67%;
+  transition: .2s ease;
+  opacity:0;
+  color: #cfa658;
+  font-size: 20px;
+  padding: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+ 
+/* When you mouse over the container, fade in the overlay title */
+.locations:hover .overlay1 {
+  opacity: 1;
+  border-radius: 0 0 30% 30%;
 }
  
 .locations{
   text-align: center;
+ 
   font: 80px;
   color: black;
   padding: 50px;
   transition: transform .2s;
   margin: auto;
+  border-radius: 25%;
 }
 .places h1 {
   color: #af8028;
@@ -322,11 +372,33 @@ margin-left: 115px;
   font-size: 120px;
  
 }
+.places1 h1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: cursive;
+  font-size: 120px;
+ 
+}
+.places2 h1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: cursive;
+  font-size: 120px;
+ 
+}
+
 .destination p {
   color: #af8028;
   text-align: center;
   font-family: cursive;
   font-size: 55px;
+}
+
+.destination1 p {
+  color: #af8028;
+  text-align: center;
+  font-family: cursive;
+  font-size: 36px;
 }
 .places-info {
   height: 150px;
@@ -345,20 +417,50 @@ margin-left: 115px;
   font-size: 30px;
   text-align: center;
 }
+.places-info1 {
+  height: 150px;
+  padding: 10px;
+  margin-top: 150px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  background-color: #cfa658;
+  text-align: center;
+  margin-top: 80px;
+}
+ 
+.places-info cite {
+  height: 220px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+
 .map{
   float: right;
   border-radius: 50px;
   margin-right: 45px;
   margin-top: 60px;
 }
+
+.map1{
+  width: 60%;
+  
+  border-radius: 10px;
+  margin-left: 20%;
+  margin-top: 60px;
+  height: 400px;
+}
 .places-locations {
   margin-top: 110px;
+  border-radius: 25%;
 }
 .places-locations h1 {
   color: #af8028;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 50px;
+  
 }
 .places-south-africa h1{
   margin-top: 20px;
@@ -372,6 +474,25 @@ margin-left: 115px;
   font-family: cursive;
   font-size: 25px;
   margin-left: 10px;
+  border-radius: 25%;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
+
+.places-south-africa1 h1{
+  margin-top: 10px;
+  text-align: center;
+}
+.places-south-africa1 p {
+  color: #af8028;
+  text-align: center;
+  
+  text-align: center;
+  font-family: cursive;
+  font-size: 25px;
+  margin-left: 60px;
+  margin-right: 60px;
+ 
   flex-direction: row-reverse;
   margin-top: 20px;
 }
@@ -410,7 +531,6 @@ margin-left: 115px;
   margin-right: 50px;
   text-align: center; /* Center the text */
 }
- 
 .reviews{
   display: flex;
   margin-top: 40px;
@@ -455,6 +575,7 @@ margin-left: 115px;
   margin: 10px;
   margin-left: 60px;
   width: 40%;
+  font-family:cursive;
 }
 button{
   border: none;
@@ -471,12 +592,14 @@ button{
   cursor: pointer;
  
 }
+
 .basic2{
   background-image: url(/images/wall1.avif);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color:white;
   font-size: 50px;
+  font-family:cursive;
 }
 .basic {
   background-image: url(/images/cpt-wall1.avif);
@@ -484,18 +607,22 @@ button{
   background-size: cover;
   color:white;
   font-size: 50px;
+  font-family:cursive;
 }
 .basic h1,h3{
   color: #af8028;
+  font-family:cursive;
 }
 .basic2 h1,h3{
   color: #af8028;
+  font-family:cursive;
 }
 div li{
   font-weight: 500;
   list-style: none;
   font-size: 30px;
   text-align: start;
+  
 }
 .more-text {
   display: none;
@@ -657,7 +784,9 @@ color: rgb(255, 255, 254);
   color: #000;
   width: 60%;
   margin: 0 auto;
-  margin-top: 270px;
+  outline: black solid 2px;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .iframe{
@@ -708,49 +837,74 @@ color: rgb(255, 255, 254);
   text-align: center;
 }
 .content-form {
-  padding:30px 100px;
+  padding: 25px 50px 25px 50px;
   margin-top: 100px;
-  margin: 0 400px;
+  margin: 0 280px;
   border-radius: 10px;
   overflow: hidden;
   background: #cfa658;
   box-shadow: 0 15px 20px rgba(10, 0, 0, 0.6);
   clear: both;
   display: flex;
+  
 }
 label {
-  padding: 12px 12px 12px 0;
+  padding: 25px 30px 25px 50px;
   display: inline-block;
   font-weight: bold;
   font-size: medium;
 }
  
 input[type="text"],
-select,
 textarea {
-  width: 100%;
-  padding: 8px;
+  width: 20%;
+  padding: 15px;
+  margin-left: 60px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+
 input[type="email"] {
-  width: 100%;
-  padding: 8px;
+  width: 20%;
+  padding: 15px;
+  margin-left: 35px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
-input[type="tel"] {
-  width: 100%;
-  padding: 8px;
+input[type="tel"]{
+  width: 20%;
+  padding: 15px;
+ 
   border: 1px solid #ccc;
   border-radius: 4px;
+
   box-sizing: border-box;
 }
+
+input[type= "number"],select{
+  width: 30%;
+  padding: 15px;
+  margin-left: 50px;
+  border: 1px solid #ccc;
+  border-radius: 4px; box-sizing: border-box;
+}
+
+input[type= "comment"],select{
+  width: 20%;
+  padding: 15px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px; box-sizing: border-box;
+}
+
+
 input[type="date"] {
-  width: 100%;
-  padding: 8px;
+  width: 20%;
+  padding: 15px;
+  margin-left: 50px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -759,13 +913,12 @@ button[type="button"] {
   background-color: white;
   color: black;
   text-decoration: none;
-  padding: 10px 18px;
-  margin-left: 20%;
+  padding: 15px;
+  margin-left: 30%;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   float: left;
-  display: inline-block;
   transition: .4s ease;
 }
 button[type="button"]:hover {
@@ -776,6 +929,14 @@ button[type="button"]:hover {
   float: left;
   width: 25%;
   margin-top: 6px;
+}
+
+/*Toggle Show and Hide */
+.page {
+  display: none;
+}
+.visible {
+  display: block;
 }
  
  
@@ -1108,4 +1269,50 @@ li.dropdown {
  
 #myBtn:hover {
   background-color: #555;
+}
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #cfa658;
+  border-bottom: 16px solid #cfa658;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
 }

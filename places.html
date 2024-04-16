@@ -1,155 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a04d21dfd1.js" crossorigin="anonymous"></script>
     <link  rel="stylesheet" href="style.css">
  
-    <title>Places To Visit</title>
+
 </head>
-<body> <!-- Navigation bar that scrolls down to sections on page-->
-  <nav role="navigation" aria-label="main menu" class="d-flex justify-content-between" >
-    <!--Logo-->
-    <a href="index.html">
-      <img src="/images/Techno.png" alt="Techno Champs Tours Logo" class="logo">
-    </a>
-    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
-      <i class="fa fa-bars"></i>
-      </a>
-    <div class="container" id="myLinks">
-    <ul>
-      <li><a href="about.html">ABOUT US</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">OUR SERVICES</a>
-        <div class="dropdown-content">
-          <a href="services.html">PACKAGES</a>
-          <a href="services.html">GALLERY</a>
-        </div>
-      </li>
-      <li><a href="places.html">PLACES TO VISIT</a></li>
-      <li><a href="booking.html">BOOKING</a></li>
-      <li><a href="contacts.html">CONTACT US</a></li>  
-    </ul>
-    </div>
-  </nav>
-  <!-- End of Nav bar-->
- 
-   <!--Destination Introduction-->
-    <div class="places">
-      <h1>
-        <i><b>Destinations</b></i>
-      </h1>
-    </div>
-    <div class="destination">
-      <p>
-        Discover South Africa with us!
-      </p>
-    </div>
-   
-     <!-- End of Destination Introduction-->
- 
- 
- 
-      <!--Quote-->
-     <div class="places-info">
- 
-      <blockquote>
-        <p>
-          “It's really beautiful. It feels like God visits everywhere else but lives in Africa.”
-        <cite>- Will Smith</cite>
-      </p>
-    </blockquote>
- 
-    </div>
-     <!-- End Quote-->
- 
-      <!--Destination Introduction-->
-    <img src="/images/flag.webp" class="map" width="600" height="400">
-    <div class="places-south-africa">
-      <br>
-      <p><br>
-        <i><b>Travel around South Africa with Techno Tours</b></i>
-        <br>
-        <br>
-        It is the southernmost country on the mainland of the Old World, and the second-most populous country located entirely south of the equator,
-        after Tanzania. South Africa is a biodiversity hotspot, with unique biomes, plant and animal life. With over 62 million people, the country is
-        the world's 23rd-most populous nation and covers an area of 1,221,037 square kilometres (471,445 square miles).
-      </p>
-    </div>
-     <!-- End of Destination Introduction-->
- 
-      <!-- Locations-->
-      <div class="places-locations">
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+    
+    <body> <!-- Navigation bar that scrolls down to sections on page-->
+        <nav role="navigation" aria-label="main menu" class="d-flex justify-content-between" >
+          <!--Logo-->
+          <a href="index.html">
+            <img src="/images/Techno.png" alt="Techno Champs Tours Logo" class="logo">
+          </a>
+          <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+          <div class="container" id="myLinks">
+          <ul>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">OUR SERVICES</a>
+              <div class="dropdown-content">
+                <a href="services.html">PACKAGES</a>
+                <a href="services.html">GALLERY</a>
+                <a href="itinerary.html">COUPLE'S ITINERARY</a>
+              </div>
+            </li>
+            <li><a href="places.html">PLACES TO VISIT</a></li>
+            <li><a href="booking.html">BOOKING</a></li>
+            <li><a href="contacts.html">CONTACT US</a></li>  
+          </ul>
+          </div>
+        </nav>
+        <!-- End of Nav bar-->
        
-        <h1><b>Western Cape</b></h1>
- 
-        <div class="locations">
-         <a aria-label="Explore uShaka marine" href="https://tablemountaincapetown.com/">
-         <img src="/images/table m.jpg" alt="uShaka Marine World, KwaZulu-Natal, South Africa."  width="400" height="300">
-         <div class="overlay"><b>Table Mountain, Cape Town</b><br>
-         <br><i>Table Mountain is a flat-topped mountain forming a prominent landmark overlooking the city of Cape Town in South Africa.</i></div>
-        </div>
- 
- 
-        <div class="locations">
-         <a aria-label="Explore Table Mountain, Cape Town" href="https://atlantisdunes.com/">
-         <img
-          src="/images/dunes.jpg"
-          alt="Table Mountain, Cape Town, South Africa."  width="400" height="300">
-          <div class="overlay"><b>Atlantis Dunes, Atlantis</b><br>
-           <br> <i>Adventures we offer include Quad-biking, Ultimate Sandboarding and Photoshoots</i></div>
-        </div>
- 
- 
-        <div class="locations">
-         <a aria-label="Explore Drankensburg, Kwazulu-Natal" href="https://www.capetown.travel/neighbourhood/bo-kaap/">
-         <img
-          src="/images/capetown/color houses.jpg"
-          alt="Bo-Kaap, Cape Town" width="400" height="300">
-          <div class="overlay"><b>Bo-Kaap, Cape Town</b><br>
-            <br><i>Bo-Kaap area of Cape Town with its distinctive pastel coloured houses</i></div>
-        </div>
-     
-        <h1><b>Mpumalanga</b></h1>
-        <div class="locations">
-          <a aria-label="Explore uShaka marine" href="https://www.mistymountain.co.za/">
-          <img
-          src="/images/Mpumalanga/misty mountain.jpg"
-          alt="Misty Mountain, Mpumalanga, South Africa." width="400" height="300">
-          <div class="overlay"><b>
-          Misty Mountain, Mpumalanga
-          </b><br> <br><i>Misty Mountain is a 280-hectare destination situated on the spectacular Long Tom Pass, Panorama Route, Mpumalanga, South Africa.</i></div>
-        </div>
- 
- 
-        <div class="locations">
-          <a aria-label="Explore Table Mountain, Cape Town" href="https://www.sanparks.org/parks/kruger">
-          <img
-          src="/images/Mpumalanga/springboks.avif"
-          alt="Table Mountain, Cape Town, South Africa." width="400" height="300">
-          <div class="overlay"><b>Kruger National Park, Mpumalanga</b><br><br><i> Africa’s largest game reserves. Its high density of wild animals includes the Big 5: lions, leopards, rhinos, elephants and buffalos.</i></div>
-        </div>
- 
- 
-        <div class="locations">
-         <a aria-label="Explore Drankensburg, Kwazulu-Natal" href="https://www.strayalongtheway.com/gods-window/">
-         <img
-         src="/images/Mpumalanga/mpumalanga.jpg"
-         alt="Drankensburg, KwaZulu-Natal, South Africa." width="400" height="300">
-         <div class="overlay"><b>God's Window, Mpumalanga</b><br><br><i>Situated on the Drakensberg escarpment in Mpumalanga is God’s Window. Just one look down and you will begin to understand why it is called "God's Window".</i></div>
-         </div>
-        </a>
-      </div>
-<!-- Locations-->
-   
+         <!--Destination Introduction-->
+          <div class="places">
+            <h1>
+              <i><b>Destinations</b></i>
+            </h1>
+          </div>
+          <div class="destination">
+            <p>
+              Discover South Africa with us!
+            </p>
+          </div>
          
-<button onclick="topFunction()" id="myBtn10" title="Go to top">Top</button>  
-      <div class="footer">
-        <footer><small> <p>&copy; 2024 Techno Champs Tours</p></small></footer>
-      </div>
- 
-   
+           <!-- End of Destination Introduction-->
+      
+            <!--Quote-->
+           <div class="places-info">
+       
+            <blockquote>
+              <p>
+                “It's really beautiful. It feels like God visits everywhere else but lives in Africa.”
+              <cite>- Will Smith</cite>
+            </p>
+          </blockquote>
+       
+          </div>
+           <!-- End Quote-->
+       
+            <!--Destination Introduction-->
+          <img src="/images/flag.webp" class="map" width="600" height="400">
+          <div class="places-south-africa">
+            <br>
+            <p><br>
+              <i><b>Travel around South Africa with Techno Tours</b></i>
+              <br>
+              <br>
+              It is the southernmost country on the mainland of the Old World, and the second-most populous country located entirely south of the equator,
+              after Tanzania. South Africa is a biodiversity hotspot, with unique biomes, plant and animal life. With over 62 million people, the country is
+              the world's 23rd-most populous nation and covers an area of 1,221,037 square kilometres (471,445 square miles).
+            </p>
+          </div>
+           <!-- End of Destination Introduction-->
+      
+      
+       
+            <!-- Locations-->
+            <div class="places-locations">
+             
+              <h1><b>Western Cape</b></h1>
+       
+              <div class="locations">
+               <a aria-label="Explore uShaka marine" href="https://tablemountaincapetown.com/">
+               <img src="/images/table m.jpg" alt="uShaka Marine World, KwaZulu-Natal, South Africa."  width="400" height="300">
+               <div class="overlay"><b>Table Mountain, Cape Town</b><br>
+               <br><i>Table Mountain is a flat-topped mountain forming a prominent landmark overlooking the city of Cape Town in South Africa.</i></div>
+              </div>
+       
+       
+              <div class="locations">
+               <a aria-label="Explore Table Mountain, Cape Town" href="https://atlantisdunes.com/">
+               <img
+                src="/images/dunes.jpg"
+                alt="Table Mountain, Cape Town, South Africa."  width="400" height="300">
+                <div class="overlay"><b>Atlantis Dunes, Atlantis</b><br>
+                 <br> <i>Adventures we offer include Quad-biking, Ultimate Sandboarding and Photoshoots</i></div>
+              </div>
+       
+       
+              <div class="locations">
+               <a aria-label="Explore Drankensburg, Kwazulu-Natal" href="https://www.capetown.travel/neighbourhood/bo-kaap/">
+               <img
+                src="/images/capetown/color houses.jpg"
+                alt="Bo-Kaap, Cape Town" width="400" height="300">
+                <div class="overlay"><b>Bo-Kaap, Cape Town</b><br>
+                  <br><i>Bo-Kaap area of Cape Town with its distinctive pastel coloured houses</i></div>
+              </div></a>
+      
+              <h1><b><i>Maps and Guides</i></b></h1>
+              <div class="locations">
+                <a aria-label="Explore uShaka marine" href="/images/maps/CityCentre_Print-1.pdf">
+                <img src="/images/maps/cape.avif" alt="uShaka Marine World, KwaZulu-Natal, South Africa."  width="200" height="200">
+                <div class="overlay1"><b>Cape Town City Center</b><br>
+                  <br><i>Click here to download</i></div>
+               </div>
+        
+        
+               <div class="locations">
+                <a aria-label="Explore Table Mountain, Cape Town" href="/images/maps/Peninsula-Map-2023-Final.pdf">
+                <img
+                 src="/images/maps/pen.avif"
+                 alt="Table Mountain, Cape Town, South Africa."  width="200" height="200">
+                 <div class="overlay1"><b>Cape Peninsula</b><br>
+                  <br><i>Click here to download</i></div>
+                
+               </div>
+               <div class="locations">
+                <a aria-label="Explore Table Mountain, Cape Town" href="/images/maps/Art-Craft-Museums-1.pdf">
+                <img
+                 src="/images/maps/arts.avif"
+                 alt="Table Mountain, Cape Town, South Africa."  width="200" height="200">
+                 <div class="overlay1"><b>Arts and Crafts Museums</b><br>
+                  <br><i>Click here to download</i></div>
+                
+               </div>
+               <div class="locations">
+                <a aria-label="Explore Table Mountain, Cape Town" href="/images/maps/Cape_town_green_map_edition_10_coastal_map.pdf">
+                <img
+                 src="/images/maps/coast.avif"
+                 alt="Table Mountain, Cape Town, South Africa."  width="200" height="200">
+                 <div class="overlay1"><b>Cape Town Coastal Map</b><br>
+                  <br><i>Click here to download</i></div>
+               </div>
+        
+               <div class="locations">
+                <a aria-label="Explore Drankensburg, Kwazulu-Natal" href="/images/maps/Wine Route.pdf">
+                <img
+                 src="/images/maps/wine.avif"
+                 alt="Bo-Kaap, Cape Town" width="200" height="200">
+                 <div class="overlay1"><b>Cape Town Wine Route <Map></Map></b><br>
+                  <br><i>Click here to download</i></div>
+               </div></a>
+       
+      
+              
+           <div class="places-info1">
+       
+            <blockquote>
+              <p>
+                “The only man I envy is the man who has not yet been to Africa - for he has so much to look forward to.”
+              <cite>- Richard Mullin</cite>
+            </p>
+          </blockquote>
+       
+          </div>
+           <!-- End Quote-->
+           
+              <h1><b>Mpumalanga</b></h1>
+              <div class="locations">
+                <a aria-label="Explore uShaka marine" href="https://www.mistymountain.co.za/">
+                <img
+                src="/images/Mpumalanga/misty mountain.jpg"
+                alt="Misty Mountain, Mpumalanga, South Africa." width="400" height="300">
+                <div class="overlay"><b>
+                Misty Mountain, Mpumalanga
+                </b><br> <br><i>Misty Mountain is a 280-hectare destination situated on the spectacular Long Tom Pass, Panorama Route, Mpumalanga, South Africa.</i></div>
+              </div>
+       
+       
+              <div class="locations">
+                <a aria-label="Explore Table Mountain, Cape Town" href="https://www.sanparks.org/parks/kruger">
+                <img
+                src="/images/Mpumalanga/springboks.avif"
+                alt="Table Mountain, Cape Town, South Africa." width="400" height="300">
+                <div class="overlay"><b>Kruger National Park, Mpumalanga</b><br><br><i> Africa’s largest game reserves. Its high density of wild animals includes the Big 5: lions, leopards, rhinos, elephants and buffalos.</i></div>
+              </div>
+       
+       
+              <div class="locations">
+               <a aria-label="Explore Drankensburg, Kwazulu-Natal" href="https://www.strayalongtheway.com/gods-window/">
+               <img
+               src="/images/Mpumalanga/mpumalanga.jpg"
+               alt="Drankensburg, KwaZulu-Natal, South Africa." width="400" height="300">
+               <div class="overlay"><b>God's Window, Mpumalanga</b><br><br><i>Situated on the Drakensberg escarpment in Mpumalanga is God’s Window. Just one look down and you will begin to understand why it is called "God's Window".</i></div>
+               </div>
+              </a>
+              
+      
+              <h1><b><i>Maps and Guides</i></b></h1>
+              <div class="locations">
+                <a aria-label="Explore uShaka marine" href="/images/maps/kruger-park-map-pdf.pdf">
+                <img src="/images/maps/krugerZ.avif" alt="uShaka Marine World, KwaZulu-Natal, South Africa."  width="200" height="200">
+                <div class="overlay1"><b>Kruger National Park</b><br>
+                  <br><i>Click here to download</i></div>
+               </div>
+        
+        
+               <div class="locations">
+                <a aria-label="Explore Table Mountain, Cape Town" href="/images/maps/mpumalanga map.pdf">
+                <img
+                 src="/images/maps/wfall.avif"
+                 alt="Table Mountain, Cape Town, South Africa."  width="200" height="200">
+                 <div class="overlay1"><b>Mpumalanga Tourist Map</b><br>
+                  <br><i>Click here to download</i></div>
+                
+               </div>
+               <div class="locations">
+                <a aria-label="Explore Table Mountain, Cape Town" href="/images/maps/misty-mountains-general-map.pdf">
+                <img
+                 src="/images/Mpumalanga/misty mountain.jpg"
+                 alt="Table Mountain, Cape Town, South Africa."  width="200" height="200">
+                 <div class="overlay1"><b>Misty Mountains</b><br>
+                  <br><i>Click here to download</i></div>
+                
+               </div>
+               <div class="locations">
+                <a aria-label="Explore Table Mountain, Cape Town" href="/images/maps/">
+                <img
+                 src="/images/maps/mpumalangat.avif"
+                 alt="Table Mountain, Cape Town, South Africa."  width="200" height="200">
+                 <div class="overlay1"><b>God's Window trail</b><br>
+                  <br><i>Click here to download</i></div>
+               </div>
+        
+               <div class="locations">
+                <a aria-label="Explore Drankensburg, Kwazulu-Natal" href="/images/maps/Wine Route.pdf">
+                <img
+                 src="/images/Mpumalanga/panaroma bridge.webp"
+                 alt="Bo-Kaap, Cape Town" width="200" height="200">
+                 <div class="overlay1"><b>Panorama Bridge<Map></Map></b><br>
+                  <br><i>Click here to download</i></div>
+               </div></a>
+       
+      <button onclick="topFunction()" id="myBtn10" title="Go to top">Top</button>  
+            <div class="footer">
+              <footer><small> <p>&copy; 2024 Techno Champs Tours</p></small></footer>
+            </div>
+              </div>
+            </div>
+           <!-- Locations-->
+         
+               
+            
+       </div>
 </body>
 <script src="script.js"></script>
 </html>

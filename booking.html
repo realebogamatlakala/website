@@ -25,6 +25,7 @@
           <div class="dropdown-content">
             <a href="services.html">PACKAGES</a>
             <a href="services.html">GALLERY</a>
+            <a href="itinerary.html">COUPLE'S ITINERARY</a>
           </div>
         </li>
         <li><a href="places.html">PLACES TO VISIT</a></li>
@@ -39,6 +40,7 @@
       <div class="content-form">
         <form onsubmit="return displayInformation()" id="ourForm" action="javascript:void(0)" method="POST">
           <h1>Bookings</h1>
+          <hr>
           <h4><i>Book your trip with Techno Champs Tours<br>Discover the world with us</i></h4>
           <div class="form">
                     <label for="name">First Name: </label>
@@ -54,7 +56,7 @@
                     <input type="tel" id="phone" placeholder="123-456-7890" required oninput="validateNumber()"><br>
                
                    
-                    <label for="number">Number of people</label>
+                    <label for="number">No. of people</label>
                     <select id="number" required>
                     <option value="One">1</option>
                     <option value="Two">2</option>
@@ -75,15 +77,15 @@
                    
                    
                     </select>
-                   
+                    <br/>
                     <label for="date">Arrival date:</label>
-                    <input type="date" id="date" name="Date" oninput="validateDate()" min="2024-04-04" required>
+                    <input type="date" id="date" name="Date" oninput="validateDate()" min="2024-04-11" required>
              
                     <label for="date">Depature date:</label>
                     <input type="date" id="datetwo" name="Date" min="2024-04-04" required>
-                 
+                 <br/>
                     <label for="comment"> Leave a message:</label><br>
-                    <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+                    <textarea id="comment" name="comment" rows="" cols="550"></textarea>
                  
                
                
