@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a04d21dfd1.js" crossorigin="anonymous"></script>
-    <link  rel="stylesheet" href="style.css">
- 
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/a04d21dfd1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Techno Champ Tours</title>
 </head>
-<body onload="myFunction()" style="margin:0;">
-
-<div id="loader"></div>
-
-<div style="display:none;" id="myDiv" class="animate-bottom">
-
- <!-- Navigation bar that scrolls down to sections on page-->
- <nav role="navigation" aria-label="main menu" class="d-flex justify-content-between" >
-    <!--Logo-->
+<body>
+  <!-- Navigation bar -->
+  <nav role="navigation" aria-label="main menu" class="d-flex justify-content-between">
+    <!-- Logo -->
     <a href="index.html">
       <img src="/images/Techno.png" alt="Techno Champs Tours Logo" class="logo">
     </a>
     <a href="javascript:void(0);" class="icon" onclick="navFunction()">
       <i class="fa fa-bars"></i>
-      </a>
+    </a>
     <div class="container" id="myLinks">
+<<<<<<< HEAD
+      <ul>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">OUR SERVICES</a>
+          <div class="dropdown-content">
+            <a href="services.html">PACKAGES</a>
+            <a href="services.html">GALLERY</a>
+          </div>
+        </li>
+        <li><a href="places.html">PLACES TO VISIT</a></li>
+        <li><a href="booking.html">BOOKING</a></li>
+        <li><a href="contacts.html">CONTACT US</a></li>  
+      </ul>
+=======
     <ul>
       <li><a href="about.html">ABOUT US</a></li>
       <li class="dropdown">
@@ -37,86 +47,60 @@
       <li><a href="booking.html">BOOKING</a></li>
       <li><a href="contacts.html">CONTACT US</a></li>  
     </ul>
+>>>>>>> a92b33af08ed92e8259ddb11510ebfa3902bb6af
     </div>
   </nav>
-<!-- End of Nav bar-->
-<!--Homepage -->
-<div class="home">
+  <!-- End of Navigation bar -->
 
-  <h1>
-    <i>Your trip is our priority. Let us be your travel companion.</i>
-  </h1>
-  <p>
-    If you are struggling to find a perfect place to visit, we are here for
-    you.
-  </p>
-  <button class="pause-button">Paused</button>
-</div>
-  <!--Reviews-->
-<div class="slideshow-container">
-<div class="mySlides">
-  <q>Wow Techno Champ Tours. I thank you for all your effort and travel information. <br>
-    I really wasn’t expecting that you do this. So thank you very much.</q>
-  <p class="author">- Pablo Escobar</p>
-</div>
-<div class="mySlides">
-  <q>Beautiful scenery, with everything - mountains, sweeping beaches, great food, excellent wine and good value. <br>
-    Never been but it was on our list would return. Beautiful scenery and interesting excursions.</q>
-  <p class="author">- Damian Santi</p>
-</div>
+  <!-- Homepage -->
+  <div class="home">
+    <div class="caption" id="caption"></div>
+    <h1><i>Your trip is our priority. Let us be your travel companion.</i></h1>
+    <p>If you are struggling to find a perfect place to visit we are here for you.</p>
+  </div>
 
-<div class="mySlides">
-  <q>Marcia, thank you so much for a well organized trip. We had a wonderful time. <br>
-    Hard to believe it's already done and past. Weather was awesome, the hotels were nice, thank you for everything!</q>
-  <p class="author">- Stephanie Manni</p>
-</div>
+  <!-- Reviews -->
+  <div class="slideshow-container">
+    <div class="mySlides">
+      <q>"Wow Techno Champ Tours. I thank you for all your effort and travel information. <br>
+        I really wasn’t expecting that you do this. So thank you very much."</q>
+      <p class="author">- Pablo Escobar</p>
+    </div>
+    <div class="mySlides">
+      <q>Beautiful scenery, with everything - mountains, sweeping beaches, great food, excellent wine and good value. <br>
+        Never been but it was on our list would return. Beautiful scenery and interesting excursions.</q>
+      <p class="author">- Damian Santi</p>
+    </div>
+    <div class="mySlides">
+      <q>Marcia, thank you so much for a well organized trip. We had a wonderful time. <br>
+        Hard to believe it's already done and past. Weather was awesome, the hotels were nice, thank you for everything!</q>
+      <p class="author">- Stephanie Manni</p>
+    </div>
+    <div class="mySlides">
+      <q>So much to see and do, weather wonderful.
+        A mix of delightful moments and unexpected frustrations, <br> all of which I'll share to help you plan your visit.</q>
+      <p class="author">- Busi Khumalo </p>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    <!-- Testimonial dots inside the slideshow container -->
+    <div class="testimonial-dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  </div>
+  <!-- End of Reviews -->
 
-<div class="mySlides">
-  <q>So much to see and do, weather wonderful.
-    A mix of delightful moments and unexpected frustrations, all of which I'll share to help you plan your visit.</q>
-  <p class="author">- Busi Khumalo </p>
-</div>
+  <button onclick="topFunction()" id="myBtn10" title="Go to top">Top</button>  
 
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-</div>
+  <!-- Footer -->
+  <div class="footer">
+    <footer><small><p>&copy; 2024 Techno Champs Tours</p></small></footer>
+  </div>
+  <!-- End of Footer -->
 
-<div class="dot-container">
-<span class="dot" onclick="currentSlide(1)"></span>
-<span class="dot" onclick="currentSlide(2)"></span>
-<span class="dot" onclick="currentSlide(3)"></span>
-<span class="dot" onclick="currentSlide(4)"></span>
-</div>
-<button onclick="topFunction()" id="myBtn10" title="Go to top">Top</button>  
-<div class="footer">
-<footer><small> <p>&copy; 2024 Techno Champs Tours</p></small></footer>
-</div>
-<!--End of Homepage -->
- </body> 
   <script src="script.js"></script>
-  <script>
-// Array of images
-var images = ["/images/capeTownSandy.jpg", "/images/capeTownTourists.jpg", "/images/back2.jpg", "/images/godsWindow.jpg","/images/mpumalangaTourist.jpg"];
-var index = 0;
-var intervalId;
-
-// Function to change the background image
-function changeBackground() {
-  document.querySelector(".home").style.backgroundImage = "url(" + images[index] + ")";
-  index = (index + 1) % images.length;
-}
-
-// Change the background image every 3 seconds
-intervalId = setInterval(changeBackground, 3000);
-
-// Pause on hover
-document.querySelector(".home").addEventListener("mouseover", function() {
-  clearInterval(intervalId);
-});
-
-// Resume when not hovering
-document.querySelector(".home").addEventListener("mouseout", function() {
-  intervalId = setInterval(changeBackground, 3000);
-});
-  </script>
+</body>
 </html>

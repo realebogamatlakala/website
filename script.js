@@ -1,4 +1,3 @@
-
 // Array of images
 var images = ["/images/capeTownSandy.jpg", "/images/back2.jpg", "/images/mpumalangaTourist.jpg", "/images/capeTownTourists.jpg", "/images/stell.jpg", "/images/knp.webp"];
 var captions = ["Table Mountain", "Kruger National Park", "Gods Window", "Table Mountain", "Stellenbosch Wine Farm", "Kruger National Park"];
@@ -63,7 +62,6 @@ function moveSlideshow() {
 document.addEventListener('DOMContentLoaded', function() {
     moveSlideshow();
 });
-
 
 //hamburger
 function navFunction() {
