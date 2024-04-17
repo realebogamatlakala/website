@@ -372,7 +372,6 @@ margin-left: 115px;
 
 .map1{
   width: 60%;
-  
   border-radius: 10px;
   margin-left: 20%;
   margin-top: 60px;
@@ -389,12 +388,18 @@ margin-left: 115px;
   height: 400px;
 }
 
+.Mpumalanga_pics img{
+  width: 400px;
+  height: 400px;
+}
+
+
 .Mpumalanga_pics h1{
   color: #af8028;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 50px;
-  margin-top: 50px;
+  margin-top: 10px;
   padding-top: 50px;
 }
 
@@ -414,7 +419,7 @@ margin-left: 115px;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 50px;
-  margin-top: 50px;
+  margin-top: 100px;
   padding-top: 50px;
 }
 
@@ -585,7 +590,6 @@ div li{
   display: none;
 }
  
-.gallery-container {
 .gallery-container {
   position: relative;
   width: 100%;
