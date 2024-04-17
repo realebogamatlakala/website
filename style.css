@@ -1,4 +1,3 @@
-
 .content {
   margin-top: 1px;
 }
@@ -68,11 +67,7 @@ nav li.active a {
   color: #ffffff;
   text-align: center;
   font-family: Comic sans MS;
-  font-size: 51px;
-  position: absolute;
-  top: 28%; /* Adjust the vertical position */
-  left: 50%;
-  transform: translateX(-50%);
+  font-size: 50px;
 }
  
 .home p {
@@ -126,8 +121,7 @@ body {
  
 .mySlides {
   display: none;
-  padding: 30px 0px 50px 0px;
-
+  padding: 80px;
   text-align: center;
 }
  
@@ -163,18 +157,11 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
-
-.testimonial-dots {
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-}
  
 .dot-container {
   text-align: center;
-  margin-top: 10px;
-  padding: 30px;
+  padding: 20px;
+  background: #ddd;
 }
  
 .dot {
@@ -187,71 +174,9 @@ body {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
  
 .active,
 .dot:hover {
-  background-color: #c99028;
-}
-
-/*IMAGE & CAPTIONS HOMEPAGE*/
-/* Styles for homepage captions */
-.home .caption {
-  color: #fff;
-  font-size: 20px;
-  position: absolute;
-  width: 20%;
-  text-align: center;
-}
-
-#caption {
-  position: absolute;
-  bottom: 160px;
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  padding: 10px;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-/* Slideshow container for homepage */
-.home .slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-/* Slides for homepage */
-.home .mySlides {
-  display: none;
-  
-}
-
-/* Dot container for homepage */
-.home .dot-container {
-  text-align: center;
-  margin-top: 90px;
-}
-
-/* Dot navigation for homepage */
-.home .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-
-}
-
-/* Active dot for homepage */
-.home .dot.active,
-.home .dot:hover {
   background-color: #c99028;
 }
  
@@ -270,13 +195,13 @@ q {
 /*Places to visit*/
  
 .places {
-  background-image: url(/images/leo.avif);
+  background-image: url(images/maxresdefault.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: scroll;
   padding: 300px 10px 300px 10px;
   border-radius: 5px;
-  height: 300px;
+  height: 500px;
 }
 
 .places1 {
@@ -360,7 +285,6 @@ margin-left: 115px;
  
 .locations{
   text-align: center;
- 
   font: 80px;
   color: black;
   padding: 50px;
@@ -369,10 +293,11 @@ margin-left: 115px;
   border-radius: 25%;
 }
 .places h1 {
-  color: #af8028;
+  color: #ffffff;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 120px;
+  font-size: 60px;
+  margin-top: 150px;
  
 }
 .places1 h1 {
@@ -390,18 +315,20 @@ margin-left: 115px;
  
 }
 
+
 .destination p {
   color: #af8028;
   text-align: center;
   font-family: cursive;
-  font-size: 55px;
+  font-size: 50px;
+  margin-top: 10px;
 }
 
 .destination1 p {
   color: #af8028;
   text-align: center;
   font-family: cursive;
-  font-size: 36px;
+  font-size: 30px;
 }
 .places-info {
   height: 150px;
@@ -454,17 +381,46 @@ margin-left: 115px;
   margin-top: 60px;
   height: 400px;
 }
-.places-locations {
-  margin-top: 110px;
-  border-radius: 25%;
+
+.African_pictures{
+  margin-top: 10px;
+}
+
+
+.African_pictures img{
+  width: 400px;
+  height: 400px;
+}
+
+.Mpumalanga_pics h1{
+  color: #af8028;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.places-locations{
+  margin-top: 20px;
+}
+
+
+.places-locations img {
+  margin-top: 5px;
+  width: 400px;
+  height: 400px;
+
 }
 .places-locations h1 {
   color: #af8028;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 50px;
-  
+  margin-top: 50px;
+  padding-top: 50px;
 }
+
 .places-south-africa h1{
   margin-top: 20px;
   text-align: center;
@@ -533,6 +489,7 @@ margin-left: 115px;
   justify-content: space-around;
   margin-right: 50px;
   text-align: center; /* Center the text */
+ 
 }
 .reviews{
   display: flex;
@@ -631,62 +588,136 @@ div li{
   display: none;
 }
  
-.gallery-container { 
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  width: 100%;
-  white-space: nowrap;
+.gallery-container {
+.gallery-container {
   position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+ 
+ 
+.scroll-container {
+  margin-top: 7rem;
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
+.image-item {
+  flex: 0 0 auto;
+  width: 450px;
+  height: 800px;
+  object-fit: cover;
+  scroll-snap-align: center;
+  /* margin: 0 10px; */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 10px;
+  /* padding-bottom: 6rem; */
+}
+
+.right-arrow {
+  right: 10px;
+  /* padding-bottom: 6rem; */
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.carousel-indicators img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 0%;
+  opacity: 5;
+  transition: opacity 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.carousel-indicators img:hover,
+.carousel-indicators img.active {
+  opacity: 1;
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.carousel-indicators img.left,
+.carousel-indicators img.right {
+  opacity: 0.3;
+  transform: scale(0.8);
+  z-index: 0;
+}
+ 
+ 
 .scroll-container {
   display: flex;
   overflow-x: scroll;
-  scroll-snap-type: x mandatory;
   width: 100%;
   height: 400px; /* Adjust the height as needed */
 }
  
 .image-item {
-  margin: 1px ; /* Adjust the spacing between images as needed */
-  width: 400px;
-  flex: 1 0 25%; /* Each image takes 25% of the container width */
-  scroll-snap-align: start;
-  transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+  margin-right: 10px ; /* Adjust the spacing between images as needed */
 }
-
-.image-item:hover {
-  transform: scale(0.9); /* Scale the image on hover */
-  }
-   
-.arrow {
+ 
+.double {
+  font-size: 50px;
   position: absolute;
-  top: 45%;
-  transform: translate(-50%, -50%);
-  width: 45px; /* Adjust arrow box width */
-  background-color:black; 
-  height: 60px; /* Adjust arrow box height */
-  border: none; /* Remove border */
-  border-radius: 30%; /* Make the arrow box circular */
-  color: white; /* Set arrow color */
-  font-size: 35px; /* Adjust arrow size */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease; /* Add transition effect */
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  cursor: pointer;
+  color: #364655;
 }
-
-.arrow:hover {
-  background-color:#cfa658; /* Darken background color on hover */
-}
-
+ 
 .left-arrow {
-  left: 40px; /* Adjust left arrow position */
+  left: 10px;
 }
-
+ 
 .right-arrow {
-  right: -20px; /* Adjust right arrow position */
+  right: 10px;
+}
+ 
+.right-arrow:hover,.left-arrow:hover {
+background-color: #cfa658;
+}
+ 
+/* ... your existing CSS code ... */
+ 
+.image-item {
+margin-right: 10px;
+transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+width: 100%;
+height: 80%;
+}
+ 
+.image-item:hover {
+transform: scale(0.9); /* Scale the image on hover */
 }
  
 /*our services*/
@@ -704,7 +735,10 @@ div li{
 footer {
   margin: 60px 0;
   text-align: center;
+  color: rgb(75, 59, 9);
+  font-weight: bold;
 }
+ 
  
 /*contact*/
  
@@ -729,28 +763,19 @@ body {
   font-size: 64px;
   font-family: 'Times New Roman', Times, serif;
 }
-
-.container-contact p {
-  margin-left: 330px;
-  text-align: left;
-}
-
 .container-contact {
   width: 950px;
   color: rgb(5, 5, 5);
   line-height: 1.5;
   text-align: center;
-  margin-left: 457px;
+  margin-left: 250px;
   margin-top: 0;
-  margin-right: 0;
-  padding: 0;
 }
  
 .content-contact{
   display: flex;
-  margin-top: -250px;
-}
  
+}
 .icon {
   background-color: white;
   border-radius: 30px;
@@ -791,14 +816,11 @@ color: rgb(255, 255, 254);
   padding: 15px;
   border-radius: 5px;
 }
-
 .iframe{
   display: flex;
   justify-content: center;
   margin-top: 25px;
-  margin-right: 1px;
 }
-
  
 .contact-info-title {
   color: #000000;
@@ -830,7 +852,7 @@ color: rgb(255, 255, 254);
 .image {
   display: block;
   width: 50%;
-  height: 100px;
+  height: auto;
 }
  
 /*start of booking page*/
@@ -945,6 +967,7 @@ button[type="button"]:hover {
  
 /*end of bookings*/
 @media (max-width: 900px) {
+<<<<<<< HEAD
 
 /*Home captions*/
 .home .caption {
@@ -1044,6 +1067,166 @@ nav a {
 .logo {
   max-height: 70px;
 }
+=======
+  .home h1 {
+    font-size: 35px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .home {
+    padding: 80px 20px;
+  }
+  .content {
+    text-align: center;
+    padding: 80px 20px;
+  }
+  nav a {
+    font-size: 14px;
+  }
+  .icon {
+    background: #cfa658;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    margin-top: 25px;
+  }
+ 
+  .container {
+    display: none;
+  }
+  .logo {
+    max-height: 70px;
+  }
+ 
+  .content {
+    padding:0%;
+  }
+  .captions{
+    display: list-item;
+    justify-content: center;
+    list-style: none;
+  }
+  .card {
+   flex: 1;
+   margin: 0 10px;
+   width: 400px;
+   margin-bottom: 10px;
+  }
+  .card h1{
+    font-size: 55px;
+  }
+  .services{
+    display: block;
+    margin-left: 1px;
+  }
+  .gallery-container {
+    display: flex;
+  }
+  /*Contact*/
+  .content-contact{
+    display: block;
+  }
+  .col-1 {
+    width: 350px;
+    margin: 40px;
+    background-color: #cfa658;
+    border-radius: 10px;
+  }
+  .iframe {
+    width: 380px;
+    margin-left: 20px;
+  }
+  .container-contact {
+    color: rgb(5, 5, 5);
+    line-height: 1.5;
+    text-align: center;
+    width: 280px;
+    margin-left: 55px;
+    margin-top: 0;
+  }
+  .container-contact h1{
+    margin-left: 5px ;
+    margin-top: 0;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  #myForm h2 {
+    font-size: 37px;
+  }
+  .content-form {
+    margin-left: 5px;
+    width: min-content;
+    height: min-content;
+    padding:10px 80px;
+  }
+  button[type="button"] {
+   display: block;
+  }
+  .places-info{
+    padding-top: 10px;
+  }
+  .places-south-africa p{
+    margin-left: 60px;
+    width: 300px;
+    padding-top: 10px;
+   
+  }
+  .destination p {
+    font-size: 28px;
+    width: 550px;
+    padding-right: 100px;
+   
+  }
+  .map{
+    margin-right: 5px;
+    margin-left: 1px;
+    margin-top: 50px;
+    width: 420px;
+    margin-bottom: 25px;
+  }
+  .locations {
+    padding-left: 15px;
+    margin-top: 10px;
+  }
+
+  .locations img a{
+    border-width: 50%;
+
+  }
+  
+
+
+  .places-locations{
+    margin-top: 10px;
+  }
+  .places-locations h1{
+    margin-left: 50px;
+  }
+  .places h1{
+    font-size: 55px;
+    margin-right: 25px;
+    margin-top: 1px;
+    color: goldenrod;
+  }
+  .places img{
+    background-image: url(/images/leo.avif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    padding: 100px 10px 100px 10px;
+    border-radius: 5px;
+    height: 300px;
+  }
+>>>>>>> a92b33af08ed92e8259ddb11510ebfa3902bb6af
 
 .content {
   padding:0%;
@@ -1211,6 +1394,13 @@ margin-right: 0px; /* Adjust the margin to reduce the gap between images */
 padding: 0;
 pointer-events: none; /* Disable pointer events including hover */
 }
+nav ul{
+  margin-top: 3rem;
+ }
+ .d-flex #myLinks{
+  display: none;
+ }
+ 
 
 }
 
@@ -1341,3 +1531,19 @@ background-color: #555;
   from{ bottom:-100px; opacity:0 } 
   to{ bottom:0; opacity:1 }
 }
+@media (max-width: 430px) {
+  
+  nav {
+    display: list-item;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .logo{
+    margin-right: 10rem;
+  }
+  
+  nav .container {
+    margin-top: 20px;
+  }
+  }
