@@ -1,4 +1,3 @@
-
 .content {
   margin-top: 1px;
 }
@@ -68,11 +67,7 @@ nav li.active a {
   color: #ffffff;
   text-align: center;
   font-family: Comic sans MS;
-  font-size: 51px;
-  position: absolute;
-  top: 28%; /* Adjust the vertical position */
-  left: 50%;
-  transform: translateX(-50%);
+  font-size: 50px;
 }
  
 .home p {
@@ -123,8 +118,7 @@ body {
  
 .mySlides {
   display: none;
-  padding: 30px 0px 50px 0px;
-
+  padding: 80px;
   text-align: center;
 }
  
@@ -160,18 +154,11 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
-
-.testimonial-dots {
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-}
  
 .dot-container {
   text-align: center;
-  margin-top: 10px;
-  padding: 30px;
+  padding: 20px;
+  background: #ddd;
 }
  
 .dot {
@@ -184,71 +171,9 @@ body {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
  
 .active,
 .dot:hover {
-  background-color: #c99028;
-}
-
-/*IMAGE & CAPTIONS HOMEPAGE*/
-/* Styles for homepage captions */
-.home .caption {
-  color: #fff;
-  font-size: 20px;
-  position: absolute;
-  width: 20%;
-  text-align: center;
-}
-
-#caption {
-  position: absolute;
-  bottom: 160px;
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  padding: 10px;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-/* Slideshow container for homepage */
-.home .slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-/* Slides for homepage */
-.home .mySlides {
-  display: none;
-  
-}
-
-/* Dot container for homepage */
-.home .dot-container {
-  text-align: center;
-  margin-top: 90px;
-}
-
-/* Dot navigation for homepage */
-.home .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-
-}
-
-/* Active dot for homepage */
-.home .dot.active,
-.home .dot:hover {
   background-color: #c99028;
 }
  
@@ -267,13 +192,13 @@ q {
 /*Places to visit*/
  
 .places {
-  background-image: url(/images/leo.avif);
+  background-image: url(images/maxresdefault.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: scroll;
   padding: 300px 10px 300px 10px;
   border-radius: 5px;
-  height: 300px;
+  height: 500px;
 }
 
 .places1 {
@@ -357,7 +282,6 @@ margin-left: 115px;
  
 .locations{
   text-align: center;
- 
   font: 80px;
   color: black;
   padding: 50px;
@@ -366,10 +290,11 @@ margin-left: 115px;
   border-radius: 25%;
 }
 .places h1 {
-  color: #af8028;
+  color: #ffffff;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 120px;
+  font-size: 60px;
+  margin-top: 150px;
  
 }
 .places1 h1 {
@@ -387,18 +312,20 @@ margin-left: 115px;
  
 }
 
+
 .destination p {
   color: #af8028;
   text-align: center;
   font-family: cursive;
-  font-size: 55px;
+  font-size: 50px;
+  margin-top: 10px;
 }
 
 .destination1 p {
   color: #af8028;
   text-align: center;
   font-family: cursive;
-  font-size: 36px;
+  font-size: 30px;
 }
 .places-info {
   height: 150px;
@@ -451,17 +378,46 @@ margin-left: 115px;
   margin-top: 60px;
   height: 400px;
 }
-.places-locations {
-  margin-top: 110px;
-  border-radius: 25%;
+
+.African_pictures{
+  margin-top: 10px;
+}
+
+
+.African_pictures img{
+  width: 400px;
+  height: 400px;
+}
+
+.Mpumalanga_pics h1{
+  color: #af8028;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.places-locations{
+  margin-top: 20px;
+}
+
+
+.places-locations img {
+  margin-top: 5px;
+  width: 400px;
+  height: 400px;
+
 }
 .places-locations h1 {
   color: #af8028;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 50px;
-  
+  margin-top: 50px;
+  padding-top: 50px;
 }
+
 .places-south-africa h1{
   margin-top: 20px;
   text-align: center;
@@ -530,6 +486,7 @@ margin-left: 115px;
   justify-content: space-around;
   margin-right: 50px;
   text-align: center; /* Center the text */
+ 
 }
 .reviews{
   display: flex;
@@ -629,6 +586,7 @@ div li{
 }
  
 .gallery-container {
+.gallery-container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -636,7 +594,8 @@ div li{
   margin: 0 auto;
   overflow: hidden;
 }
-
+ 
+ 
 .scroll-container {
   margin-top: 7rem;
   display: flex;
@@ -773,6 +732,8 @@ transform: scale(0.9); /* Scale the image on hover */
 footer {
   margin: 60px 0;
   text-align: center;
+  color: rgb(75, 59, 9);
+  font-weight: bold;
 }
  
  
@@ -799,28 +760,19 @@ body {
   font-size: 64px;
   font-family: 'Times New Roman', Times, serif;
 }
-
-.container-contact p {
-  margin-left: 330px;
-  text-align: left;
-}
-
 .container-contact {
   width: 950px;
   color: rgb(5, 5, 5);
   line-height: 1.5;
   text-align: center;
-  margin-left: 457px;
+  margin-left: 250px;
   margin-top: 0;
-  margin-right: 0;
-  padding: 0;
 }
  
 .content-contact{
   display: flex;
-  margin-top: -250px;
-}
  
+}
 .icon {
   background-color: white;
   border-radius: 30px;
@@ -861,14 +813,11 @@ color: rgb(255, 255, 254);
   padding: 15px;
   border-radius: 5px;
 }
-
 .iframe{
   display: flex;
   justify-content: center;
   margin-top: 25px;
-  margin-right: 1px;
 }
-
  
 .contact-info-title {
   color: #000000;
@@ -900,7 +849,7 @@ color: rgb(255, 255, 254);
 .image {
   display: block;
   width: 50%;
-  height: 100px;
+  height: auto;
 }
  
 /*start of booking page*/
@@ -1015,48 +964,9 @@ button[type="button"]:hover {
  
 /*end of bookings*/
 @media (max-width: 900px) {
-
-/*Home captions*/
-  .home .caption {
-    color: #fff;
-    font-size: 20px;
-    position: absolute;
-    width: 50%;
-    text-align: center;
-  }
-
-  #caption {
-
-    bottom: 21%;
-  
-  }
-
   .home h1 {
-    color: #ffffff;
-    text-align: center;
-    font-family: Comic sans MS;
     font-size: 35px;
-    position: absolute;
-    top: 15%; /* Adjust the vertical position */
-    left: 50%;
-    transform: translateX(-50%);
   }
-   
-  .home p {
-    color: #ffffff;
-    text-align: center;
-    font-family: Comic sans MS;
-    font-size: 25px;
-    margin-top: 83%;
-  }
-
-  /* Dot container for homepage */
-  .home .dot-container {
-  text-align: center;
-  margin-top: 80px;
-}
-
-
   h1 {
     font-size: 35px;
   }
@@ -1114,7 +1024,9 @@ button[type="button"]:hover {
     display: block;
     margin-left: 1px;
   }
-
+  .gallery-container {
+    display: flex;
+  }
   /*Contact*/
   .content-contact{
     display: block;
@@ -1181,6 +1093,14 @@ button[type="button"]:hover {
     padding-left: 15px;
     margin-top: 10px;
   }
+
+  .locations img a{
+    border-width: 50%;
+
+  }
+  
+
+
   .places-locations{
     margin-top: 10px;
   }
