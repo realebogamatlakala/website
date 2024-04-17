@@ -75,33 +75,81 @@ function navFunction() {
   }
 }
 //end of hamburger
+
+const scrollContainer = document.getElementById('scrollContainer');
+      const carouselIndicators = document.querySelectorAll('.carousel-indicators img');
+  
+      let currentIndex = 0;
+  
+      function scrollGallery(direction) {
+        const imageWidth = document.querySelector('.image-item').offsetWidth;
+        const scrollLeft = scrollContainer.scrollLeft;
+        const scrollTo = scrollLeft + (imageWidth + 20) * direction;
+        scrollContainer.scrollTo({ left: scrollTo, behavior: 'smooth' });
+      }
+  
+      function updateIndicators(index) {
+        carouselIndicators.forEach((indicator, i) => {
+          indicator.classList.remove('active');
+          indicator.classList.remove('left');
+          indicator.classList.remove('right');
+  
+          if (i === index) {
+            indicator.classList.add('active');
+          } else if (i < index) {
+            indicator.classList.add('left');
+          } else {
+            indicator.classList.add('right');
+          }
+        });
+      }
+  
+      carouselIndicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+          const imageWidth = document.querySelector('.image-item').offsetWidth;
+          const scrollLeft = (imageWidth + 20) * index;
+          scrollContainer.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+          currentIndex = index;
+          updateIndicators(currentIndex);
+        });
+      });
+  
+      scrollContainer.addEventListener('scroll', () => {
+        const imageWidth = document.querySelector('.image-item').offsetWidth;
+        const scrollLeft = scrollContainer.scrollLeft;
+        currentIndex = Math.round(scrollLeft / (imageWidth + 20));
+        updateIndicators(currentIndex);
+      });
+  
+      updateIndicators(currentIndex);
+ 
  
 // Our services slide show. Get the button
-document.addEventListener("DOMContentLoaded", function () {
-  const scrollContainer = document.getElementById("scrollContainer");
-  const leftArrow = document.querySelector(".left-arrow");
-  const rightArrow = document.querySelector(".right-arrow");
-  const imageWidth = 400; // Width of each image
-  let scrollPosition = 0;
+// document.addEventListener("DOMContentLoaded", function () {
+//   const scrollContainer = document.getElementById("scrollContainer");
+//   const leftArrow = document.querySelector(".left-arrow");
+//   const rightArrow = document.querySelector(".right-arrow");
+//   const imageWidth = 400; // Width of each image
+//   let scrollPosition = 0;
 
-  function scrollGallery(offset) {
-    scrollPosition += offset * imageWidth;
-    // Ensure scrollPosition is within bounds
-    scrollPosition = Math.max(0, Math.min(scrollPosition, scrollContainer.scrollWidth - scrollContainer.clientWidth));
-    scrollContainer.scrollTo({
-      left: scrollPosition,
-      behavior: 'smooth'
-    });
-  }
+//   function scrollGallery(offset) {
+//     scrollPosition += offset * imageWidth;
+//     // Ensure scrollPosition is within bounds
+//     scrollPosition = Math.max(0, Math.min(scrollPosition, scrollContainer.scrollWidth - scrollContainer.clientWidth));
+//     scrollContainer.scrollTo({
+//       left: scrollPosition,
+//       behavior: 'smooth'
+//     });
+//   }
 
-  leftArrow.addEventListener("click", function () {
-    scrollGallery(-1);
-  });
+//   leftArrow.addEventListener("click", function () {
+//     scrollGallery(-1);
+//   });
 
-  rightArrow.addEventListener("click", function () {
-    scrollGallery(1);
-  });
-});
+//   rightArrow.addEventListener("click", function () {
+//     scrollGallery(1);
+//   });
+// });
  
  
 // Home page. Reviews
